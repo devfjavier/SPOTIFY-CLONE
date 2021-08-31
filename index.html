@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- javascript -->
+    <script src="scripts.js"></script>
+    <title>Clon de Spotify</title>
+</head>
+<body>
+    <div class="index content">
+        <NAV class="PANEL">
+            <ul class="menu">
+                <li class="index">
+                    <img class="icon" src="" alt="">
+                    <a class="text" href="index.html">Inicio</a>
+                </li>
+                <li class="search">
+                    <img class="icon" src="" alt="">
+                    <a class="text" href="search.html">Buscar</a>
+                </li>
+                <li class="collection">
+                    <img class="icon" src="" alt="">
+                    <a class="text" href="collection/playlists.html">Tu Biblioteca</a>
+                </li>
+            </ul>
+            <div class="buttons">
+                <button class="create-playlist text">Crear playlist</button>
+                <button class="tracks">
+                    <a class="text" href="collection/tracks.html">Tus me gusta</a>
+                </button>
+            </div>
+            <hr class="hr">
+            <ul class="playlists-shortcut">
+                <li class="pl">
+                    <a href="playlist/playlist.html">LISTA</a>
+                </li>
+            </ul>
+        </NAV>
+
+        <HEADER class="HEADER">
+            <div class="page-navigation">
+                <button class="button back">izq</button>
+                <button class="button fordward">der</button>
+            </div>
+            <span class="void"></span>
+            <button class="premium">PREMIUM</button>
+            <div class="user-container">
+                <button class="user-btn">
+                    <div class="img-container"><img src="img/profile.svg" alt=""></div>
+                    <span class="name">Usuario</span>
+                    <div class="dd-menu-icon"><img src="img/song-play.svg" alt=""></div>
+                    <ul class="dd-menu">
+                        <li class="profile"><a class="link" href="">Perfil</a></li>
+                        <li class="preferences"><a class="link" href="">Preferencias</a></li>
+                    </ul>
+                </button>
+            </div>
+        </HEADER>
+
+        <MAIN class="MAIN">
+            <section class="section greetings">
+                <h2 class="title">Titulo</h2>
+                <div class="container">
+                </div>
+            </section>
+
+            <section class="section recently-heard">
+                <h2 class="title">Escuchado recientemente</h2>
+                <div class="container">
+                    <article class="song">
+                        <a class="source-link" href="search.html"></a>
+                        <div class="img-container">
+                            <img src="img/song.jpg" alt="">
+                            <button class="play-pause">play/pause</button>
+                        </div>
+                        <div class="info">
+                            <h3 class="title">cancion</h3>
+                            <p class="text">De *usuario</p>
+                        </div>
+                    </article>
+                    
+                    <article class="song">
+                        <a class="source-link" href="search.html"></a>
+                        <div class="img-container">
+                            <img src="img/song.jpg" alt="">
+                            <button class="play-pause">play/pause</button>
+                        </div>
+                        <div class="info">
+                            <h3 class="title">cancion</h3>
+                            <p class="text">De *usuario</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </MAIN>
+
+        <FOOTER class="FOOTER"><span>polaris</span></FOOTER>
+    </div>
+</body>
+</html>

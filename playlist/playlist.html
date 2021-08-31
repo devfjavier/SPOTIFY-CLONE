@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- javascript -->
+    <script src="../scripts.js"></script>
+    <title>Clon de Spotify</title>
+</head>
+<body>
+    <div class="playlist content">
+        <NAV class="PANEL">
+            <ul class="menu">
+                <li class="index">
+                    <img class="icon" src="" alt="">
+                    <a class="link" href="/">Inicio</a>
+                </li>
+                <li class="search">
+                    <img class="icon" src="" alt="">
+                    <a class="link" href="../search.html">Buscar</a>
+                </li>
+                <li class="collection">
+                    <img class="icon" src="" alt="">
+                    <a class="link" href="../collection/playlists.html">Tu Biblioteca</a>
+                </li>
+            </ul>
+            <div class="buttons">
+                <button class="create-playlist">Crear playlist</button>
+                <button class="tracks">
+                    <a href="../collection/tracks.html">Tus me gusta</a>
+                </button>
+            </div>
+            <hr class="hr">
+            <ul class="playlists-shortcut">
+                <li class="pl">
+                    <a href="">LISTA</a>
+                </li>
+            </ul>
+        </NAV>
+
+        <HEADER class="HEADER">
+            <div class="page-navigation">
+                <button class="button back">izq</button>
+                <button class="button fordward">der</button>
+            </div>
+            <span class="void"></span>
+            <button class="premium">PREMIUM</button>
+            <div class="user-container">
+                <button class="user">
+                    <span class="profile-icon">svg</span>
+                    <span class="name">Usuario</span>
+                    <span class="dd-menu-icon">flecha</span>
+                </button>
+                <!-- <ul class="dd-menu">
+                    <li class="profile"><a class="link" href="">Perfil</a></li>
+                    <li class="preferences"><a class="link" href="">Preferencias</a></li>
+                </ul> -->
+            </div>
+        </HEADER>
+
+        <MAIN class="MAIN">
+            <section class="section banner">
+                <div classs="img-container"><img src="../img/song.jpg" alt=""></div>
+                <div class="container">
+                    <h2 class="title">PLAYLIST</h2>
+                    <h1 class="title h1">TITULO DEL PLAYLIST</h1>
+                    <div class="info text">
+                        <a href="../user/usuario"></a>
+                        <span>
+                            ·<span class="song-number">2</span> cancion, <span class="duration">2</span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section tracks">
+                <div class="menu">
+                    <button class="play-pause"></button>
+                    <button class="download">#</button>
+                    <div class="more-options">
+                        <button class="button">...</button>
+                        <ul class="options">
+                            <li class="op"></li>
+                        </ul>
+                    </div>
+                    <span class="void"></span>
+                    <div class="search">
+                        <button class="button">lupa</button>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="filters">
+                        <button>Orden personalizado</button>
+                        <!-- <ul>
+                            <li><button>Orden personalizado</button></li>
+                            <li><button>Titulo</button></li>
+                            <li><button>Artista</button></li>
+                            <li><button>Album</button></li>
+                            <li><button>Fecha en que se agrego</button></li>
+                            <li><button>Duracion</button></li>
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div>
+                    <div class="columns-info">
+                            <span class="song-number text">#</span>
+                            <span class="song-title text">TITULO</span>
+                            <span class="song-album text">ALBUM</span>
+                            <span class="song-info text">AGREGADO EL</span>
+                            <span class="song-like-btn void">like</span>
+                            <span class="song-duration text">reloj</span>
+                            <span class="song-more-options void">...op</span>
+                    </div>
+                    <hr>
+                    <div class="song-container">
+                        <article class="song">
+                                <div class="song-number text">
+                                    <span class="number text">1</span>
+                                    <button class="play icon"><img src="../img/song-play.svg" alt=""></button>
+                                    <button class="pause icon"><img src="../img/song-pause.svg" alt=""></button>
+                                </div>
+                                <div class="song-title">
+                                    <div class="img-container"><img src="../img/song.jpg" alt=""></div>
+                                    <div>
+                                        <span class="title">nombre cancion</span>
+                                        <a class="artist text" href="">artista</a>
+                                    </div>
+                                </div>
+                                <a class="song-album text" href="">Album</a>
+                                <span class="song-info text">Fecha de agregacion</span>
+                                <button class="song-like-btn">icono</button>
+                                <span class="song-duration text">Duracion</span>
+                                <button class="song-more-options text">...</button>
+                        </article>
+                        <!-- <article class="song"></article> -->
+                    </div>
+                </div>
+            </section>
+        </MAIN>
+
+        <FOOTER class="FOOTER"><span>polaris</span></FOOTER>
+    </div>
+</body>
+</html>

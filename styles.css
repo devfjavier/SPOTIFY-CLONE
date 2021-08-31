@@ -1,0 +1,372 @@
+:root {
+    --h1-font-size: 3.6rem;
+    --h2-section-f-s: 1.8rem;
+    --h2-h3-f-s: 1.2rem;
+    --h4-section-f-s: 1.5rem;
+    --big-font-size: 1.5rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: 1.05rem;
+    --smaller-font-size: 0.9rem;
+    --panel-bg-color: rgb(6, 6, 6);
+    --section-bg-color: rgb(25, 23, 28);
+    --title-color: rgb(250, 255, 249);
+    --text-color: rgb(160, 160, 160);
+    --link-color: rgb(240, 240, 240);
+    --item-hover-bg-color: rgba(60, 60, 60);
+    --menu-hover-bg-color: rgb(42, 46, 54);
+    --link-hover-bg-color: rgb(76, 80, 87);
+    --secondary-color: black;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+.section > .title {
+    font-size: var(--h2-section-f-s);
+}
+.title.h1 {
+    font-size: var(--h1-font-size);
+}
+
+.title {
+    color: var(--title-color);
+}
+
+.text {
+    color: var(--text-color);
+}
+
+/* TODO EL CONTENIDO DE LA PAGINA */
+.content {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "PANEL HEADER-MAIN"
+    "FOOTER FOOTER";
+}
+
+/* 
+
+PANEL, MENU DE LA DERECHA
+
+*/
+
+.PANEL {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    grid-area: PANEL;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    background-color: var(--panel-bg-color);
+}
+
+.PANEL .menu {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.PANEL .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* 
+
+HEADER, CABECERA DEL CONTENIDO PRINCIPAL
+
+*/
+
+/* para todos los HEADER */
+.HEADER {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    background-color: aqua;
+    grid-area: HEADER-MAIN;
+    justify-content: space-around;
+}
+
+.HEADER {
+    grid-template-columns: auto auto 1fr auto;
+}
+
+.index.content .HEADER,
+.playlist.content .HEADER,
+.track.content .HEADER,
+.user-tracks.content .HEADER {
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.HEADER .collection-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.HEADER .page-navigation {
+    display: flex;
+    gap: .6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.HEADER .premium {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+.HEADER .user-container {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+/* boton que activa el menu desplegable */
+.HEADER .user-container .user-btn {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-radius: 2rem;
+    padding: .2rem;
+    border: none;
+    background-color: var(--panel-bg-color);
+    align-items: center;
+    gap: .6rem;
+}
+.HEADER .user-container .user-btn:hover {
+    background-color: var(--menu-hover-bg-color);
+}
+.HEADER .user-container .user-btn .img-container {
+    width: 2rem;
+    border-radius: 50%;
+    padding: 2%;
+    background-color: var(--item-hover-bg-color);
+    overflow: hidden;
+}
+.HEADER .user-container .user-btn .name {
+    color: var(--title-color);
+}
+.HEADER .user-container .user-btn .dd-menu-icon {
+    width: .6rem;
+    margin-right: .6rem;
+}
+/* menu desplegable del usuario */
+.HEADER .user-container .user-btn .dd-menu {
+    position: absolute;
+    top: 119%;
+    right: 0;
+    background-color: var(--menu-hover-bg-color);
+    padding: .29rem;
+    border-radius: .27rem;
+}
+.HEADER .user-container .user-btn .dd-menu .link {
+    padding: .6rem .4rem;
+    display: block;
+    text-align: left;
+    color: var(--link-color);
+    border-radius: .12rem;
+}
+.HEADER .user-container .user-btn .dd-menu .link:hover {
+    background-color: var(--link-hover-bg-color);
+}
+
+/* 
+
+MAIN, CONTENIDO PRINCIPAL
+
+*/
+
+.MAIN {
+    background-color: var(--section-bg-color);
+    grid-area: HEADER-MAIN;
+    padding: 4rem 2rem;
+}
+
+.MAIN .banner{
+    display: grid;
+    gap: 1.9rem;
+    grid-template-columns: 12rem auto;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+.MAIN .banner .title:not(.h1){
+    font-size: var(--h2-h3-f-s);
+}
+
+
+
+/* pagina index */
+
+.index.content .MAIN .recently-heard .container {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.index.content .MAIN .recently-heard .song {
+    position: relative;
+    padding: 1rem;
+    border: 2px solid greenyellow;
+    border-radius: .2rem;
+}
+.index.content .MAIN .recently-heard .song .source-link {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.index.content .MAIN .recently-heard .song .info {
+    margin-bottom: 1rem;
+}
+.index.content .MAIN .recently-heard .song .img-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.index.content .MAIN .recently-heard .song .img-container .play-pause {
+    position: absolute;
+    bottom: .29rem;
+    right: .29rem;
+    z-index: 10; 
+}
+
+/* pagina de una playlist */
+
+.playlist.content .MAIN {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    overflow: auto;
+}
+
+.playlist.content .MAIN .tracks .menu {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr auto auto;
+    background-color: aquamarine;
+    gap: 2.9rem;
+    margin-bottom: 1.6rem;
+}
+
+/* contenedor solo de las canciones */
+.playlist.content .MAIN .tracks .song-container {
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
+}
+/* estilos para que las columnas de informacion y canciones esten alineados  */
+.playlist.content .MAIN .tracks .columns-info,
+.playlist.content .MAIN .tracks .song {
+    display: grid;
+    grid-template-columns: 6% 35% 22% 16% 6% 9% 6%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    align-items: center;
+}
+.playlist.content .MAIN .tracks .song {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+.playlist.content .MAIN .tracks .song:hover {
+    background-color: var(--item-hover-bg-color);
+    border-radius: 0.2rem;
+}
+/* alinear para la infomacion de las columnas y las canciones */
+.playlist.content .MAIN .tracks .columns-info .song-number,
+.playlist.content .MAIN .tracks .song-like-btn,
+.playlist.content .MAIN .tracks .song-more-options {
+    justify-self: center;
+}
+
+.playlist.content .MAIN .tracks .song-duration,
+.playlist.content .MAIN .tracks .song-title,
+.playlist.content .MAIN .tracks .song-album,
+.playlist.content .MAIN .tracks .song-info {
+    justify-self: left;
+}
+/* solo para la informacion de las columnas */
+.playlist.content .MAIN .tracks .columns-info .song-duration:hover,
+.playlist.content .MAIN .tracks .columns-info .song-info:hover,
+.playlist.content .MAIN .tracks .columns-info .song-album:hover,
+.playlist.content .MAIN .tracks .columns-info .song-title:hover {
+    color: var(--title-color);
+}
+
+/* solo para las canciones */
+.playlist.content .MAIN .tracks .song .song-number {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.playlist.content .MAIN .tracks .song .song-number .number {
+    position: absolute;
+}
+.playlist.content .MAIN .tracks .song .song-number .play.icon, 
+.playlist.content .MAIN .tracks .song .song-number .pause.icon {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 22%;
+    opacity: 0;
+}
+
+.playlist.content .MAIN .tracks .song .song-title {
+    display: grid;
+    gap: .6rem;
+    grid-template-columns: 2.7rem 1fr;
+    align-items: end;
+}
+.playlist.content .MAIN .tracks .song .song-title .title {
+    display: block;
+}
+.playlist.content .MAIN .tracks .song .song-title .artist:hover,
+.playlist.content .MAIN .tracks .song .song-album:hover {
+    text-decoration: underline;
+}
+.playlist.content .MAIN .tracks .song:hover .song-title .artist,
+.playlist.content .MAIN .tracks .song:hover .song-album {
+    color: var(--title-color);
+}
+
+.playlist.content .MAIN .tracks .song .song-like-btn,
+.playlist.content .MAIN .tracks .song .song-more-options{
+    opacity: 0;
+}
+.playlist.content .MAIN .tracks .song:hover .song-like-btn,
+.playlist.content .MAIN .tracks .song:hover .song-more-options{
+    opacity: 1;
+}
+
+/* 
+
+FOOTER, CONTROLES DE REPRODUCION
+
+*/
+
+.FOOTER {
+    grid-area: FOOTER;
+}
