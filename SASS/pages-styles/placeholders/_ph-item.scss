@@ -1,0 +1,39 @@
+// PLACE HOLDER PARA LOS ITEMS DE: _playlists
+%container {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+%song{
+    position: relative;
+    padding: 1rem;
+    border: 2px solid greenyellow;
+    border-radius: .2rem;
+}
+
+%source-link{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--index-front);
+}
+
+%info {
+    margin-bottom: 1rem;
+}
+
+%img-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+%play-pause {
+    position: absolute;
+    bottom: .29rem;
+    right: .29rem;
+    z-index: var(--index-overlay); 
+}

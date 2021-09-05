@@ -1,0 +1,114 @@
+/* 
+
+HEADER, CABECERA DEL CONTENIDO PRINCIPAL
+
+*/
+
+/* para todos los HEADER */
+.HEADER {
+    display: grid;
+    position: absolute;
+    padding: .46rem;
+    width: 100%;
+    background-color: aqua;
+    grid-area: HEADER-MAIN;
+    justify-content: space-around;
+}
+
+.HEADER {
+    grid-template-columns: auto auto 1fr auto;
+}
+
+.void {
+    display: block;
+    padding: .6rem 0;
+    color: transparent;
+    z-index: var(--index-back);
+}
+
+.index.content .HEADER,
+.playlist.content .HEADER,
+.track.content .HEADER,
+.user-tracks.content .HEADER {
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.HEADER .collection-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.HEADER .collection-menu .link {
+    display: inline-block;
+    padding: .6rem .9rem;
+}
+.HEADER .collection-menu .link.actual {
+    border-radius: .2em;
+    background-color: var(--item-hover-bg-color);
+}
+
+.HEADER .page-navigation {
+    display: flex;
+    gap: .6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.HEADER .premium {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+.HEADER .user-container {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    height: 100%;
+}
+/* boton que activa el menu desplegable */
+.HEADER .user-container .user-btn {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-radius: 2rem;
+    padding: .2rem;
+    height: 100%;
+    border: none;
+    background-color: var(--user-bg-color);
+    align-items: center;
+    gap: .6rem;
+}
+.HEADER .user-container .user-btn:hover {
+    background-color: var(--menu-hover-bg-color);
+}
+.HEADER .user-container .user-btn .img-container {
+    width: 2rem;
+    border-radius: 50%;
+    padding: 2%;
+    background-color: var(--item-hover-bg-color);
+    overflow: hidden;
+}
+.HEADER .user-container .user-btn .name {
+    color: var(--title-color);
+}
+.HEADER .user-container .user-btn .dd-menu-icon {
+    width: .6rem;
+    margin-right: .6rem;
+}
+/* menu desplegable del usuario */
+.HEADER .user-container .user-btn .dd-menu {
+    position: absolute;
+    top: 119%;
+    right: 0;
+    background-color: var(--menu-hover-bg-color);
+    padding: .29rem;
+    border-radius: .27rem;
+}
+.HEADER .user-container .user-btn .dd-menu .link {
+    padding: .6rem .4rem;
+    display: block;
+    text-align: left;
+    color: var(--link-color);
+    border-radius: .12rem;
+}
+.HEADER .user-container .user-btn .dd-menu .link:hover {
+    background-color: var(--link-hover-bg-color);
+}

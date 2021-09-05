@@ -1,0 +1,41 @@
+/* 
+
+FOOTER, CONTROLES DE REPRODUCION
+
+*/
+
+.FOOTER {
+    background-color: var(--menu-hover-bg-color);
+    padding: 1rem;
+    grid-area: FOOTER;
+}
+
+.FOOTER .container {
+    display: grid;  
+    grid-template-columns: 2fr 6fr 2fr;
+    justify-content: space-between;
+    gap: 12%;
+}
+.FOOTER .container .song {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4rem auto auto;
+    gap: 1rem;
+}
+.FOOTER .container .song .info {
+    display: grid;
+    gap: .2rem;
+}
+.FOOTER .container .song .info .link {
+    white-space: nowrap;
+}
+.FOOTER .container .song .info .link:hover {
+    text-decoration: underline;
+}
+.FOOTER .container .song .like{
+    white-space: nowrap;
+}
+
+.FOOTER .container .primary-controls {
+    background-color: rgba(0, 0, 0, 0.275);
+}

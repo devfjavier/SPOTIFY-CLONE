@@ -1,0 +1,28 @@
+/* 
+
+PANEL, MENU DE LA DERECHA
+
+*/
+
+.PANEL {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    grid-area: PANEL;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    background-color: var(--panel-bg-color);
+}
+
+.PANEL .menu {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.PANEL .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+

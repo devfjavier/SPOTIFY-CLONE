@@ -1,0 +1,11 @@
+// components, divisiones de todo el sitio
+@use "components/config";
+@use "components/main";
+@use "components/panel";
+@use "components/header";
+@use "components/footer";
+
+// pages-styles, paginas individuales
+@use "pages-styles/playlist";
+@use "pages-styles/playlists";
+@use "pages-styles/recently-heard";

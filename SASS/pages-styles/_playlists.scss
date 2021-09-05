@@ -1,0 +1,30 @@
+/* 
+
+PAGINA "playlists" DE COLLECTION 
+
+*/
+@use "placeholders/ph-item";
+
+.MAIN .playlists .container {
+    @extend %container;
+}
+
+.MAIN .playlists .song {
+    @extend %song;
+}
+
+.MAIN .playlists .song .source-link {
+    @extend %source-link;
+}
+
+.MAIN .playlists .song .info {
+    @extend %info;
+}
+
+.MAIN .playlists .song .img-container {
+    @extend %img-container;
+}
+
+.MAIN .playlists .song .img-container .play-pause {
+    @extend %play-pause;
+}

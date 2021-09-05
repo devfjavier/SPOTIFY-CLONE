@@ -1,0 +1,30 @@
+/* 
+
+SECCION "recently-heard" DE LA PAGINA "index" 
+
+*/
+@use "placeholders/ph-item";
+
+.MAIN .recently-heard .container {
+    @extend %container;
+}
+
+.MAIN .recently-heard .song {
+    @extend %song;
+}
+
+.MAIN .recently-heard .song .source-link {
+    @extend %source-link;
+}
+
+.MAIN .recently-heard .song .info {
+    @extend %info;
+}
+
+.MAIN .recently-heard .song .img-container {
+    @extend %img-container;
+}
+
+.MAIN .recently-heard .song .img-container .play-pause {
+    @extend %play-pause;
+}

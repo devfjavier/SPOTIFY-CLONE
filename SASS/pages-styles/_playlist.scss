@@ -1,0 +1,112 @@
+/* pagina de una playlist */
+@use "placeholders/ph-banner";
+
+.playlist.content .MAIN {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    overflow: auto;
+}
+.playlist.content .MAIN .banner {
+    @extend %banner;
+}
+
+.playlist.content .MAIN .tracks .menu {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr auto auto;
+    background-color: aquamarine;
+    gap: 2.9rem;
+    margin-bottom: 1.6rem;
+}
+
+/* contenedor solo de las canciones */
+.playlist.content .MAIN .tracks .song-container {
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
+}
+/* estilos para que las columnas de informacion y canciones esten alineados  */
+.playlist.content .MAIN .tracks .columns-info,
+.playlist.content .MAIN .tracks .song {
+    display: grid;
+    grid-template-columns: 6% 35% 22% 16% 6% 9% 6%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    align-items: center;
+}
+.playlist.content .MAIN .tracks .song {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+.playlist.content .MAIN .tracks .song:hover {
+    background-color: var(--item-hover-bg-color);
+    border-radius: 0.2rem;
+}
+/* alinear para la infomacion de las columnas y las canciones */
+.playlist.content .MAIN .tracks .columns-info .song-number,
+.playlist.content .MAIN .tracks .song-like-btn,
+.playlist.content .MAIN .tracks .song-more-options {
+    justify-self: center;
+}
+
+.playlist.content .MAIN .tracks .song-duration,
+.playlist.content .MAIN .tracks .song-title,
+.playlist.content .MAIN .tracks .song-album,
+.playlist.content .MAIN .tracks .song-info {
+    justify-self: left;
+}
+/* solo para la informacion de las columnas */
+.playlist.content .MAIN .tracks .columns-info .song-duration:hover,
+.playlist.content .MAIN .tracks .columns-info .song-info:hover,
+.playlist.content .MAIN .tracks .columns-info .song-album:hover,
+.playlist.content .MAIN .tracks .columns-info .song-title:hover {
+    color: var(--title-color);
+}
+
+/* solo para las canciones */
+.playlist.content .MAIN .tracks .song .song-number {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.playlist.content .MAIN .tracks .song .song-number .number {
+    position: absolute;
+}
+.playlist.content .MAIN .tracks .song .song-number .play.icon, 
+.playlist.content .MAIN .tracks .song .song-number .pause.icon {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 22%;
+    opacity: 0;
+}
+
+.playlist.content .MAIN .tracks .song .song-title {
+    display: grid;
+    gap: .6rem;
+    grid-template-columns: 2.7rem 1fr;
+    align-items: end;
+}
+.playlist.content .MAIN .tracks .song .song-title .title {
+    display: block;
+}
+.playlist.content .MAIN .tracks .song .song-title .artist:hover,
+.playlist.content .MAIN .tracks .song .song-album:hover {
+    text-decoration: underline;
+}
+.playlist.content .MAIN .tracks .song:hover .song-title .artist,
+.playlist.content .MAIN .tracks .song:hover .song-album {
+    color: var(--title-color);
+}
+
+.playlist.content .MAIN .tracks .song .song-like-btn,
+.playlist.content .MAIN .tracks .song .song-more-options{
+    opacity: 0;
+}
+.playlist.content .MAIN .tracks .song:hover .song-like-btn,
+.playlist.content .MAIN .tracks .song:hover .song-more-options{
+    opacity: 1;
+}
