@@ -9,22 +9,22 @@ SECCION "recently-heard" DE LA PAGINA "index"
     @extend %container;
 }
 
-.MAIN .recently-heard .song {
-    @extend %song;
+.MAIN .recently-heard .item {
+    @extend %item;
 }
 
-.MAIN .recently-heard .song .source-link {
+.MAIN .recently-heard .item .source-link {
     @extend %source-link;
 }
 
-.MAIN .recently-heard .song .info {
+.MAIN .recently-heard .item .info {
     @extend %info;
 }
 
-.MAIN .recently-heard .song .img-container {
+.MAIN .recently-heard .item .img-container {
     @extend %img-container;
 }
 
-.MAIN .recently-heard .song .img-container .play-pause {
+.MAIN .recently-heard .item .img-container .play-pause {
     @extend %play-pause;
 }

@@ -9,22 +9,22 @@ PAGINA "playlists" DE COLLECTION
     @extend %container;
 }
 
-.MAIN .playlists .song {
-    @extend %song;
+.MAIN .playlists .item {
+    @extend %item;
 }
 
-.MAIN .playlists .song .source-link {
+.MAIN .playlists .item .source-link {
     @extend %source-link;
 }
 
-.MAIN .playlists .song .info {
+.MAIN .playlists .item .info {
     @extend %info;
 }
 
-.MAIN .playlists .song .img-container {
+.MAIN .playlists .item .img-container {
     @extend %img-container;
 }
 
-.MAIN .playlists .song .img-container .play-pause {
+.MAIN .playlists .item .img-container .play-pause {
     @extend %play-pause;
 }
