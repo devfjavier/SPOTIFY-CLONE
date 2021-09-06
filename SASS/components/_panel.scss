@@ -44,8 +44,11 @@ PANEL, MENU DE LA DERECHA
     color: var(--title-color);
 }
 
-.PANEL .actual{
+.PANEL .menu .actual{
     background-color: var(--item-hover-bg-color);
-    color: var(--title-color);
     border-radius: .29em;
+}
+
+.PANEL .actual{
+    color: var(--title-color);
 }
