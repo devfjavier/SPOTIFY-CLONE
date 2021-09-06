@@ -33,6 +33,9 @@
 %img-container {
     position: relative;
     margin-bottom: 1rem;
+    .artist-img {
+        border-radius: 50%;
+    }
 }
 
 %play-pause {
