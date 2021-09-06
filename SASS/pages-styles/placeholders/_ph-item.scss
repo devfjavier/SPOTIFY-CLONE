@@ -5,11 +5,15 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-%song{
+%item{
     position: relative;
     padding: 1rem;
-    border: 2px solid greenyellow;
     border-radius: .2rem;
+    transition: background-color .2s linear;
+    background-color: var(--item-bg-color);
+    &:hover {
+        background-color: var(--item-hover-bg-color);
+    }
 }
 
 %source-link{
