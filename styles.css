@@ -145,6 +145,11 @@ PANEL, MENU DE LA DERECHA
   background-color: transparent;
 }
 
+.PANEL .pl .text {
+  padding: 0.4em 0.6em;
+  display: block;
+}
+
 .PANEL .text:hover {
   color: var(--title-color);
 }

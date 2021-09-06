@@ -40,6 +40,11 @@ PANEL, MENU DE LA DERECHA
     background-color: transparent;
 }
 
+.PANEL .pl .text{
+    padding: .4em .6em;
+    display: block;
+}
+
 .PANEL .text:hover{
     color: var(--title-color);
 }
