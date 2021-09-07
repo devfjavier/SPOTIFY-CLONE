@@ -81,6 +81,9 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 .HEADER .user-btn:hover {
     background-color: var(--menu-hover-bg-color);
 }
+.HEADER .user-btn.is-active {
+    background-color: var(--menu-hover-bg-color);
+}
 .HEADER .img-container {
     width: 2rem;
     border-radius: 50%;
@@ -105,6 +108,9 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     background-color: var(--menu-hover-bg-color);
     padding: .29rem;
     border-radius: .27rem;
+}
+.HEADER .dd-menu.is-active {
+    display: block;
 }
 .HEADER .link {
     padding: .6rem .4rem;
