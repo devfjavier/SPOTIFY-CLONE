@@ -58,13 +58,15 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     margin-left: 1.2rem;
     margin-right: 1.2rem;
 }
+
+/* boton que activa el menu desplegable del menu del usuario*/
 .HEADER .user-container {
+    position: relative;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     height: 100%;
 }
-/* boton que activa el menu desplegable */
-.HEADER .user-container .user-btn {
+.HEADER .user-btn {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -76,25 +78,27 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     align-items: center;
     gap: .6rem;
 }
-.HEADER .user-container .user-btn:hover {
+.HEADER .user-btn:hover {
     background-color: var(--menu-hover-bg-color);
 }
-.HEADER .user-container .user-btn .img-container {
+.HEADER .img-container {
     width: 2rem;
     border-radius: 50%;
     padding: 2%;
     background-color: var(--item-hover-bg-color);
     overflow: hidden;
 }
-.HEADER .user-container .user-btn .name {
+.HEADER .name {
     color: var(--title-color);
 }
-.HEADER .user-container .user-btn .dd-menu-icon {
+.HEADER .dd-menu-icon {
     width: .6rem;
     margin-right: .6rem;
 }
+
 /* menu desplegable del usuario */
-.HEADER .user-container .user-btn .dd-menu {
+.HEADER .dd-menu {
+    display: none;
     position: absolute;
     top: 119%;
     right: 0;
@@ -102,13 +106,13 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     padding: .29rem;
     border-radius: .27rem;
 }
-.HEADER .user-container .user-btn .dd-menu .link {
+.HEADER .link {
     padding: .6rem .4rem;
     display: block;
     text-align: left;
     color: var(--link-color);
     border-radius: .12rem;
 }
-.HEADER .user-container .user-btn .dd-menu .link:hover {
+.HEADER .link:hover {
     background-color: var(--link-hover-bg-color);
 }
