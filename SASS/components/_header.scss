@@ -95,8 +95,12 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     color: var(--title-color);
 }
 .HEADER .dd-menu-icon {
+    transform: rotate(90deg);
     width: .6rem;
     margin-right: .6rem;
+}
+.HEADER .user-btn.is-active .dd-menu-icon {
+    transform: rotate(-90deg);
 }
 
 /* menu desplegable del usuario */
