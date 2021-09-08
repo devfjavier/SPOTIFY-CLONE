@@ -40,7 +40,48 @@
 
 %play-pause {
     position: absolute;
-    bottom: .29rem;
+    bottom: 0;
     right: .29rem;
-    z-index: var(--index-overlay); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: var(--index-overlay);
+    background-color: green;
+    transition: .12s linear;
+    
+    .item:hover & {
+        opacity: 1;
+        bottom: .29rem;
+    }
+    &.is-active {
+        opacity: 1;
+        bottom: .29rem;
+        .play-icon {
+            opacity: 0;
+        }
+        .pause-icon {
+            opacity: 1;
+        }
+    }
+
+    &.is-active:hover {
+        transform: scale(112%);
+    }
+
+    .icon {
+        position: absolute;
+        width: .5rem;
+    }
+
+    .play.icon {
+        opacity: 1;
+    }
+    .pause.icon {
+        opacity: 0;
+    }
 }
