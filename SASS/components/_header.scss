@@ -10,7 +10,7 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     position: absolute;
     padding: .46rem;
     width: 100%;
-    background-color: aqua;
+    background-color: var(--header-color);
     grid-area: HEADER-MAIN;
     justify-content: space-around;
 }
