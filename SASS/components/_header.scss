@@ -123,3 +123,7 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     color: var(--link-color);
     border-radius: .12rem;
 }
+
+.HEADER .link:hover {
+    background-color: var(--link-hover-bg-color);
+}
