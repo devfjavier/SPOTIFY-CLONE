@@ -29,20 +29,28 @@ PANEL, MENU DE LA DERECHA
 .PANEL .menu .text,
 .PANEL .buttons .text {
     padding: .6em;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     border: none;
     cursor: pointer;
     text-align: left;
     font-family: inherit;
+    font-weight: bold;
 }
 
 .PANEL .create-playlist {
     background-color: transparent;
 }
 
+
 .PANEL .pl .text{
     padding: .4em .6em;
     display: block;
+}
+
+.PANEL .text:not(.pl .text){
+    transition: color .12s linear;
 }
 
 .PANEL .text:hover{
@@ -56,4 +64,9 @@ PANEL, MENU DE LA DERECHA
 
 .PANEL .actual{
     color: var(--title-color);
+}
+
+.PANEL .panel-icon {
+    width: 1.4rem;
+    height: auto;
 }
