@@ -3,20 +3,22 @@
 HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 
 */
+@use "../vars";
 
 /* para todos los HEADER */
 .HEADER {
-    display: grid;
+    display: none;
+    grid-template-columns: auto auto 1fr auto;
     position: absolute;
     padding: .46rem;
     width: 100%;
     background-color: var(--header-color);
     grid-area: HEADER-MAIN;
     justify-content: space-around;
-}
-
-.HEADER {
-    grid-template-columns: auto auto 1fr auto;
+    
+    @media screen and (min-width: vars.$media-screen) {
+        display: grid;
+    }
 }
 
 .void {
