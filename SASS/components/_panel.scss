@@ -17,96 +17,105 @@ PANEL, MENU DE LA DERECHA
         padding-right: 1rem;
         padding-top: 1rem;
     }
-}
 
-.PANEL .menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+        @media screen and (min-width: vars.$media-screen) {
+            display: block;
+            padding-top: .6rem;
+            padding-bottom: .6rem;
+        }
+        
+        .actual {
+            background-color: var(--item-hover-bg-color);
+            border-radius: .29em;
+        }
+    } 
     
-    @media screen and (min-width: vars.$media-screen) {
-        display: block;
-        padding-top: .6rem;
-        padding-bottom: .6rem;
-    }
-}
-
-.PANEL .menu .premium {
-    @media screen and (min-width: vars.$media-screen) {
+    .buttons {
         display: none;
+        flex-direction: column;
+        
+        @media screen and (min-width: vars.$media-screen) {
+            display: flex;
+        }
     }
-}
-
-.PANEL .buttons {
-    display: none;
-    flex-direction: column;
     
-    @media screen and (min-width: vars.$media-screen) {
+    .create-playlist {
+        background-color: transparent;
+    }
+    
+    .hr {
+        display: none;
+        
+        @media screen and (min-width: vars.$media-screen) {
+            display: block;
+        }
+    }
+    
+    // links exclusivos para el menu lateral
+    .menu-link {
+        display: none;
+        @media screen and (min-width: vars.$media-screen) {
+            display: block;
+        }
+    }
+    
+    //links exclusivos para el menu cuando esta en footer
+    .footer-menu-link {
+        @media screen and (min-width: vars.$media-screen) {
+            display: none;
+        }
+    }
+    
+    .link {
+        padding: .6em;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .6rem;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-family: inherit;
+        font-weight: bold;
+        transition: color .12s linear;
+        
+        @media screen and (min-width: vars.$media-screen) {
+            flex-direction: row;
+            gap: 1.2rem;
+        }
     }
-}
-
-.PANEL .menu .text,
-.PANEL .buttons .text {
-    padding: .6em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .6rem;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    font-family: inherit;
-    font-weight: bold;
     
-    @media screen and (min-width: vars.$media-screen) {
-        flex-direction: row;
-        gap: 1.2rem;
+    
+    //atajo para listas de reproduccion creadas
+    .playlists-shortcut {
+        display: none;
+        
+        @media screen and (min-width: vars.$media-screen) {
+            display: block;
+        }
     }
-}
 
-.PANEL .create-playlist {
-    background-color: transparent;
-}
-
-.PANEL .hr {
-    display: none;
-    
-    @media screen and (min-width: vars.$media-screen) {
+    .pl .text{
+        padding: .4em .6em;
         display: block;
     }
-}
 
-.PANEL .playlists-shortcut {
-    display: none;
+    //contenido de texto
 
-    @media screen and (min-width: vars.$media-screen) {
-        display: block;
+    .text:hover{
+        color: var(--title-color);
     }
-}
 
-.PANEL .pl .text{
-    padding: .4em .6em;
-    display: block;
-}
+    .actual{
+        color: var(--title-color);
+    }
 
-.PANEL .text:not(.pl .text){
-    transition: color .12s linear;
-}
-
-.PANEL .text:hover{
-    color: var(--title-color);
-}
-
-.PANEL .menu .actual{
-    background-color: var(--item-hover-bg-color);
-    border-radius: .29em;
-}
-
-.PANEL .actual{
-    color: var(--title-color);
-}
-
-.PANEL .panel-icon {
-    width: 1.4rem;
-    height: auto;
+    .panel-icon {
+        width: 1.4rem;
+        height: auto;
+    }
 }
