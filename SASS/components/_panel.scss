@@ -3,46 +3,86 @@
 PANEL, MENU DE LA DERECHA
 
 */
+@use "../vars";
 
 .PANEL {
     display: flex;
     gap: 1rem;
     flex-direction: column;
     grid-area: PANEL;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
     background-color: var(--panel-bg-color);
+    
+    @media screen and (min-width: vars.$media-screen) {
+        padding: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
 }
 
 .PANEL .menu {
-    padding-top: .6rem;
-    padding-bottom: .6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    @media screen and (min-width: vars.$media-screen) {
+        display: block;
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
 }
 
+.PANEL .menu .premium {
+    @media screen and (min-width: vars.$media-screen) {
+        display: none;
+    }
+}
 
 .PANEL .buttons {
-    display: flex;
+    display: none;
     flex-direction: column;
+    
+    @media screen and (min-width: vars.$media-screen) {
+        display: flex;
+    }
 }
 
 .PANEL .menu .text,
 .PANEL .buttons .text {
     padding: .6em;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
+    gap: .6rem;
     border: none;
     cursor: pointer;
     text-align: left;
     font-family: inherit;
     font-weight: bold;
+    
+    @media screen and (min-width: vars.$media-screen) {
+        flex-direction: row;
+        gap: 1.2rem;
+    }
 }
 
 .PANEL .create-playlist {
     background-color: transparent;
 }
 
+.PANEL .hr {
+    display: none;
+    
+    @media screen and (min-width: vars.$media-screen) {
+        display: block;
+    }
+}
+
+.PANEL .playlists-shortcut {
+    display: none;
+
+    @media screen and (min-width: vars.$media-screen) {
+        display: block;
+    }
+}
 
 .PANEL .pl .text{
     padding: .4em .6em;
