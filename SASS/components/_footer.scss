@@ -3,39 +3,54 @@
 FOOTER, CONTROLES DE REPRODUCION
 
 */
+@use "../vars";
 
 .FOOTER {
     background-color: var(--menu-hover-bg-color);
     padding: 1rem;
     grid-area: FOOTER;
-}
 
-.FOOTER .container {
-    display: grid;  
-    grid-template-columns: 2fr 6fr 2fr;
-    justify-content: space-between;
-    gap: 12%;
-}
-.FOOTER .container .song {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 4rem auto auto;
-    gap: 1rem;
-}
-.FOOTER .container .song .info {
-    display: grid;
-    gap: .2rem;
-}
-.FOOTER .container .song .info .link {
-    white-space: nowrap;
-}
-.FOOTER .container .song .info .link:hover {
-    text-decoration: underline;
-}
-.FOOTER .container .song .like{
-    white-space: nowrap;
-}
+    .container {
+        display: grid;  
+        gap: 12%;
+        
+        @media screen and (min-width: vars.$media-screen) {
+            justify-content: space-between;
+            grid-template-columns: 2fr 6fr 2fr;
+        }
+    }
 
-.FOOTER .container .primary-controls {
-    background-color: rgba(0, 0, 0, 0.275);
+    .song {
+        display: grid;
+        grid-template-columns: 4rem auto auto auto;
+        gap: 1rem;
+        align-items: center;
+    }
+    .song .info {
+        display: grid;
+        gap: .2rem;
+    }
+    .song .info .link {
+        white-space: nowrap;
+    }
+    .song .info .link:hover {
+        text-decoration: underline;
+    }
+    .song .like{
+        white-space: nowrap;
+    }
+    
+    .primary-controls {
+        background-color: rgba(0, 0, 0, 0.275);
+    }
+    
+    .primary-controls,
+    .secondary-controls {
+        display: none;
+    
+        @media screen and (min-width: vars.$media-screen) {
+                display: block;
+            }
+    }
 }
+        
