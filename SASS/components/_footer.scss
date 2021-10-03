@@ -22,9 +22,13 @@ FOOTER, CONTROLES DE REPRODUCION
 
     .song {
         display: grid;
-        grid-template-columns: 4rem auto auto auto;
+        grid-template-columns: 2.9rem 1fr auto auto;
         gap: 1rem;
         align-items: center;
+        
+        @media screen and (min-width: vars.$media-screen) {
+            grid-template-columns: 4rem auto auto auto;
+        }
     }
     .song .info {
         display: grid;
