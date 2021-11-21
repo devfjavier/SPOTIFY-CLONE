@@ -25,7 +25,6 @@ function loadJS() {
         userMenu.classList.toggle("is-active")
     })
     
-    
     document.addEventListener("click", () => {
         userButton.classList.remove("is-active")
         userMenu.classList.remove("is-active")
