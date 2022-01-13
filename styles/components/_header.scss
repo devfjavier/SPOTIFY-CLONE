@@ -1,0 +1,131 @@
+/* 
+
+HEADER, CABECERA DEL CONTENIDO PRINCIPAL
+
+*/
+@use "../vars";
+
+/* para todos los HEADER */
+.HEADER {
+    display: none;
+    grid-template-columns: auto auto 1fr auto;
+    position: absolute;
+    padding: .46rem;
+    width: 100%;
+    background-color: var(--header-color);
+    grid-area: HEADER-MAIN;
+    justify-content: space-around;
+    
+    @media screen and (min-width: vars.$media-screen) {
+        display: grid;
+    }
+}
+
+.void {
+    display: block;
+    padding: .6rem 0;
+    color: transparent;
+    z-index: var(--index-back);
+}
+
+.index.root-container .HEADER,
+.playlist.root-container .HEADER,
+.track.root-container .HEADER,
+.user-tracks.root-container .HEADER {
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.HEADER .collection-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.HEADER .collection-menu .link {
+    display: inline-block;
+    padding: .6rem .9rem;
+}
+.HEADER .collection-menu .link.actual {
+    border-radius: .2em;
+    background-color: var(--item-hover-bg-color);
+}
+
+.HEADER .page-navigation {
+    display: flex;
+    gap: .6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.HEADER .premium {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+/* boton que activa el menu desplegable del menu del usuario*/
+.HEADER .user-container {
+    position: relative;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    height: 100%;
+}
+.HEADER .user-btn {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-radius: 2rem;
+    padding: .2rem;
+    height: 100%;
+    border: none;
+    background-color: var(--user-bg-color);
+    align-items: center;
+    gap: .6rem;
+}
+.HEADER .user-btn:hover {
+    background-color: var(--menu-hover-bg-color);
+}
+.HEADER .user-btn.is-active {
+    background-color: var(--menu-hover-bg-color);
+}
+.HEADER .img-container {
+    width: 2rem;
+    border-radius: 50%;
+    padding: 2%;
+    background-color: var(--item-hover-bg-color);
+    overflow: hidden;
+}
+.HEADER .name {
+    color: var(--title-color);
+}
+.HEADER .dd-menu-icon {
+    transform: rotate(90deg);
+    width: .6rem;
+    margin-right: .6rem;
+}
+.HEADER .user-btn.is-active .dd-menu-icon {
+    transform: rotate(-90deg);
+}
+
+/* menu desplegable del usuario */
+.HEADER .dd-menu {
+    display: none;
+    position: absolute;
+    top: 119%;
+    right: 0;
+    background-color: var(--menu-hover-bg-color);
+    padding: .29rem;
+    border-radius: .27rem;
+}
+.HEADER .dd-menu.is-active {
+    display: block;
+}
+.HEADER .link {
+    padding: .6rem .4rem;
+    display: block;
+    text-align: left;
+    color: var(--link-color);
+    border-radius: .12rem;
+}
+
+.HEADER .user-container .link:hover {
+    background-color: var(--link-hover-bg-color);
+}
