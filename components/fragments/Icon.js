@@ -21,7 +21,7 @@ function icons() {
     tracks: <>
       <defs>
         <linearGradient id="linearGradient5016" x2="16" y2="16" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#250780" offset="0"/>
+          <stop stopColor="#3f12b8" offset="0"/>
           <stop stopColor="#fff" offset="1"/>
         </linearGradient>
       </defs>
