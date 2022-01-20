@@ -3,7 +3,7 @@
 FOOTER, CONTROLES DE REPRODUCION
 
 */
-@use "../vars";
+@use "../config/sass-vars" as vars;
 
 .FOOTER {
     background-color: var(--menu-hover-bg-color);

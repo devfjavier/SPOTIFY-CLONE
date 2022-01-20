@@ -1,5 +1,9 @@
 //variables CSS y estilos del contenido
-@use "config";
+@use "config/css-vars";
+@use "config/sass-vars";
+@use "config/base-layout";
+//estilos globales
+@use "global";
 // components, divisiones de todo el sitio
 @use "components/main";
 @use "components/panel";

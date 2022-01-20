@@ -3,7 +3,7 @@
 PANEL, MENU DE LA DERECHA
 
 */
-@use "../vars";
+@use "../config/sass-vars" as vars;
 
 .PANEL {
     display: flex;

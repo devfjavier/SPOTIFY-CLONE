@@ -3,7 +3,7 @@
 HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 
 */
-@use "../vars";
+@use "../config/sass-vars" as vars;
 
 /* para todos los HEADER */
 .HEADER {

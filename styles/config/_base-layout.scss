@@ -1,0 +1,44 @@
+@use "sass-vars" as vars;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body, #__next {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+
+  @media screen and (min-width: vars.$font-size-media-screen) {
+    font-size: 16px;
+  }
+}
+
+/* CONTENDOR RAIZ DE TODO EL CONTENIDO DE LA PAGINA */
+.root-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  grid-template-rows: 1fr 1fr auto auto;
+  grid-template-areas: 
+  "HEADER-MAIN"
+  "HEADER-MAIN"
+  "FOOTER"
+  "PANEL";
+  
+  @media screen and (min-width: vars.$media-screen) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "PANEL HEADER-MAIN"
+    "FOOTER FOOTER";
+  }
+}
