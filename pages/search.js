@@ -4,7 +4,7 @@ import Panel from "../components/core-sections/Panel"
 const Search = () => {
   return (
     <RootContainer pageClassName="search">
-      <Panel/>
+      <Panel type="search"/>
 
       <header className="HEADER">
         <div className="page-navigation">

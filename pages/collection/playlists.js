@@ -8,7 +8,7 @@ import Icon from "../../components/fragments/Icon"
 const Playlists = () => {
 	return (
 		<RootContainer pageClassName="user-playlists">
-      <Panel/>
+      <Panel type="library"/>
       <Header type={COLLECTION_HEADER} collectionsPage="playlist"/>
       <main className="MAIN">
         <section className="section playlists">

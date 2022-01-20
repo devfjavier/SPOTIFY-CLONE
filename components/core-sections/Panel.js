@@ -1,13 +1,13 @@
 import Link from "next/link"
 import Icon from "../fragments/Icon"
 
-const Panel = () => {
+const Panel = ({type}) => {
   return (
     <nav className="PANEL">
       <ul className="menu">
         <li>
           <Link href="/">
-            <a className="link fs-p4">
+            <a className={`link fs-p4${type === "index" ? " actual" : ""}`}>
               <Icon className="panel-icon" name="index" fill="currentColor"/>
               <span>Inicio</span>
             </a>
@@ -16,7 +16,7 @@ const Panel = () => {
 
         <li>
           <Link href="/search">
-            <a className="link fs-p4">
+            <a className={`link fs-p4${type === "search" ? " actual" : ""}`}>
               <Icon className="panel-icon" name="search" stroke="currentColor"/>
               <span>Buscar</span>
             </a>
@@ -25,7 +25,7 @@ const Panel = () => {
 
         <li className="menu-link">
           <Link href="/collection/playlists">
-            <a className="link fs-p4">
+            <a className={`link fs-p4${type === "library" ? " actual" : ""}`}>
               <Icon className="panel-icon" name="library" stroke="currentColor"/>
               <span>Tu Biblioteca</span>
             </a>
@@ -34,7 +34,7 @@ const Panel = () => {
 
         <li className="footer-menu-link">
           <Link href="/collection/tracks">
-            <a className="link fs-p4">
+            <a className={`link fs-p4${type === "tracks" ? " actual" : ""}`}>
               <Icon className="panel-icon" name="tracks2" fill="currentColor"/>
               <span>Favoritos</span>
             </a>
@@ -55,7 +55,7 @@ const Panel = () => {
           <span>Crear playlist</span>
         </button>
         <Link href="/collection/tracks">
-          <a className="link fs-p4">
+          <a className={`link fs-p4${type === "tracks" ? " actual" : ""}`}>
             <Icon className="panel-icon" name="tracks"/>
             <span>Tus me gusta</span>
           </a>

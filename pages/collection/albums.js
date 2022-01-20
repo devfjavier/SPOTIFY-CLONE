@@ -6,7 +6,7 @@ import { COLLECTION_HEADER } from "../../consts/header_types"
 const Albums = () => {
   return (
     <RootContainer className="user-albums content">
-      <Panel/>
+      <Panel type="library"/>
       <Header type={COLLECTION_HEADER} collectionsPage="albums"/>
 
       <main className="MAIN">

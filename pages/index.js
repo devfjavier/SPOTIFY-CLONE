@@ -19,7 +19,7 @@ const Home = () => {
         <meta name="description" content="Clon de Spotify" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Panel/>
+      <Panel type="index"/>
       <Header type={NORMAL_HEADER}/>
 
       <main className="MAIN">
