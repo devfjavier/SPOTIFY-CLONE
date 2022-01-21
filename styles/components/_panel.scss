@@ -29,15 +29,6 @@ PANEL, MENU DE LA DERECHA
     }
   }
   
-  .buttons {
-    display: none;
-    flex-direction: column;
-    
-    @media screen and (min-width: vars.$media-screen) {
-      display: flex;
-    }
-  }
-  
   .create-playlist {
     background-color: transparent;
   }
@@ -50,21 +41,6 @@ PANEL, MENU DE LA DERECHA
     }
   }
   
-  // links exclusivos para el menu lateral
-  .menu-link {
-    display: none;
-    @media screen and (min-width: vars.$media-screen) {
-      display: block;
-    }
-  }
-  
-  //links exclusivos para el menu cuando esta en footer
-  .footer-menu-link {
-    @media screen and (min-width: vars.$media-screen) {
-      display: none;
-    }
-  }
-
   .link {
     padding: .6em;
     display: flex;
@@ -79,7 +55,7 @@ PANEL, MENU DE LA DERECHA
     transition: filter .12s linear;
     color: var(--title-color);
     filter: brightness(.6);
-
+    
     &:hover{
       filter: brightness(1);
     }
@@ -88,9 +64,24 @@ PANEL, MENU DE LA DERECHA
       background-color: var(--item-hover-bg-color);
       border-radius: .29em;
     }
+
     @media screen and (min-width: vars.$media-screen) {
       flex-direction: row;
       gap: 1.2rem;
+    }
+  }
+
+  .hidden-on-small-screen {
+    display: none;
+    @media screen and (min-width: vars.$media-screen) {
+      display: block;
+    }
+  }
+
+  .hidden-on-big-screen {
+    display: block;
+    @media screen and (min-width: vars.$media-screen) {
+      display: none;
     }
   }
   

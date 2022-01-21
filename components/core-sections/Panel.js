@@ -23,7 +23,7 @@ const Panel = ({type}) => {
           </Link>
         </li>
 
-        <li className="menu-link">
+        <li className="hidden-on-small-screen">
           <Link href="/collection/playlists">
             <a className={`link fs-p4${type === "library" ? " actual" : ""}`}>
               <Icon className="panel-icon" name="library" stroke="currentColor"/>
@@ -32,7 +32,7 @@ const Panel = ({type}) => {
           </Link>
         </li>
 
-        <li className="footer-menu-link">
+        <li className="hidden-on-big-screen">
           <Link href="/collection/tracks">
             <a className={`link fs-p4${type === "tracks" ? " actual" : ""}`}>
               <Icon className="panel-icon" name="tracks2" fill="currentColor"/>
@@ -41,7 +41,7 @@ const Panel = ({type}) => {
           </Link>
         </li>
 
-        <li className="footer-menu-link">
+        <li className="hidden-on-big-screen">
           <a className="link fs-p4" href="#">
             <Icon className="panel-icon" name="spotify" fill="currentColor"/>
               <span>Premium</span>
@@ -49,7 +49,7 @@ const Panel = ({type}) => {
         </li>
       </ul>
     
-      <div className="buttons">
+      <div className="hidden-on-small-screen">
         <button className="link create-playlist fs-p4">
           <Icon className="panel-icon" name="createPlaylist"/>
           <span>Crear playlist</span>
