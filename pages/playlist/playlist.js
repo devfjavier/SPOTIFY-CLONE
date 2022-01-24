@@ -3,6 +3,7 @@ import { NORMAL_HEADER } from "../../consts/header_types"
 import Header from "../../components/core-sections/Header"
 import Panel from "../../components/core-sections/Panel"
 import Icon from "../../components/fragments/Icon"
+import PlaylistSong from "../../components/fragments/PlaylistSong"
 
 const Playlist = () => {
   return (
@@ -64,26 +65,8 @@ const Playlist = () => {
             </div>
             <hr/>
             <div className="song-container">
-              <article className="song">
-                <div className="song-number text">
-                    <span className="number text">1</span>
-                    <button className="play icon"><Icon name="play"/></button>
-                    <button className="pause icon"><Icon name="pause"/></button>
-                </div>
-                <div className="song-title">
-                    <div className="img-container"><img src="/img/song.jpg" alt=""/></div>
-                    <div>
-                        <span className="title">nombre cancion</span>
-                        <a className="artist text" href="">artista</a>
-                    </div>
-                </div>
-                <a className="song-album text" href="">Album</a>
-                <span className="song-info text">Fecha de agregacion</span>
-                <button className="song-like-btn">icono</button>
-                <span className="song-duration text">Duracion</span>
-                <button className="song-more-options text">...</button>
-              </article>
-              {/* <article className="song"></article> */}
+              <PlaylistSong/>
+              <PlaylistSong/>
             </div>
           </div>
         </section>

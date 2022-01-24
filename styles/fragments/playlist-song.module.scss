@@ -1,0 +1,108 @@
+.song {
+  display: grid;
+  grid-template-columns: 6% 35% 22% 16% 6% 9% 6%;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--item-hover-bg-color);
+    border-radius: 0.2rem;
+  }
+
+  /* CONTENEDOR DEL NUMERO DE LA CANCION */
+  .number-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .number {
+    position: absolute;
+  }
+  
+  &:hover {
+    .number {
+      filter: opacity(0);
+    }
+    .play-btn {
+      display: flex;
+    }
+  }
+  
+  .play-btn, .pause-btn {
+    all: unset;
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 50%;
+  }
+
+  
+  /* CONTENEDOR DEL TITULO DE LA CANCION */
+  .title-container {
+    display: grid;
+    gap: .6rem;
+    grid-template-columns: 2.7rem 1fr;
+    align-items: end;
+  }
+
+  .title {
+    display: block;
+    justify-self: left;
+  }
+
+  &:hover .artist-link {
+    color: var(--title-color);
+  }
+
+  .artist-link:hover{
+    text-decoration: underline;
+  }
+  
+  /* ENLACE DEL ALBUM */
+  &:hover .album-link {
+    color: var(--title-color);
+  }
+
+  .album-link {
+    justify-self: left;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* FECHA DE LA CANCION */
+  .date {
+    justify-self: left;
+  }
+  
+  /* BOTON ME GUSTA */
+  &:hover .like-btn {
+    filter: opacity(1)
+  }
+  
+  .like-btn {
+    justify-self: center;
+    filter: opacity(0)
+  }
+  
+  /* DURACION DE LA CANCION */
+  .length {
+    justify-self: left;
+  }
+  
+  /* BOTON MAS OPCIONES */
+  &:hover .more-options {
+    filter: opacity(1)
+  }
+  
+  .more-options {
+    justify-self: center;
+    filter: opacity(0)
+  }
+}
