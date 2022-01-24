@@ -4,6 +4,7 @@ import Header from "../../components/core-sections/Header"
 import Panel from "../../components/core-sections/Panel"
 import Icon from "../../components/fragments/Icon"
 import PlaylistSong from "../../components/fragments/PlaylistSong"
+import PlaylistHeader from "../../components/fragments/PlaylistHeader"
 
 const Playlist = () => {
   return (
@@ -30,39 +31,31 @@ const Playlist = () => {
             <button className="play-pause"></button>
             <button className="download">#</button>
             <div className="more-options">
-                <button className="button">...</button>
-                <ul className="options">
-                    <li className="op"></li>
-                </ul>
+              <button className="button">...</button>
+              <ul className="options">
+                <li className="op"></li>
+              </ul>
             </div>
             <span className="void"></span>
             <div className="search">
-                <button className="button">lupa</button>
-                <input className="input" type="text"/>
+              <button className="button">lupa</button>
+              <input className="input" type="text"/>
             </div>
             <div className="filters">
-                <button>Orden personalizado</button>
-                  {/* <ul>
-                    <li><button>Orden personalizado</button></li>
-                    <li><button>Titulo</button></li>
-                    <li><button>Artista</button></li>
-                    <li><button>Album</button></li>
-                    <li><button>Fecha en que se agrego</button></li>
-                    <li><button>Duracion</button></li>
-                </ul> */}
+              <button>Orden personalizado</button>
+              {/* <ul>
+                <li><button>Orden personalizado</button></li>
+                <li><button>Titulo</button></li>
+                <li><button>Artista</button></li>
+                <li><button>Album</button></li>
+                <li><button>Fecha en que se agrego</button></li>
+                <li><button>Duracion</button></li>
+              </ul> */}
             </div>
           </div>
 
           <div>
-            <div className="columns-info">
-              <span className="song-number text">#</span>
-              <span className="song-title text">TITULO</span>
-              <span className="song-album text">ALBUM</span>
-              <span className="song-info text">AGREGADO EL</span>
-              <span className="song-like-btn void">like</span>
-              <span className="song-duration text">reloj</span>
-              <span className="song-more-options void">...op</span>
-            </div>
+            <PlaylistHeader/>
             <hr/>
             <div className="song-container">
               <PlaylistSong/>
