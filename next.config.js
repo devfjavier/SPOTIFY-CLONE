@@ -4,8 +4,8 @@ module.exports = phase => {
   if (phase === PHASE_PRODUCTION_BUILD) {
     return {
       reactStrictMode: true,
-      basePath: "/Proyecto-de-Clon-de-Spotify",
-      assetPrefix: "https://cdn.statically.io/gh/devfjavier/Proyecto-de-Clon-de-Spotify/gh-pages/"
+      basePath: "/SPOTIFY-CLONE",
+      assetPrefix: "https://cdn.statically.io/gh/devfjavier/SPOTIFY-CLONE/gh-pages/"
     }
   } 
   else {
