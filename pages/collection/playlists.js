@@ -19,7 +19,7 @@ const Playlists = () => {
                 <a className="source-link"></a>
               </Link>
               <div className="img-container">
-                <img src="/img/song.jpg" alt=""/>
+                <img src="/img/song.webp" alt=""/>
                 <button className="play-pause"><Icon name="play" fill="#fff"/><Icon name="pause" fill="#fff"/></button>
               </div>
               <div className="info">

@@ -35,7 +35,7 @@ const Home = () => {
             <article className="item">
               <a className="source-link" href="search.html"></a>
               <div className="img-container">
-                <img className="artist-img" src={`https://raw.githubusercontent.com/devfjavier/Proyecto-de-Clon-de-Spotify/gh-pages/img/song.jpg`} alt=""/>
+                <img className="artist-img" src="/img/song.webp" alt="godot engine"/>
                 <button ref={button} onClick={toggleButton} className="play-pause">
                   <Icon className="play icon" name="play" fill="#fff"/>
                   <Icon className="pause icon" name="pause" fill="#fff"/>

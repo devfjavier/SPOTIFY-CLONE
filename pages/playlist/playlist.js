@@ -13,7 +13,7 @@ const Playlist = () => {
       <Header type={NORMAL_HEADER}/>
       <main className="MAIN">
         <section className="section banner">
-          <div classs="img-container"><img src="/img/song.jpg" alt=""/></div>
+          <div classs="img-container"><img src="/img/song.webp" alt=""/></div>
           <div className="container">
             <h2 className="title fs-h2">PLAYLIST</h2>
             <h1 className="title fs-h1">TITULO DEL PLAYLIST</h1>

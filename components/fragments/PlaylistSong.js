@@ -10,7 +10,7 @@ const PlaylistSong = () => {
         <button className={styles["pause-btn"]}><Icon name="pause"  fill="#fff"/></button>
       </div>
       <div className={styles["title-container"]}>
-        <img src="/img/song.jpg" alt=""/>
+        <img src="/img/song.webp" alt=""/>
         <div>
           <span className={`${styles.title} title`}>nombre cancion</span>
           <a className={`${styles["artist-link"]} text`} href="">artista</a>
