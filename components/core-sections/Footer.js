@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container">
         <div className="song">
           <div>
-            <img src="/img/song.webp"alt=""/>
+            <img src={process.env.projectPath + "/img/song.webp"}alt=""/>
           </div>
           <div className="info">
             <a className="link title" href="">cancion</a>
