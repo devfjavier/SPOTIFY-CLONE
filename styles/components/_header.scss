@@ -19,6 +19,9 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     @media screen and (min-width: vars.$media-screen) {
         display: grid;
     }
+    &.normal {
+        grid-template-columns: auto 1fr auto auto;
+    }
 }
 
 .void {
@@ -26,13 +29,6 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     padding: .6rem 0;
     color: transparent;
     z-index: var(--index-back);
-}
-
-.index.root-container .HEADER,
-.playlist.root-container .HEADER,
-.track.root-container .HEADER,
-.user-tracks.root-container .HEADER {
-    grid-template-columns: auto 1fr auto auto;
 }
 
 .HEADER .collection-menu {

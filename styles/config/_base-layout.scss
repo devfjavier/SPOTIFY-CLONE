@@ -22,10 +22,8 @@ html {
 }
 
 /* CONTENDOR RAIZ DE TODO EL CONTENIDO DE LA PAGINA */
-.root-container {
+#__next {
   display: grid;
-  width: 100%;
-  height: 100%;
   position: relative;
   grid-template-rows: 1fr 1fr auto auto;
   grid-template-areas: 

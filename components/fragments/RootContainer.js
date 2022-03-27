@@ -1,12 +1,10 @@
 import Footer from "../core-sections/Footer"
 
-const RootContainer = ({pageClassName, children}) => {
-  return (
-    <div className={`root-container ${pageClassName}`}>
-      {children}
-      <Footer/>
-    </div>
-  )
+const RootContainer = ({children}) => {
+  return <>
+    {children}
+    <Footer/>
+  </>
 }
 
 export default RootContainer

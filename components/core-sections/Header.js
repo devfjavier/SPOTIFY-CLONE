@@ -21,7 +21,7 @@ const Header = ({type, collectionsPage}) => {
   })
 
   return (
-    <header className="HEADER">
+    <header className={`HEADER${type === NORMAL_HEADER ? " normal": ""}`}>
       <div className="page-navigation">
         <button className="button back">izq</button>
         <button className="button fordward">der</button>
@@ -73,7 +73,6 @@ const Header = ({type, collectionsPage}) => {
         </ul>
       </div>
     </header>
-    
   )
 }
 
