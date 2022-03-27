@@ -3,7 +3,7 @@
 HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 
 */
-@use "../config/sass-vars" as vars;
+@use "../mixins/breakpoint" as *;
 
 /* para todos los HEADER */
 .HEADER {
@@ -16,7 +16,7 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     grid-area: HEADER-MAIN;
     justify-content: space-around;
     
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2){
         display: grid;
     }
     &.normal {

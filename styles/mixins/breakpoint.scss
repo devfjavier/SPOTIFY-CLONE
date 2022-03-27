@@ -1,0 +1,15 @@
+@use "../config/sass-vars";
+
+@mixin breakpoint($level) {
+  @if $level == b1 {
+    @media screen and (min-width: sass-vars.$font-size-media-screen) {
+      @content
+    }
+  }
+  
+  @if $level == b2 {
+    @media screen and (min-width: sass-vars.$media-screen) {
+      @content
+    }
+  }
+}

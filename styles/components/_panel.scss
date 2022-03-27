@@ -3,7 +3,7 @@
 PANEL, MENU DE LA DERECHA
 
 */
-@use "../config/sass-vars" as vars;
+@use "../mixins/breakpoint" as *;
 
 .PANEL {
   display: flex;
@@ -12,7 +12,7 @@ PANEL, MENU DE LA DERECHA
   grid-area: PANEL;
   background-color: var(--panel-bg-color);
   
-  @media screen and (min-width: vars.$media-screen) {
+  @include breakpoint(b2) {
     padding: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
@@ -22,7 +22,7 @@ PANEL, MENU DE LA DERECHA
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2) {
       display: block;
       padding-top: .6rem;
       padding-bottom: .6rem;
@@ -36,7 +36,7 @@ PANEL, MENU DE LA DERECHA
   .hr {
     display: none;
     
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2) {
       display: block;
     }
   }
@@ -65,7 +65,7 @@ PANEL, MENU DE LA DERECHA
       border-radius: .29em;
     }
 
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2) {
       flex-direction: row;
       gap: 1.2rem;
     }
@@ -73,14 +73,14 @@ PANEL, MENU DE LA DERECHA
 
   .hidden-on-small-screen {
     display: none;
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2) {
       display: block;
     }
   }
 
   .hidden-on-big-screen {
     display: block;
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2) {
       display: none;
     }
   }
@@ -89,7 +89,7 @@ PANEL, MENU DE LA DERECHA
   .playlists-shortcut {
     display: none;
     
-    @media screen and (min-width: vars.$media-screen) {
+    @include breakpoint(b2) {
       display: block;
     }
   }

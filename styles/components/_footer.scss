@@ -3,7 +3,7 @@
 FOOTER, CONTROLES DE REPRODUCION
 
 */
-@use "../config/sass-vars" as vars;
+@use "../mixins/breakpoint" as *;
 
 .FOOTER {
     background-color: var(--menu-hover-bg-color);
@@ -13,8 +13,8 @@ FOOTER, CONTROLES DE REPRODUCION
     .container {
         display: grid;  
         gap: 12%;
-        
-        @media screen and (min-width: vars.$media-screen) {
+
+        @include breakpoint(b2) {
             justify-content: space-between;
             grid-template-columns: 2fr 6fr 2fr;
         }
@@ -25,8 +25,8 @@ FOOTER, CONTROLES DE REPRODUCION
         grid-template-columns: 2.9rem 1fr auto auto;
         gap: 1rem;
         align-items: center;
-        
-        @media screen and (min-width: vars.$media-screen) {
+
+        @include breakpoint(b2) {
             grid-template-columns: 4rem auto auto auto;
         }
     }
@@ -43,18 +43,18 @@ FOOTER, CONTROLES DE REPRODUCION
     .song .like{
         white-space: nowrap;
     }
-    
+
     .primary-controls {
         background-color: rgba(0, 0, 0, 0.275);
     }
-    
+
     .primary-controls,
     .secondary-controls {
         display: none;
-    
-        @media screen and (min-width: vars.$media-screen) {
-                display: block;
-            }
+
+        @include breakpoint(b2) {
+            display: block;
+        }
     }
 }
         

@@ -1,4 +1,4 @@
-@use "sass-vars" as vars;
+@use "../mixins/breakpoint" as *;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ html, body, #__next {
 html {
   font-size: 14px;
 
-  @media screen and (min-width: vars.$font-size-media-screen) {
+  @include breakpoint(b1) {
     font-size: 16px;
   }
 }
@@ -32,7 +32,7 @@ html {
   "FOOTER"
   "PANEL";
   
-  @media screen and (min-width: vars.$media-screen) {
+  @include breakpoint(b2) {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: 
