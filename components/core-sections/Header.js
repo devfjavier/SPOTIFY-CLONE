@@ -20,22 +20,22 @@ const Header = ({type, collectionsPage}) => {
         type === COLLECTION_HEADER ? <>
           <ul className="collection-menu">
             <li>
-              <Link href="playlists">
+              <Link href="/collection/playlists">
                 <a className={`link fs-p3 title${collectionsPage === "playlist" && " actual"}`}>Listas</a>
               </Link>
             </li>
             <li>
-              <Link href="podcasts">
+              <Link href="/collection/podcasts">
                 <a className={`link fs-p3 title${collectionsPage === "podcasts" && " actual"}`}>Podcasts</a>
               </Link>
             </li>
             <li>
-              <Link href="artists">
+              <Link href="/collection/artists">
                 <a className={`link fs-p3 title${collectionsPage === "artists" && " actual"}`}>Artistas</a>
               </Link>
             </li>
             <li>
-              <Link href="albums">
+              <Link href="/collection/albums">
                 <a className={`link fs-p3 title${collectionsPage === "albums" && " actual"}`}>Albumes</a>
               </Link>
             </li>
