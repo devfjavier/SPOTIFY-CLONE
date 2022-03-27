@@ -1,5 +1,6 @@
 import RootContainer from "../components/fragments/RootContainer"
 import Panel from "../components/core-sections/Panel"
+import UserMenu from "../components/fragments/UserMenu"
 
 const Search = () => {
   return (
@@ -16,17 +17,7 @@ const Search = () => {
 
         <span className="void fs-p3">H</span>
 
-        <div className="user-container">
-          <button className="user-btn" id="user-btn">
-            icon perfil
-            <span className="name">Usuario</span>
-            icon flecha
-          </button>
-          <ul className="dd-menu" id="dd-menu">
-            <li className="profile"><a className="link" href="">Perfil</a></li>
-            <li className="preferences"><a className="link" href="">Preferencias</a></li>
-          </ul>
-        </div>
+        <UserMenu/>
       </header>
 
       <main className="MAIN">

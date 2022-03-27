@@ -57,71 +57,10 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     margin-right: 1.2rem;
 }
 
-/* boton que activa el menu desplegable del menu del usuario*/
-.HEADER .user-container {
-    position: relative;
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
-    height: 100%;
-}
-.HEADER .user-btn {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    border-radius: 2rem;
-    padding: .2rem;
-    height: 100%;
-    border: none;
-    background-color: var(--user-bg-color);
-    align-items: center;
-    gap: .6rem;
-}
-.HEADER .user-btn:hover {
-    background-color: var(--menu-hover-bg-color);
-}
-.HEADER .user-btn.is-active {
-    background-color: var(--menu-hover-bg-color);
-}
-.HEADER .img-container {
-    width: 2rem;
-    border-radius: 50%;
-    padding: 2%;
-    background-color: var(--item-hover-bg-color);
-    overflow: hidden;
-}
-.HEADER .name {
-    color: var(--title-color);
-}
-.HEADER .dd-menu-icon {
-    transform: rotate(90deg);
-    width: .6rem;
-    margin-right: .6rem;
-}
-.HEADER .user-btn.is-active .dd-menu-icon {
-    transform: rotate(-90deg);
-}
-
-/* menu desplegable del usuario */
-.HEADER .dd-menu {
-    display: none;
-    position: absolute;
-    top: 119%;
-    right: 0;
-    background-color: var(--menu-hover-bg-color);
-    padding: .29rem;
-    border-radius: .27rem;
-}
-.HEADER .dd-menu.is-active {
-    display: block;
-}
 .HEADER .link {
     padding: .6rem .4rem;
     display: block;
     text-align: left;
     color: var(--link-color);
     border-radius: .12rem;
-}
-
-.HEADER .user-container .link:hover {
-    background-color: var(--link-hover-bg-color);
 }

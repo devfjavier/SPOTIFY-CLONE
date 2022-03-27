@@ -60,6 +60,7 @@ const Playlist = () => {
             <div className="song-container">
               <PlaylistSong/>
               <PlaylistSong/>
+              <PlaylistSong/>
             </div>
           </div>
         </section>
