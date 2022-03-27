@@ -9,7 +9,7 @@ module.exports = phase => {
   
     config = {
       basePath: PROJECT_PATH,
-      assetPrefix: `https://cdn.statically.io/gh/devfjavier/${PROJECT_PATH}/gh-pages/`
+      assetPrefix: `https://cdn.statically.io/gh/devfjavier${PROJECT_PATH}/gh-pages/`
     }
   }
 
