@@ -1,33 +1,38 @@
 import RootContainer from "../components/fragments/RootContainer"
 import Panel from "../components/core-sections/Panel"
 import UserMenu from "../components/fragments/UserMenu"
+import Icon from "../components/fragments/Icon"
 
 const Search = () => {
   return (
     <RootContainer pageClassName="search">
-      <Panel type="search"/>
+      <Panel type="search" />
 
       <header className="HEADER">
         <div className="page-navigation">
-          <button className="button back">izq</button>
-          <button className="button fordward">der</button>
+          <button className="button back">
+            <Icon fill="#fff" stroke="#fff" name="chevronLeft" />
+          </button>
+          <button className="button fordward">
+            <Icon fill="#fff" stroke="#fff" name="chevronRight" />
+          </button>
         </div>
 
-        <label><input type="text"/></label>
+        <label><input type="text" /></label>
 
         <span className="void fs-p3">H</span>
 
-        <UserMenu/>
+        <UserMenu />
       </header>
 
       <main className="MAIN">
-          <section className="section recent-searches">
-              <h2 className="title">Busquedas recientes</h2>
-          </section>
+        <section className="section recent-searches">
+          <h2 className="title">Busquedas recientes</h2>
+        </section>
 
-          <section className="section most-listened-g">
-              <h2 className="title">Los generos que mas escuchaste</h2>
-          </section>
+        <section className="section most-listened-g">
+          <h2 className="title">Los generos que mas escuchaste</h2>
+        </section>
       </main>
     </RootContainer>
   )

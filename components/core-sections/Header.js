@@ -1,13 +1,18 @@
 import Link from "next/link"
 import { COLLECTION_HEADER, NORMAL_HEADER } from "../../consts/header_types"
+import Icon from "../fragments/Icon"
 import UserMenu from "../fragments/UserMenu"
 
 const Header = ({type, collectionsPage}) => {
   return (
     <header className={`HEADER${type === NORMAL_HEADER ? " normal": ""}`}>
       <div className="page-navigation">
-        <button className="button back">izq</button>
-        <button className="button fordward">der</button>
+        <button className="button back">
+          <Icon fill="#fff" stroke="#fff" name="chevronLeft"/>
+        </button>
+        <button className="button fordward">
+          <Icon fill="#fff" stroke="#fff" name="chevronRight"/>
+        </button>
       </div>
 
       {

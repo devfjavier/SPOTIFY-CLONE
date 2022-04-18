@@ -50,6 +50,21 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     gap: .6rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
+
+    .button {
+        all: unset;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.72);
+        border-radius: 50%;
+        padding: .27rem;
+        margin: auto;
+    }
+    
+    svg {
+        display: block;
+        width: 1.27rem;
+        height: auto;
+    }
 }
 
 .HEADER .premium {

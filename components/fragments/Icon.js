@@ -18,6 +18,8 @@ function icons() {
       <path d="m0.06639 16h15.934v-16h-16z" fill="#fff"/>
       <path d="m8 4v8m-4-4h8" fill="none" stroke="#000" strokeWidth="1.0079"/>
     </>,
+    chevronLeft: <path strokeWidth=".72" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>,
+    chevronRight: <path strokeWidth=".72" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>,
     tracks: <>
       <defs>
         <linearGradient id="linearGradient5016" x2="16" y2="16" gradientUnits="userSpaceOnUse">
