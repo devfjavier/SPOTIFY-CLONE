@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { COLLECTION_HEADER, NORMAL_HEADER } from "../../consts/header_types"
-import Icon from "../fragments/Icon"
+import Icon from "../icon-svg"
 import UserMenu from "../fragments/UserMenu"
 
 const Header = ({type, collectionsPage}) => {

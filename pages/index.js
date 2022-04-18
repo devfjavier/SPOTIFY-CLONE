@@ -3,7 +3,7 @@ import RootContainer from '../components/fragments/RootContainer'
 import Header from '../components/core-sections/Header'
 import Panel from '../components/core-sections/Panel'
 import { NORMAL_HEADER } from '../consts/header_types'
-import Icon from '../components/fragments/Icon'
+import Icon from '../components/icon-svg'
 import { useRef } from 'react'
 
 const Home = () => {

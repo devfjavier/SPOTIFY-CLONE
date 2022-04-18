@@ -1,6 +1,6 @@
 import styles from "../../styles/fragments/user-menu.module.scss"
 import { useRef, useEffect } from "react"
-import Icon from "./Icon"
+import Icon from "../icon-svg"
 
 const UserMenu = () => {
   const containerRef = useRef()

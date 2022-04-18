@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Icon from "../fragments/Icon"
+import Icon from "../icon-svg"
 import PanelLink from "../fragments/PanelLink"
 
 const Panel = ({type}) => {

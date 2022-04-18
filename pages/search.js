@@ -1,7 +1,7 @@
 import RootContainer from "../components/fragments/RootContainer"
 import Panel from "../components/core-sections/Panel"
 import UserMenu from "../components/fragments/UserMenu"
-import Icon from "../components/fragments/Icon"
+import Icon from "../components/icon-svg"
 
 const Search = () => {
   return (
