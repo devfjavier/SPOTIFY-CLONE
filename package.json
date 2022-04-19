@@ -2,6 +2,7 @@
   "name": "spotify-clone",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
