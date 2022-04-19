@@ -2,7 +2,6 @@ import RootContainer from "../../components/fragments/RootContainer"
 import { NORMAL_HEADER } from "../../consts/header_types"
 import Header from "../../components/core-sections/Header"
 import Panel from "../../components/core-sections/Panel"
-import Icon from "../../components/fragments/Icon"
 import PlaylistSong from "../../components/fragments/PlaylistSong"
 import PlaylistHeader from "../../components/fragments/PlaylistHeader"
 

@@ -3,7 +3,7 @@ import { COLLECTION_HEADER } from "../../consts/header_types"
 import Panel from "../../components/core-sections/Panel"
 import Header from "../../components/core-sections/Header"
 import Link from "next/link"
-import Icon from "../../components/fragments/Icon"
+import Icon from "../../components/icon-svg"
 
 const Playlists = () => {
 	return (
