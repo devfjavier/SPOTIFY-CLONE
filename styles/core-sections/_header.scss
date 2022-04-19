@@ -67,6 +67,22 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     }
 }
 
+.HEADER .form-search {
+    display: flex;
+    border-radius: 2rem;
+    background-color: rgb(246, 246, 246);
+
+    input {
+        all: unset;
+    }
+
+    svg {
+        margin: 0 .6rem;
+        width: 1.27rem;
+        height: auto;
+    }
+}
+
 .HEADER .premium {
     margin-left: 1.2rem;
     margin-right: 1.2rem;

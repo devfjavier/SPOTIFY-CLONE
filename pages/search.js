@@ -18,7 +18,11 @@ const Search = () => {
           </button>
         </div>
 
-        <label><input type="text" /></label>
+        <form className="form-search">
+          <Icon name="search" stroke="currentColor"/>
+          <input type="text" placeholder="Aristas, canciones o podcasts" />
+          <Icon name="x" fill="currentColor"/>
+        </form>
 
         <span className="void fs-p3">H</span>
 
