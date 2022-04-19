@@ -6,8 +6,8 @@ import Link from "next/link"
 import Icon from "../../components/icon-svg"
 
 const Playlists = () => {
-	return (
-		<RootContainer pageClassName="user-playlists">
+  return (
+    <RootContainer pageClassName="user-playlists">
       <Panel type="library"/>
       <Header type={COLLECTION_HEADER} collectionsPage="playlist"/>
       <main className="MAIN">
@@ -20,7 +20,10 @@ const Playlists = () => {
               </Link>
               <div className="img-container">
                 <img src={process.env.projectPath + "/img/song.webp"} alt=""/>
-                <button className="play-pause"><Icon name="play" fill="#fff"/><Icon name="pause" fill="#fff"/></button>
+                <button className="play-pause">
+                  <Icon className="play icon" name="play" fill="#fff"/>
+                  <Icon className="pause icon" name="pause" fill="#fff"/>
+                </button>
               </div>
               <div className="info">
                 <h3 className="title">LISTA</h3>
@@ -30,8 +33,8 @@ const Playlists = () => {
           </div>
         </section>
       </main>
-		</RootContainer>
-	)
+    </RootContainer>
+  )
 }
 
 export default Playlists
