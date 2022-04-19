@@ -5,10 +5,10 @@
 //estilos globales
 @use "global";
 // components, divisiones de todo el sitio
-@use "components/main";
-@use "components/panel";
-@use "components/header";
-@use "components/footer";
+@use "core-sections/main";
+@use "core-sections/panel";
+@use "core-sections/header";
+@use "core-sections/footer";
 
 // pages-styles, paginas individuales
 @use "pages-styles/playlist";
