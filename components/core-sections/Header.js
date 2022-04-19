@@ -18,7 +18,7 @@ const Header = ({type, collectionsPage}) => {
       {
         type === NORMAL_HEADER ? <>
           <span className="void fs-p3">H</span>
-          <button className="premium">PREMIUM</button>
+          <button className="premium" title="Actualizar a Premium">PREMIUM</button>
         </> : null
       }
       {
