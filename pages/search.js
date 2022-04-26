@@ -6,7 +6,7 @@ import Icon from "../components/icon-svg"
 const Search = () => {
   return (
     <RootContainer pageClassName="search">
-      <Panel type="search" />
+      <Panel panelName="search" />
 
       <header className="HEADER">
         <div className="page-navigation">

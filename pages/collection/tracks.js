@@ -6,7 +6,7 @@ import { NORMAL_HEADER } from "../../consts/header_types"
 const Tracks = () => {
   return (
     <RootContainer pageClassName="user-tracks">
-      <Panel type="tracks"/>
+      <Panel panelName="tracks"/>
       <Header type={NORMAL_HEADER}/>
 
       <main className="MAIN">
