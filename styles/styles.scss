@@ -10,7 +10,7 @@
 @use "core-sections/header";
 @use "core-sections/footer";
 
-// pages-styles, paginas individuales
-@use "pages-styles/playlist";
-@use "pages-styles/playlists";
-@use "pages-styles/recently-heard";
+// paginas individuales
+@use "pages/playlist";
+@use "pages/playlists";
+@use "pages/recently-heard";

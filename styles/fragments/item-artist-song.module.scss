@@ -1,0 +1,69 @@
+.sourceLink {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--index-front);
+}
+
+.item {
+  position: relative;
+  padding: 1rem;
+  border-radius: .2rem;
+  transition: background-color .2s linear;
+  background-color: var(--item-bg-color);
+
+  &:hover {
+    background-color: var(--item-hover-bg-color);
+  }
+}
+
+.playPause {
+  position: absolute;
+  bottom: 0;
+  right: .29rem;
+  padding: .5rem;
+  border: none;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: var(--index-overlay);
+  background-color: rgb(0, 200, 0);
+  transition: .12s linear;
+  transform: translateY(0);
+
+  &:hover {
+    transform: scale(112%) translateY(-12%);
+  }
+
+  .item:hover &, &.isActive {
+    opacity: 1;
+    transform: translateY(-12%);
+  }
+}
+
+.playIcon, .pauseIcon {
+  width: 1.5rem;
+}
+
+.playIcon, .isActive .pauseIcon {
+  display: block;
+}
+
+.pauseIcon, .isActive .playIcon {
+  display: none;
+}
+
+.infoContainer {
+  margin-bottom: 1rem;
+}
+
+.imgContainer {
+  position: relative;
+  margin-bottom: 1rem;
+
+  img {
+    border-radius: 50%;
+  }
+}

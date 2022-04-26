@@ -1,0 +1,6 @@
+// PLACE HOLDER PARA LOS ITEMS DE: _playlists
+%container {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(4, 1fr);
+}

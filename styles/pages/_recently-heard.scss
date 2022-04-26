@@ -1,0 +1,10 @@
+/* 
+
+SECCION "recently-heard" DE LA PAGINA "index" 
+
+*/
+@use "placeholders/ph-item";
+
+.MAIN .recently-heard .container {
+    @extend %container;
+}
