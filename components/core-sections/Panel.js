@@ -48,7 +48,7 @@ const Panel = ({type}) => {
       <hr className="hr"/>
       
       <ul className="playlists-shortcut">
-        <PanelLink href="/playlist/playlist" linkClassName="text" itemClassName="pl">
+        <PanelLink href="/playlist/playlist" linkClassName="color-text" itemClassName="pl">
           LISTA
         </PanelLink>
       </ul>

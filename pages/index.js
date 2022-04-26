@@ -24,13 +24,13 @@ const Home = () => {
 
       <main className="MAIN">
         <section className="section greetings">
-          <h2 className="title">Titulo</h2>
+          <h2 className="color-title">Titulo</h2>
           <div className="container">
           </div>
         </section>
 
         <section className="section recently-heard">
-          <h2 className="title">Escuchado recientemente</h2>
+          <h2 className="color-title">Escuchado recientemente</h2>
           <div className="container">
             <article className="item">
               <a className="source-link" href="search.html"></a>
@@ -42,8 +42,8 @@ const Home = () => {
                 </button>
               </div>
               <div className="info">
-                <h3 className="title">cancion/album</h3>
-                <p className="text">Artista</p>
+                <h3 className="color-title">cancion/album</h3>
+                <p className="color-text">Artista</p>
               </div>
             </article>
           </div>

@@ -12,8 +12,8 @@ const Posdcasts = () => {
 
       <main className="MAIN">
           <section className="section podcasts">
-              <h1 className="title fs-h2">Sigue tu primer podcasts</h1>
-              <p className="title">sigue podcasts que te gusten pulsando el boton Seguir</p>
+              <h1 className="color-title fs-h2">Sigue tu primer podcasts</h1>
+              <p className="color-title">sigue podcasts que te gusten pulsando el boton Seguir</p>
               <button>Buscar Podcasts</button>
           </section>
       </main>

@@ -4,7 +4,7 @@ const PanelLink = ({ children, href, linkClassName, itemClassName}) => {
   return (
     <li className={itemClassName ?? ""}>
       <Link href={href}>
-        <a className={`link text fs-p4${linkClassName}`}>
+        <a className={`link color-text fs-p4${linkClassName}`}>
           { children }
         </a>
       </Link>

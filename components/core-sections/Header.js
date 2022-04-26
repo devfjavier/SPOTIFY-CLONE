@@ -26,22 +26,22 @@ const Header = ({type, collectionsPage}) => {
           <ul className="collection-menu">
             <li>
               <Link href="/collection/playlists">
-                <a className={`link fs-p3 title${collectionsPage === "playlist" && " actual"}`}>Listas</a>
+                <a className={`link fs-p3 color-title${collectionsPage === "playlist" && " actual"}`}>Listas</a>
               </Link>
             </li>
             <li>
               <Link href="/collection/podcasts">
-                <a className={`link fs-p3 title${collectionsPage === "podcasts" && " actual"}`}>Podcasts</a>
+                <a className={`link fs-p3 color-title${collectionsPage === "podcasts" && " actual"}`}>Podcasts</a>
               </Link>
             </li>
             <li>
               <Link href="/collection/artists">
-                <a className={`link fs-p3 title${collectionsPage === "artists" && " actual"}`}>Artistas</a>
+                <a className={`link fs-p3 color-title${collectionsPage === "artists" && " actual"}`}>Artistas</a>
               </Link>
             </li>
             <li>
               <Link href="/collection/albums">
-                <a className={`link fs-p3 title${collectionsPage === "albums" && " actual"}`}>Albumes</a>
+                <a className={`link fs-p3 color-title${collectionsPage === "albums" && " actual"}`}>Albumes</a>
               </Link>
             </li>
           </ul>

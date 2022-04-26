@@ -12,7 +12,7 @@ const Playlists = () => {
       <Header type={COLLECTION_HEADER} collectionsPage="playlist"/>
       <main className="MAIN">
         <section className="section playlists">
-          <h1 className="title">PLAYLIST</h1>
+          <h1 className="color-title">PLAYLIST</h1>
           <div className="container">
             <article className="item">
               <Link href="/playlist/playlist">
@@ -26,8 +26,8 @@ const Playlists = () => {
                 </button>
               </div>
               <div className="info">
-                <h3 className="title">LISTA</h3>
-                <p className="text">De *usuario</p>
+                <h3 className="color-title">LISTA</h3>
+                <p className="color-text">De *usuario</p>
               </div>
             </article>
           </div>

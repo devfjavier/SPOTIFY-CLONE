@@ -11,7 +11,7 @@ const Tracks = () => {
 
       <main className="MAIN">
         <section className="section tracks">
-          <h1 className="title h1">Tus me gusta</h1>
+          <h1 className="color-title h1">Tus me gusta</h1>
         </section>
       </main>
     </RootContainer>

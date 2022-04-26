@@ -14,9 +14,9 @@ const Playlist = () => {
         <section className="section banner">
           <div classs="img-container"><img src={process.env.projectPath + "/img/song.webp"} alt=""/></div>
           <div className="container">
-            <h2 className="title fs-h2">PLAYLIST</h2>
-            <h1 className="title fs-h1">TITULO DEL PLAYLIST</h1>
-            <div className="info text">
+            <h2 className="color-title fs-h2">PLAYLIST</h2>
+            <h1 className="color-title fs-h1">TITULO DEL PLAYLIST</h1>
+            <div className="info color-text">
               <a href="../user/usuario"></a>
               <span>
                 ·<span className="song-number">2</span> cancion, <span className="duration">2</span>

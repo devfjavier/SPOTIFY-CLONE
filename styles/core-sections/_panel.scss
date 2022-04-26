@@ -53,7 +53,7 @@ PANEL, MENU DE LA DERECHA
     font-family: inherit;
     font-weight: bold;
     transition: filter .12s linear;
-    color: var(--title-color);
+    color: var(--color-title);
     filter: brightness(.6);
     
     &:hover{

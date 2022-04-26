@@ -31,11 +31,11 @@ const Search = () => {
 
       <main className="MAIN">
         <section className="section recent-searches">
-          <h2 className="title">Busquedas recientes</h2>
+          <h2 className="color-title">Busquedas recientes</h2>
         </section>
 
         <section className="section most-listened-g">
-          <h2 className="title">Los generos que mas escuchaste</h2>
+          <h2 className="color-title">Los generos que mas escuchaste</h2>
         </section>
       </main>
     </RootContainer>

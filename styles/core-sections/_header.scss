@@ -88,14 +88,14 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
     margin-right: 1.2rem;
     padding: 0 1.9rem;
     border-radius: 2rem;
-    color: var(--title-color);
+    color: var(--color-title);
     background-color: var(--user-bg-color);
-    border: 1.27px solid var(--text-color);
+    border: 1.27px solid var(--color-text);
     font-weight: bold;
     transition: 27ms;
 
     &:hover {
-        border-color: var(--title-color);
+        border-color: var(--color-title);
         transform: scale(1.06);
     } 
 }

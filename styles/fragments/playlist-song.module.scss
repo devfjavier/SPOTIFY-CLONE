@@ -56,7 +56,7 @@
   }
 
   &:hover .artist-link {
-    color: var(--title-color);
+    color: var(--color-title);
   }
 
   .artist-link:hover{
@@ -65,7 +65,7 @@
   
   /* ENLACE DEL ALBUM */
   &:hover .album-link {
-    color: var(--title-color);
+    color: var(--color-title);
   }
 
   .album-link {
