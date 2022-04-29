@@ -7,7 +7,7 @@ import { PLAYLISTS_COLLECTION } from "../../consts/collection_page_names"
 const Playlists = () => {
   return (
     <RootContainer pageClassName="user-playlists" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PLAYLISTS_COLLECTION}>
-      <main className="MAIN">
+      <main>
         <section className="section playlists">
           <h1 className="color-title">PLAYLIST</h1>
           <div className="container">

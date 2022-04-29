@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <RootContainer pageClassName="index" headerName={NORMAL_HEADER} panelName={INDEX_PANEL}>
 
-      <main className="MAIN">
+      <main>
         <section className="section greetings">
           <h2 className="color-title">Titulo</h2>
           <div className="container">

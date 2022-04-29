@@ -5,7 +5,7 @@ import { TRACKS_PANEL } from "../../consts/panel_page_names"
 const Tracks = () => {
   return (
     <RootContainer pageClassName="user-tracks" panelName={TRACKS_PANEL} headerName={NORMAL_HEADER}>
-      <main className="MAIN">
+      <main>
         <section className="section tracks">
           <h1 className="color-title h1">Tus me gusta</h1>
         </section>

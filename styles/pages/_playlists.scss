@@ -5,6 +5,6 @@ PAGINA "playlists" DE COLLECTION
 */
 @use "placeholders/ph-item";
 
-.MAIN .playlists .container {
+main .playlists .container {
     @extend %container;
 }

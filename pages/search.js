@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <RootContainer pageClassName="search" panelName={SEARCH_PANEL} headerName={SEARCH_HEADER}>
 
-      <main className="MAIN">
+      <main>
         <section className="section recent-searches">
           <h2 className="color-title">Busquedas recientes</h2>
         </section>

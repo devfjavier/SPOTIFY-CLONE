@@ -7,7 +7,7 @@ const Albums = () => {
   return (
     <RootContainer className="user-albums content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ALBUMS_COLLECTION}>
 
-      <main className="MAIN">
+      <main>
         <section className="section albums">
 
         </section>

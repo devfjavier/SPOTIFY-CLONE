@@ -1,18 +1,18 @@
 /* pagina de una playlist */
 @use "placeholders/ph-banner";
 
-.MAIN {
+main {
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: auto 1fr;
     align-items: start;
     overflow: auto;
 }
-.MAIN .banner {
+main .banner {
     @extend %banner;
 }
 
-.MAIN .tracks .menu {
+main .tracks .menu {
     display: grid;
     grid-template-columns: auto auto auto 1fr auto auto;
     background-color: aquamarine;
@@ -21,50 +21,50 @@
 }
 
 /* contenedor solo de las canciones */
-.MAIN .tracks .song-container {
+main .tracks .song-container {
     padding-top: 0.66rem;
     padding-bottom: 0.66rem;
 }
 /* estilos para que las columnas de informacion y canciones esten alineados  */
-.MAIN .tracks .columns-info,
-.MAIN .tracks .song {
+main .tracks .columns-info,
+main .tracks .song {
     display: grid;
     grid-template-columns: 6% 35% 22% 16% 6% 9% 6%;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     align-items: center;
 }
-.MAIN .tracks .song {
+main .tracks .song {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
 }
-.MAIN .tracks .song:hover {
+main .tracks .song:hover {
     background-color: var(--item-hover-bg-color);
     border-radius: 0.2rem;
 }
 /* alinear para la infomacion de las columnas y las canciones */
-.MAIN .tracks .columns-info .song-number,
-.MAIN .tracks .song-like-btn,
-.MAIN .tracks .song-more-options {
+main .tracks .columns-info .song-number,
+main .tracks .song-like-btn,
+main .tracks .song-more-options {
     justify-self: center;
 }
 
-.MAIN .tracks .song-duration,
-.MAIN .tracks .song-title,
-.MAIN .tracks .song-album,
-.MAIN .tracks .song-info {
+main .tracks .song-duration,
+main .tracks .song-title,
+main .tracks .song-album,
+main .tracks .song-info {
     justify-self: left;
 }
 /* solo para la informacion de las columnas */
-.MAIN .tracks .columns-info .song-duration:hover,
-.MAIN .tracks .columns-info .song-info:hover,
-.MAIN .tracks .columns-info .song-album:hover,
-.MAIN .tracks .columns-info .song-title:hover {
+main .tracks .columns-info .song-duration:hover,
+main .tracks .columns-info .song-info:hover,
+main .tracks .columns-info .song-album:hover,
+main .tracks .columns-info .song-title:hover {
     color: var(--color-title);
 }
 
 /* solo para las canciones */
-.MAIN .tracks .song .song-number {
+main .tracks .song .song-number {
     display: grid;
     width: 100%;
     height: 100%;
@@ -72,11 +72,11 @@
     align-items: center;
     position: relative;
 }
-.MAIN .tracks .song .song-number .number {
+main .tracks .song .song-number .number {
     position: absolute;
 }
-.MAIN .tracks .song .song-number .play.icon, 
-.MAIN .tracks .song .song-number .pause.icon {
+main .tracks .song .song-number .play.icon, 
+main .tracks .song .song-number .pause.icon {
     position: absolute;
     border: none;
     background-color: transparent;
@@ -84,29 +84,29 @@
     opacity: 0;
 }
 
-.MAIN .tracks .song .song-title {
+main .tracks .song .song-title {
     display: grid;
     gap: .6rem;
     grid-template-columns: 2.7rem 1fr;
     align-items: end;
 }
-.MAIN .tracks .song .song-title .title {
+main .tracks .song .song-title .title {
     display: block;
 }
-.MAIN .tracks .song .song-title .artist:hover,
-.MAIN .tracks .song .song-album:hover {
+main .tracks .song .song-title .artist:hover,
+main .tracks .song .song-album:hover {
     text-decoration: underline;
 }
-.MAIN .tracks .song:hover .song-title .artist,
-.MAIN .tracks .song:hover .song-album {
+main .tracks .song:hover .song-title .artist,
+main .tracks .song:hover .song-album {
     color: var(--color-title);
 }
 
-.MAIN .tracks .song .song-like-btn,
-.MAIN .tracks .song .song-more-options{
+main .tracks .song .song-like-btn,
+main .tracks .song .song-more-options{
     opacity: 0;
 }
-.MAIN .tracks .song:hover .song-like-btn,
-.MAIN .tracks .song:hover .song-more-options{
+main .tracks .song:hover .song-like-btn,
+main .tracks .song:hover .song-more-options{
     opacity: 1;
 }

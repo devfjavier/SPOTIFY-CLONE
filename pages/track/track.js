@@ -8,7 +8,7 @@ const Track = () => {
     <RootContainer pageClassName="track">
       <Panel/>
       <Header headerName={NORMAL_HEADER}/>
-      <main className="MAIN">
+      <main>
 
       </main>
     </RootContainer>
