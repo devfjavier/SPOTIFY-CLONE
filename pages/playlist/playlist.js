@@ -5,7 +5,7 @@ import PlaylistHeader from "../../components/fragments/PlaylistHeader"
 
 const Playlist = () => {
   return (
-    <RootContainer pageClassName="playlist" headerName={NORMAL_HEADER}>
+    <RootContainer headerName={NORMAL_HEADER}>
       <main>
         <section className="section banner">
           <div classs="img-container"><img src={process.env.projectPath + "/img/song.webp"} alt=""/></div>

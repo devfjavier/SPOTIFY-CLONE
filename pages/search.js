@@ -4,7 +4,7 @@ import { SEARCH_HEADER } from "../consts/header_names"
 
 const Search = () => {
   return (
-    <RootContainer pageClassName="search" panelName={SEARCH_PANEL} headerName={SEARCH_HEADER}>
+    <RootContainer panelName={SEARCH_PANEL} headerName={SEARCH_HEADER}>
 
       <main>
         <section className="section recent-searches">

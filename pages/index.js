@@ -5,7 +5,7 @@ import { INDEX_PANEL } from '../consts/panel_page_names'
 
 const Home = () => {
   return (
-    <RootContainer pageClassName="index" headerName={NORMAL_HEADER} panelName={INDEX_PANEL}>
+    <RootContainer headerName={NORMAL_HEADER} panelName={INDEX_PANEL}>
 
       <main>
         <section className="section greetings">

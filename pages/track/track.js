@@ -3,7 +3,7 @@ import { NORMAL_HEADER } from "../../consts/header_names"
 
 const Track = () => {
   return (
-    <RootContainer pageClassName="track" headerName={NORMAL_HEADER}>
+    <RootContainer headerName={NORMAL_HEADER}>
       <main>
         dynamic route
       </main>

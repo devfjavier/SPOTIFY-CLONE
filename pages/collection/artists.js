@@ -5,7 +5,7 @@ import { ARTISTS_COLLECTION } from "../../consts/collection_page_names"
 
 const Artists = () => {
   return (
-    <RootContainer pageClassName="user-artists" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ARTISTS_COLLECTION}>
+    <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ARTISTS_COLLECTION}>
 
       <main>
         <section className="section artists">
