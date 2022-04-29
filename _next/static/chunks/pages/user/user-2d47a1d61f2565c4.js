@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[773],{2726:function(n,u,r){(window.__NEXT_P=window.__NEXT_P||[]).push(["/user/user",function(){return r(831)}])},831:function(n,u,r){"use strict";r.r(u);u.default=function(){return"USUARIO"}}},function(n){n.O(0,[774,888,179],(function(){return u=2726,n(n.s=u);var u}));var u=n.O();_N_E=u}]);
