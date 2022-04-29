@@ -1,4 +1,4 @@
-import styles from "../../../styles/fragments/user-menu.module.scss"
+import classes from "../../../styles/core-sections/header/user-menu.module.scss"
 import { useRef, useEffect } from "react"
 import Icon from "../../icon-svg"
 
@@ -7,25 +7,25 @@ const UserMenu = () => {
   
   const toggleMenu = e => {
     e.stopPropagation()
-    containerRef.current.classList.toggle(styles.active)
+    containerRef.current.classList.toggle(classes.active)
   }
 
   useEffect(() => {
     document.onclick = () => {
-      containerRef.current?.classList.remove(styles.active)
+      containerRef.current?.classList.remove(classes.active)
     }
   })
 
   return (
-    <div className={styles.container} ref={containerRef}>
-      <button onClick={toggleMenu} className={styles.btn}>
-        <div className={styles.imgContainer}><Icon name="user" stroke="#fff"/></div>
-        <span className={styles.name}>Usuario</span>
-        <Icon className={styles.icon} name="play" fill="#fff"/>
+    <div className={classes.container} ref={containerRef}>
+      <button onClick={toggleMenu} className={classes.btn}>
+        <div className={classes.imgContainer}><Icon name="user" stroke="#fff"/></div>
+        <span className={classes.name}>Usuario</span>
+        <Icon className={classes.icon} name="play" fill="#fff"/>
       </button>
-      <ul className={styles.menu}>
-        <li><a className={styles.link} href="">Perfil</a></li>
-        <li><a className={styles.link} href="">Preferencias</a></li>
+      <ul className={classes.menu}>
+        <li><a className={classes.link} href="">Perfil</a></li>
+        <li><a className={classes.link} href="">Preferencias</a></li>
       </ul>
     </div>
   )

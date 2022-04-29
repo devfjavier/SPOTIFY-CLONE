@@ -1,8 +1,9 @@
 .container {
+  grid-column: 4 / span 1;
+  justify-self: end;
+  align-self: center;
   position: relative;
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
-  height: 100%;
+  margin: 0 1.2rem;
 }
 
 .active {

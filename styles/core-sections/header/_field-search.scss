@@ -1,0 +1,19 @@
+.field-search {
+  grid-column: 2 / span 1;
+  justify-self: left;
+  align-self: center;
+  height: 2.6rem;
+  display: inline-flex;
+  border-radius: 2rem;
+  background-color: rgb(246, 246, 246);
+
+  input {
+    all: unset;
+  }
+
+  svg {
+    margin: 0 .6rem;
+    width: 1.27rem;
+    height: auto;
+  }
+}

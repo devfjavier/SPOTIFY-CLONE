@@ -8,7 +8,7 @@ import UserMenu from "./UserMenu"
 const Header = ({ name, collectionPageName }) => {
 
   return (
-    <header className={`HEADER${name === NORMAL_HEADER ? " normal" : ""}`}>
+    <header className="HEADER">
       <NavigationButtons />
 
       {name === NORMAL_HEADER && <PremiumButton />}
