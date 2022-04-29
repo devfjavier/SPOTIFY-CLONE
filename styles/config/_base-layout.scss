@@ -21,6 +21,15 @@ html {
   }
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+svg {
+  display: block;
+}
+
 /* CONTENDOR RAIZ DE TODO EL CONTENIDO DE LA PAGINA */
 #__next {
   display: grid;

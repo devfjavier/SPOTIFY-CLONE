@@ -3,7 +3,8 @@
 @use "config/sass-vars";
 @use "config/base-layout";
 //estilos globales
-@use "global";
+@use "global/color-text";
+@use "global/font-size";
 // components, divisiones de todo el sitio
 @use "core-sections/main";
 @use "core-sections/panel";
