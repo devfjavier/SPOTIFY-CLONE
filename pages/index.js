@@ -1,20 +1,11 @@
-import Head from 'next/head'
 import RootContainer from '../components/fragments/RootContainer'
-import Header from '../components/core-sections/Header'
-import Panel from '../components/core-sections/Panel'
-import { NORMAL_HEADER } from '../consts/header_types'
+import { NORMAL_HEADER } from '../consts/header_names'
 import ItemArtistSong from '../components/fragments/ItemArtistSong'
+import { INDEX_PANEL } from '../consts/panel_page_names'
 
 const Home = () => {
   return (
-    <RootContainer pageClassName="index">
-      <Head>
-        <title>Clon de Spotify</title>
-        <meta name="description" content="Clon de Spotify" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Panel panelName="index" />
-      <Header type={NORMAL_HEADER} />
+    <RootContainer pageClassName="index" headerName={NORMAL_HEADER} panelName={INDEX_PANEL}>
 
       <main className="MAIN">
         <section className="section greetings">

@@ -1,29 +1,30 @@
-import Icon from "../icon-svg"
-import PanelLink from "../fragments/PanelLink"
+import { INDEX_PANEL, LIBRARY_PANEL, SEARCH_PANEL, TRACKS_PANEL } from "../../../consts/panel_page_names"
+import Icon from "../../icon-svg"
+import PanelLink from "./PanelLink"
 
 
-const Panel = ({ panelName }) => {
-  const setPanelClass = (name) => panelName === name ? " actual" : ""
+const Panel = ({ name }) => {
+  const setPanelClass = (page) => name === page ? " actual" : ""
 
   return (
     <nav className="PANEL">
       <ul className="menu">
-        <PanelLink href="/" linkClassName={setPanelClass("index")}>
+        <PanelLink href="/" linkClassName={setPanelClass(INDEX_PANEL)}>
           <Icon className="panel-icon" name="index" fill="currentColor" />
           <span>Inicio</span>
         </PanelLink>
 
-        <PanelLink href="/search" linkClassName={setPanelClass("search")}>
+        <PanelLink href="/search" linkClassName={setPanelClass(SEARCH_PANEL)}>
           <Icon className="panel-icon" name="search" stroke="currentColor" />
           <span>Buscar</span>
         </PanelLink>
 
-        <PanelLink href="/collection/playlists" linkClassName={setPanelClass("library")} itemClassName="hidden-on-small-screen">
+        <PanelLink href="/collection/playlists" linkClassName={setPanelClass(LIBRARY_PANEL)} itemClassName="hidden-on-small-screen">
           <Icon className="panel-icon" name="library" stroke="currentColor" />
           <span>Tu Biblioteca</span>
         </PanelLink>
 
-        <PanelLink href="/collection/tracks" linkClassName={setPanelClass("tracks")} itemClassName="hidden-on-big-screen">
+        <PanelLink href="/collection/tracks" linkClassName={setPanelClass(TRACKS_PANEL)} itemClassName="hidden-on-big-screen">
           <Icon className="panel-icon" name="tracks2" fill="currentColor" />
           <span>Favoritos</span>
         </PanelLink>
@@ -41,7 +42,7 @@ const Panel = ({ panelName }) => {
             <span>Crear playlist</span>
           </button>
         </li>
-        <PanelLink href="/collection/tracks" linkClassName={setPanelClass("tracks")}>
+        <PanelLink href="/collection/tracks" linkClassName={setPanelClass(TRACKS_PANEL)}>
           <Icon className="panel-icon" name="tracks" />
           <span>Tus me gusta</span>
         </PanelLink>

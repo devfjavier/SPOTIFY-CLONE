@@ -1,13 +1,13 @@
 import RootContainer from "../../components/fragments/RootContainer"
-import { NORMAL_HEADER } from "../../consts/header_types"
+import { NORMAL_HEADER } from "../../consts/header_names"
 import Header from "../../components/core-sections/Header"
-import Panel from "../../components/core-sections/Panel"
+import Panel from "../../components/core-sections/panel"
 
 const Track = () => {
   return (
     <RootContainer pageClassName="track">
       <Panel/>
-      <Header type={NORMAL_HEADER}/>
+      <Header headerName={NORMAL_HEADER}/>
       <main className="MAIN">
 
       </main>

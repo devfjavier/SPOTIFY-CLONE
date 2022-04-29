@@ -1,0 +1,4 @@
+export const INDEX_PANEL = "INDEX_PANEL"
+export const SEARCH_PANEL = "SEARCH_PANEL" 
+export const LIBRARY_PANEL = "LIBRARY_PANEL"
+export const TRACKS_PANEL = "TRACKS_PANEL"

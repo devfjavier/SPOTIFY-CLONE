@@ -1,14 +1,12 @@
 import RootContainer from "../../components/fragments/RootContainer"
-import { COLLECTION_HEADER } from "../../consts/header_types"
-import Panel from "../../components/core-sections/Panel"
-import Header from "../../components/core-sections/Header"
+import { COLLECTION_HEADER } from "../../consts/header_names"
 import ItemArtistSong from "../../components/fragments/ItemArtistSong"
+import { LIBRARY_PANEL } from "../../consts/panel_page_names"
+import { PLAYLISTS_COLLECTION } from "../../consts/collection_page_names"
 
 const Playlists = () => {
   return (
-    <RootContainer pageClassName="user-playlists">
-      <Panel panelName="library"/>
-      <Header type={COLLECTION_HEADER} collectionsPage="playlist"/>
+    <RootContainer pageClassName="user-playlists" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PLAYLISTS_COLLECTION}>
       <main className="MAIN">
         <section className="section playlists">
           <h1 className="color-title">PLAYLIST</h1>

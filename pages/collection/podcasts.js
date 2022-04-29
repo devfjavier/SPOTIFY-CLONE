@@ -1,14 +1,11 @@
-import Header from "../../components/core-sections/Header"
-import Panel from "../../components/core-sections/Panel"
 import RootContainer from "../../components/fragments/RootContainer"
-import { COLLECTION_HEADER } from "../../consts/header_types"
+import { PODCASTS_COLLECTION } from "../../consts/collection_page_names"
+import { COLLECTION_HEADER } from "../../consts/header_names"
+import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 
 const Posdcasts = () => {
   return (
-    <RootContainer className="user-podcasts content">
-      <Panel panelName="library"/>
-
-      <Header type={COLLECTION_HEADER} collectionsPage="podcasts"/>
+    <RootContainer className="user-podcasts content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PODCASTS_COLLECTION}>
 
       <main className="MAIN">
           <section className="section podcasts">

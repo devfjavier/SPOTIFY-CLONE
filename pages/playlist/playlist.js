@@ -1,15 +1,11 @@
 import RootContainer from "../../components/fragments/RootContainer"
-import { NORMAL_HEADER } from "../../consts/header_types"
-import Header from "../../components/core-sections/Header"
-import Panel from "../../components/core-sections/Panel"
+import { NORMAL_HEADER } from "../../consts/header_names"
 import PlaylistSong from "../../components/fragments/PlaylistSong"
 import PlaylistHeader from "../../components/fragments/PlaylistHeader"
 
 const Playlist = () => {
   return (
-    <RootContainer pageClassName="playlist">
-      <Panel/>
-      <Header type={NORMAL_HEADER}/>
+    <RootContainer pageClassName="playlist" headerName={NORMAL_HEADER}>
       <main className="MAIN">
         <section className="section banner">
           <div classs="img-container"><img src={process.env.projectPath + "/img/song.webp"} alt=""/></div>

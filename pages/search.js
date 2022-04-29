@@ -1,33 +1,10 @@
 import RootContainer from "../components/fragments/RootContainer"
-import Panel from "../components/core-sections/Panel"
-import UserMenu from "../components/fragments/UserMenu"
-import Icon from "../components/icon-svg"
+import { SEARCH_PANEL } from "../consts/panel_page_names"
+import { SEARCH_HEADER } from "../consts/header_names"
 
 const Search = () => {
   return (
-    <RootContainer pageClassName="search">
-      <Panel panelName="search" />
-
-      <header className="HEADER">
-        <div className="page-navigation">
-          <button className="button back">
-            <Icon fill="#fff" stroke="#fff" name="chevronLeft" />
-          </button>
-          <button className="button fordward">
-            <Icon fill="#fff" stroke="#fff" name="chevronRight" />
-          </button>
-        </div>
-
-        <form className="form-search">
-          <Icon name="search" stroke="currentColor"/>
-          <input type="text" placeholder="Aristas, canciones o podcasts" />
-          <Icon name="x" fill="currentColor"/>
-        </form>
-
-        <span className="void fs-p3">H</span>
-
-        <UserMenu />
-      </header>
+    <RootContainer pageClassName="search" panelName={SEARCH_PANEL} headerName={SEARCH_HEADER}>
 
       <main className="MAIN">
         <section className="section recent-searches">

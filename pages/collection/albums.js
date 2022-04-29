@@ -1,13 +1,11 @@
 import RootContainer from "../../components/fragments/RootContainer"
-import Header from "../../components/core-sections/Header"
-import Panel from "../../components/core-sections/Panel"
-import { COLLECTION_HEADER } from "../../consts/header_types"
+import { COLLECTION_HEADER } from "../../consts/header_names"
+import { LIBRARY_PANEL } from "../../consts/panel_page_names"
+import { ALBUMS_COLLECTION } from "../../consts/collection_page_names"
 
 const Albums = () => {
   return (
-    <RootContainer className="user-albums content">
-      <Panel panelName="library"/>
-      <Header type={COLLECTION_HEADER} collectionsPage="albums"/>
+    <RootContainer className="user-albums content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ALBUMS_COLLECTION}>
 
       <main className="MAIN">
         <section className="section albums">
