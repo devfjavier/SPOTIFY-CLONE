@@ -15,12 +15,12 @@ const Panel = ({ name }) => {
         </PanelLink>
 
         <PanelLink href="/search" linkClassName={setPanelClass(SEARCH_PANEL)}>
-          <Icon className="panel-icon" name="search" stroke="currentColor" />
+          <Icon className="panel-icon" name="search" fill="currentColor" />
           <span>Buscar</span>
         </PanelLink>
 
         <PanelLink href="/collection/playlists" linkClassName={setPanelClass(LIBRARY_PANEL)} itemClassName="hidden-on-small-screen">
-          <Icon className="panel-icon" name="library" stroke="currentColor" />
+          <Icon className="panel-icon" name="library" fill="currentColor" />
           <span>Tu Biblioteca</span>
         </PanelLink>
 

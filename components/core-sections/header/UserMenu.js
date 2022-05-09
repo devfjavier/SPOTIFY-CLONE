@@ -19,7 +19,7 @@ const UserMenu = () => {
   return (
     <div className={classes.container} ref={containerRef}>
       <button onClick={toggleMenu} className={classes.btn}>
-        <div className={classes.imgContainer}><Icon name="user" stroke="#fff"/></div>
+        <div className={classes.imgContainer}><Icon name="user" fill="#fff"/></div>
         <span className={classes.name}>Usuario</span>
         <Icon className={classes.icon} name="play" fill="#fff"/>
       </button>
