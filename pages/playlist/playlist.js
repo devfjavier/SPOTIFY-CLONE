@@ -2,24 +2,13 @@ import RootContainer from "../../components/fragments/RootContainer"
 import { NORMAL_HEADER } from "../../consts/header_names"
 import PlaylistSong from "../../components/fragments/PlaylistSong"
 import PlaylistHeader from "../../components/fragments/PlaylistHeader"
+import Banner from "../../components/fragments/Banner"
 
 const Playlist = () => {
   return (
     <RootContainer headerName={NORMAL_HEADER}>
       <main>
-        <section className="section banner">
-          <div classs="img-container"><img src={process.env.projectPath + "/img/song.webp"} alt=""/></div>
-          <div className="container">
-            <h2 className="h-color-light h-fs-t2">PLAYLIST</h2>
-            <h1 className="h-color-light h-fs-t1">TITULO DEL PLAYLIST</h1>
-            <div className="info h-color-gray">
-              <a href="../user/usuario"></a>
-              <span>
-                ·<span className="song-number">2</span> cancion, <span className="duration">2</span>
-              </span>
-            </div>
-          </div>
-        </section>
+        <Banner/>
 
         <section className="section tracks">
           <div className="menu">

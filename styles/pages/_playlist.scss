@@ -1,5 +1,4 @@
 /* pagina de una playlist */
-@use "placeholders/ph-banner";
 
 main {
     display: grid;
@@ -7,9 +6,6 @@ main {
     grid-template-rows: auto 1fr;
     align-items: start;
     overflow: auto;
-}
-main .banner {
-    @extend %banner;
 }
 
 main .tracks .menu {
