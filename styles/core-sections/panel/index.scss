@@ -1,0 +1,12 @@
+/* 
+
+PANEL, MENU DE LA IZQUIERDA
+
+*/
+@use "./desk-panel";
+@use "./mobile-panel";
+
+#desk-panel, #mobile-panel {
+  grid-area: PANEL;
+  background-color: var(--panel-bg-color);
+}
