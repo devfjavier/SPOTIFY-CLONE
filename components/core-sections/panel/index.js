@@ -9,28 +9,23 @@ const Panel = ({ name }) => {
   return (
     <nav className="PANEL">
       <ul className="menu">
-        <PanelLink href="/" linkClassName={setPanelClass(INDEX_PANEL)}>
-          <Icon className="panel-icon" name="index" fill="currentColor" />
+        <PanelLink href="/" iconName="index" linkClassName={setPanelClass(INDEX_PANEL)}>
           <span>Inicio</span>
         </PanelLink>
 
-        <PanelLink href="/search" linkClassName={setPanelClass(SEARCH_PANEL)}>
-          <Icon className="panel-icon" name="search" fill="currentColor" />
+        <PanelLink href="/search" iconName="search" linkClassName={setPanelClass(SEARCH_PANEL)}>
           <span>Buscar</span>
         </PanelLink>
 
-        <PanelLink href="/collection/playlists" linkClassName={setPanelClass(LIBRARY_PANEL)} itemClassName="hidden-on-small-screen">
-          <Icon className="panel-icon" name="library" fill="currentColor" />
+        <PanelLink href="/collection/playlists" iconName="library" linkClassName={setPanelClass(LIBRARY_PANEL)} itemClassName="hidden-on-small-screen">
           <span>Tu Biblioteca</span>
         </PanelLink>
 
-        <PanelLink href="/collection/tracks" linkClassName={setPanelClass(TRACKS_PANEL)} itemClassName="hidden-on-big-screen">
-          <Icon className="panel-icon" name="tracks2" fill="currentColor" />
+        <PanelLink href="/collection/tracks" iconName="tracks2" linkClassName={setPanelClass(TRACKS_PANEL)} itemClassName="hidden-on-big-screen">
           <span>Favoritos</span>
         </PanelLink>
 
-        <PanelLink href="#" linkClassName="" itemClassName="hidden-on-big-screen">
-          <Icon className="panel-icon" name="spotify" fill="currentColor" />
+        <PanelLink href="#" iconName="spotify" linkClassName="" itemClassName="hidden-on-big-screen">
           <span>Premium</span>
         </PanelLink>
       </ul>
@@ -38,12 +33,11 @@ const Panel = ({ name }) => {
       <ul className="hidden-on-small-screen">
         <li>
           <button className="link create-playlist fs-p4">
-            <Icon className="panel-icon" name="createPlaylist" />
+            <Icon name="createPlaylist" size="1.4rem" />
             <span>Crear playlist</span>
           </button>
         </li>
-        <PanelLink href="/collection/tracks" linkClassName={setPanelClass(TRACKS_PANEL)}>
-          <Icon className="panel-icon" name="tracks" />
+        <PanelLink href="/collection/tracks" iconName="tracks" linkClassName={setPanelClass(TRACKS_PANEL)}>
           <span>Tus me gusta</span>
         </PanelLink>
       </ul>

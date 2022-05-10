@@ -15,8 +15,8 @@ const ItemArtistSong = () => {
       <div className={classes.imgContainer}>
         <img className="artist-img" src={process.env.projectPath + "/img/song.webp"} alt="godot engine" />
         <button className={classes.playPause} ref={buttonRef} onClick={toggleButton}>
-          <Icon className={classes.playIcon} name="play" fill="#fff" />
-          <Icon className={classes.pauseIcon} name="pause" fill="#fff" />
+          <Icon className={classes.playIcon} name="play" fill="#000" size="1.5rem" />
+          <Icon className={classes.pauseIcon} name="pause" fill="#000" size="1.5rem" />
         </button>
       </div>
       <div className={classes.infoContainer}>

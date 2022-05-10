@@ -19,9 +19,8 @@
 }
 
 .btn {
-  position: relative;
+  cursor: pointer;
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: .6rem;
   height: 100%;
@@ -35,20 +34,9 @@
   }
 }
 
-.menu {
-  display: none;
-  position: absolute;
-  top: 119%;
-  right: 0;
-  background-color: var(--menu-hover-bg-color);
-  padding: .29rem;
-  border-radius: .27rem;
-}
-
 .imgContainer {
-  width: 2rem;
+  padding: 1px;
   border-radius: 50%;
-  padding: 2%;
   background-color: var(--item-hover-bg-color);
   overflow: hidden;
 }
@@ -59,8 +47,17 @@
 
 .icon {
   transform: rotate(90deg);
-  width: .9rem;
   margin-right: .6rem;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 119%;
+  right: 0;
+  background-color: var(--menu-hover-bg-color);
+  padding: .29rem;
+  border-radius: .27rem;
 }
 
 .link{

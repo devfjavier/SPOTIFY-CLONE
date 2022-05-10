@@ -19,9 +19,9 @@ const UserMenu = () => {
   return (
     <div className={classes.container} ref={containerRef}>
       <button onClick={toggleMenu} className={classes.btn}>
-        <div className={classes.imgContainer}><Icon name="user" fill="#fff"/></div>
+        <div className={classes.imgContainer}><Icon name="user" fill="#fff" size="1.9rem"/></div>
         <span className={classes.name}>Usuario</span>
-        <Icon className={classes.icon} name="play" fill="#fff"/>
+        <Icon className={classes.icon} name="play" fill="#fff" size="0.9rem"/>
       </button>
       <ul className={classes.menu}>
         <li><a className={classes.link} href="">Perfil</a></li>
