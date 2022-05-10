@@ -7,7 +7,7 @@ const Tracks = () => {
     <RootContainer panelName={TRACKS_PANEL} headerName={NORMAL_HEADER}>
       <main>
         <section className="section tracks">
-          <h1 className="color-title h1">Tus me gusta</h1>
+          <h1 className="h-color-light h1">Tus me gusta</h1>
         </section>
       </main>
     </RootContainer>

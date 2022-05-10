@@ -8,8 +8,8 @@ const Footer = () => {
             <img src={process.env.projectPath + "/img/song.webp"}alt=""/>
           </div>
           <div className="info">
-            <a className="link color-title" href="">cancion</a>
-            <a className="link color-text" href="">artista</a>
+            <a className="link h-color-light" href="">cancion</a>
+            <a className="link h-color-gray" href="">artista</a>
           </div>
           <button className="btn like">dar like</button>
           <button className="btn play-pause">play-pause</button>

@@ -8,7 +8,7 @@ const CollectionLinks = ({ pageName }) => {
   const Link = ({ href, className, children }) => (
     <li>
       <NextLink href={href}>
-        <a className={`fs-p3 color-title ${classes.link + className}`}>
+        <a className={`h-fs-st3 h-color-light ${classes.link + className}`}>
           {children}
         </a>
       </NextLink>

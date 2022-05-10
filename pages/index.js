@@ -9,13 +9,13 @@ const Home = () => {
 
       <main>
         <section className="section greetings">
-          <h2 className="color-title">Titulo</h2>
+          <h2 className="h-color-light">Titulo</h2>
           <div className="container">
           </div>
         </section>
 
         <section className="section recently-heard">
-          <h2 className="color-title">Escuchado recientemente</h2>
+          <h2 className="h-color-light">Escuchado recientemente</h2>
           <div className="container">
             <ItemArtistSong />
             <ItemArtistSong />

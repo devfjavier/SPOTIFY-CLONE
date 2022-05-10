@@ -20,8 +20,8 @@ const ItemArtistSong = () => {
         </button>
       </div>
       <div className={classes.infoContainer}>
-        <h3 className="color-title">title</h3>
-        <p className="color-text">subtitle</p>
+        <h3 className="h-color-light">title</h3>
+        <p className="h-color-gray">subtitle</p>
       </div>
     </article>
   )

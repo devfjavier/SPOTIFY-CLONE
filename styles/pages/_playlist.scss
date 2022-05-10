@@ -60,7 +60,7 @@ main .tracks .columns-info .song-duration:hover,
 main .tracks .columns-info .song-info:hover,
 main .tracks .columns-info .song-album:hover,
 main .tracks .columns-info .song-title:hover {
-    color: var(--color-title);
+    color: var(--color-text-light);
 }
 
 /* solo para las canciones */
@@ -99,7 +99,7 @@ main .tracks .song .song-album:hover {
 }
 main .tracks .song:hover .song-title .artist,
 main .tracks .song:hover .song-album {
-    color: var(--color-title);
+    color: var(--color-text-light);
 }
 
 main .tracks .song .song-like-btn,

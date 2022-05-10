@@ -9,7 +9,7 @@ const Playlists = () => {
     <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PLAYLISTS_COLLECTION}>
       <main>
         <section className="section playlists">
-          <h1 className="color-title">PLAYLIST</h1>
+          <h1 className="h-color-light">PLAYLIST</h1>
           <div className="container">
             <ItemArtistSong/>
             <ItemArtistSong/>

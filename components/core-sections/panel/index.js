@@ -32,7 +32,7 @@ const Panel = ({ name }) => {
 
       <ul className="hidden-on-small-screen">
         <li>
-          <button className="link create-playlist fs-p4">
+          <button className="link h-color-light create-playlist h-fs-st4">
             <Icon name="createPlaylist" size="1.4rem" />
             <span>Crear playlist</span>
           </button>

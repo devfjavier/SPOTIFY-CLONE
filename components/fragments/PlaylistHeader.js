@@ -3,12 +3,12 @@ import styles from "../../styles/fragments/playlist-header.module.scss"
 const PlaylistHeading = () => {
   return (
     <div className={styles.header}>
-      <span className={`${styles.number} color-text`}>#</span>
-      <span className={`${styles.title} color-title`}>TITULO</span>
-      <span className={`${styles["album-link"]} color-title`}>ALBUM</span>
-      <span className={`${styles.date} color-title`}>AGREGADO EL</span>
+      <span className={`${styles.number} h-color-gray`}>#</span>
+      <span className={`${styles.title} h-color-light`}>TITULO</span>
+      <span className={`${styles["album-link"]} h-color-light`}>ALBUM</span>
+      <span className={`${styles.date} h-color-light`}>AGREGADO EL</span>
       <span className={`void`}>like</span>
-      <span className={`${styles.length} color-title`}>reloj</span>
+      <span className={`${styles.length} h-color-light`}>reloj</span>
       <span className={`void`}>...op</span>
     </div>
   )

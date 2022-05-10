@@ -1,25 +1,25 @@
-/* fs es font-size */
-.fs-h1 {
+/* fs es font-size, t es title y st es subtitle */
+.h-fs-t1 {
   font-size: var(--h1-font-size);
 }
-.fs-h2 {
+.h-fs-t2 {
   font-size: var(--h2-font-size);
 }
-.fs-h3 {
+.h-fs-t3 {
   font-size: var(--h3-font-size);
 }
-.fs-h4 {
+.h-fs-t4 {
   font-size: var(--h4-font-size);
 }
-.fs-p1 {
+.h-fs-st1 {
   font-size: var(--big-font-size);
 }
-.fs-p2 {
+.h-fs-st2 {
   font-size: var(--medium-font-size);
 }
-.fs-p3 {
+.h-fs-st3 {
   font-size: var(--small-font-size);
 }
-.fs-p4 {
+.h-fs-st4 {
   font-size: var(--smaller-font-size);
 }

@@ -9,8 +9,8 @@ const Posdcasts = () => {
 
       <main>
           <section className="section podcasts">
-              <h1 className="color-title fs-h2">Sigue tu primer podcasts</h1>
-              <p className="color-title">sigue podcasts que te gusten pulsando el boton Seguir</p>
+              <h1 className="h-color-light h-fs-t2">Sigue tu primer podcasts</h1>
+              <p className="h-color-light">sigue podcasts que te gusten pulsando el boton Seguir</p>
               <button>Buscar Podcasts</button>
           </section>
       </main>

@@ -27,6 +27,7 @@
   padding: .2rem;
   border: none;
   border-radius: 2rem;
+  font-size: .9rem;
   background-color: var(--user-bg-color);
 
   &:hover {
@@ -41,10 +42,6 @@
   overflow: hidden;
 }
 
-.name {
-  color: var(--color-title);
-}
-
 .icon {
   transform: rotate(90deg);
   margin-right: .6rem;
@@ -53,6 +50,7 @@
 .menu {
   display: none;
   position: absolute;
+  z-index: var(--index-overlay);
   top: 119%;
   right: 0;
   background-color: var(--menu-hover-bg-color);
@@ -60,11 +58,10 @@
   border-radius: .27rem;
 }
 
-.link{
+.link {
   padding: .6rem .4rem;
   display: block;
   text-align: left;
-  color: var(--link-color);
   border-radius: .12rem;
 
   &:hover {

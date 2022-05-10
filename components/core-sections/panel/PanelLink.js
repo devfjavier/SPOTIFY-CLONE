@@ -5,7 +5,7 @@ const PanelLink = ({ children, href, iconName, linkClassName, itemClassName }) =
   return (
     <li className={itemClassName ?? ""}>
       <Link href={href}>
-        <a className={`link color-text fs-p4${linkClassName}`}>
+        <a className={`link h-color-light h-fs-st4${linkClassName}`}>
           {iconName && <Icon name={iconName} fill="currentColor" size="1.4rem" />}
           {children}
         </a>
