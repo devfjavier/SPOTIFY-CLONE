@@ -8,10 +8,10 @@ const RootContainer = ({ panelName, headerName, collectionPageName, children }) 
     <NextHead>
       <title>SPOTIFY CLONE</title>
       <meta name="description" content="Spotify clone" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href={process.env.projectPath + "/svgs/spotify.svg"} />
     </NextHead>
-    <Panel name={panelName}/>
-    <Header name={headerName} collectionPageName={collectionPageName}/>
+    <Panel name={panelName} />
+    <Header name={headerName} collectionPageName={collectionPageName} />
     {children}
     <Footer />
   </>
