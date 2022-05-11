@@ -11,7 +11,7 @@ const Playlist = () => {
         <Banner/>
 
         <section className="section tracks">
-          <div className="menu">
+          {/* <div className="menu">
             <button className="play-pause"></button>
             <button className="download">#</button>
             <div className="more-options">
@@ -27,16 +27,16 @@ const Playlist = () => {
             </div>
             <div className="filters">
               <button>Orden personalizado</button>
-              {/* <ul>
+              <ul>
                 <li><button>Orden personalizado</button></li>
                 <li><button>Titulo</button></li>
                 <li><button>Artista</button></li>
                 <li><button>Album</button></li>
                 <li><button>Fecha en que se agrego</button></li>
                 <li><button>Duracion</button></li>
-              </ul> */}
+              </ul>
             </div>
-          </div>
+          </div> */}
 
           <div>
             <PlaylistHeader/>

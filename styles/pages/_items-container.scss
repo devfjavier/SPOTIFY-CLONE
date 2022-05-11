@@ -1,0 +1,17 @@
+@use "../mixins/breakpoint.scss" as *;
+
+.items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.27rem;
+  
+  @include breakpoint(b2) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.sub-header {
+  @include breakpoint(b2) {
+    display: none;
+  }
+}

@@ -16,7 +16,7 @@ const MobilePanel = ({ setPanelClass }) => (
         <span>Tu Biblioteca</span>
       </PanelLink>
 
-      <PanelLink href="#" iconName="spotify" className="h-unset">
+      <PanelLink href="/premium" iconName="spotify" className="h-unset">
         <span>Premium</span>
       </PanelLink>
     </ul>

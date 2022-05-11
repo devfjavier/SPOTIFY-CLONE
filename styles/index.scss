@@ -12,7 +12,5 @@
 @use "core-sections/header";
 @use "core-sections/footer";
 
-// paginas individuales
-@use "pages/playlist";
-@use "pages/playlists";
-@use "pages/recently-heard";
+// paginas de items
+@use "pages/items-container";
