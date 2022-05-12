@@ -2,7 +2,7 @@ import classes from "../../styles/fragments/item-artist-song.module.scss"
 import { useRef } from "react"
 import Icon from "../icon-svg"
 
-const ItemArtistSong = () => {
+const ItemArtistSong = ({ compact = false }) => {
   const buttonRef = useRef()
 
   const toggleButton = () => {
@@ -19,10 +19,13 @@ const ItemArtistSong = () => {
           <Icon className={classes.pauseIcon} name="pause" fill="#000" size="1.5rem" />
         </button>
       </div>
-      <div className={classes.infoContainer}>
-        <h3 className="h-color-light">title</h3>
-        <p className="h-color-gray">subtitle</p>
-      </div>
+
+      {compact ? null :
+        <div className={classes.infoContainer}>
+          <h3 className="h-color-light">title</h3>
+          <p className="h-color-gray">subtitle</p>
+        </div>
+      }
     </article>
   )
 }
