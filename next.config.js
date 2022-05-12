@@ -16,7 +16,8 @@ module.exports = phase => {
   return {
     reactStrictMode: true,
     env: {
-      projectPath: PROJECT_PATH
+      projectPath: PROJECT_PATH,
+      uiM: true //change to false for building the desk ui
     },
     ...config
   }
