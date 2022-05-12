@@ -1,17 +1,20 @@
 import RootContainer from "../components/fragments/RootContainer"
 import { SEARCH_PANEL } from "../consts/panel_page_names"
 import { SEARCH_HEADER } from "../consts/header_names"
-import SearchSongs from "../components/page-sections/search/Search"
+import PageSearch_uiM from "../components/page-content/page-search/ui-m"
+import PageSearch_uiDesk from "../components/page-content/page-search/ui-desk"
 
-const contaierSearch = () => {
+//page for mobile and desktop
+
+const Search = () => {
   return (
     <RootContainer panelName={SEARCH_PANEL} headerName={SEARCH_HEADER}>
 
       <main>
-        <SearchSongs/>
+        {process.env.uiM ? <PageSearch_uiM/> : <PageSearch_uiDesk/>}
       </main>
     </RootContainer>
   )
 }
 
-export default contaierSearch
+export default Search

@@ -1,8 +1,12 @@
 import CollectionLinks from "../../components/core-sections/header/CollectionLinks"
 import RootContainer from "../../components/fragments/RootContainer"
+import PagePodcasts_uiM from "../../components/page-content/page-library/subpages/page-podcasts/ui-m"
+import PagePodcasts_uiDesk from "../../components/page-content/page-library/subpages/page-podcasts/ui-desk"
 import { PODCASTS_COLLECTION } from "../../consts/collection_page_names"
 import { COLLECTION_HEADER } from "../../consts/header_names"
 import { LIBRARY_PANEL } from "../../consts/panel_page_names"
+
+//page for mobile and desktop
 
 const Posdcasts = () => {
   return (
@@ -11,11 +15,7 @@ const Posdcasts = () => {
         <header className="sub-header">
           <CollectionLinks pageName={PODCASTS_COLLECTION} />
         </header>
-        <section className="section podcasts">
-          <h1 className="h-color-light h-fs-t2">Sigue tu primer podcasts</h1>
-          <p className="h-color-light">sigue podcasts que te gusten pulsando el boton Seguir</p>
-          <button>Buscar Podcasts</button>
-        </section>
+        {process.env.iuM ? <PagePodcasts_uiM /> : <PagePodcasts_uiDesk />}
       </main>
     </RootContainer>
   )
