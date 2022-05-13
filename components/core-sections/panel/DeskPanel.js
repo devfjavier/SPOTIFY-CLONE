@@ -14,7 +14,7 @@ const DeskPanel = ({ setPanelClass }) => (
         <span>Buscar</span>
       </PanelLink>
 
-      <PanelLink href="/collection/playlists" iconName="library" className={setPanelClass(LIBRARY_PANEL)}>
+      <PanelLink href="/library/playlists" iconName="library" className={setPanelClass(LIBRARY_PANEL)}>
         <span>Tu Biblioteca</span>
       </PanelLink>
     </ul>
@@ -26,7 +26,7 @@ const DeskPanel = ({ setPanelClass }) => (
           <span>Crear playlist</span>
         </button>
       </li>
-      <PanelLink href="/collection/tracks" iconName="tracks" className={setPanelClass(TRACKS_PANEL)}>
+      <PanelLink href="/library/tracks" iconName="tracks" className={setPanelClass(TRACKS_PANEL)}>
         <span>Tus me gusta</span>
       </PanelLink>
     </ul>

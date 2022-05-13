@@ -2,7 +2,7 @@ import RootContainer from "../../components/fragments/RootContainer"
 import { COLLECTION_HEADER } from "../../consts/header_names"
 import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 import { ARTISTS_COLLECTION } from "../../consts/collection_page_names"
-import CollectionLinks from "../../components/core-sections/header/CollectionLinks"
+import LibraryLinks from "../../components/core-sections/header/LibraryLinks"
 import PageArtists_uiDesk from "../../components/page-ui-desk/library/subpages/artists"
 import PageArtists_uiM from "../../components/page-ui-m/library/subpages/artists"
 
@@ -13,7 +13,7 @@ const Artists = () => {
     <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ARTISTS_COLLECTION}>
       <main>
         <header className="sub-header">
-          <CollectionLinks pageName={ARTISTS_COLLECTION} />
+          <LibraryLinks pageName={ARTISTS_COLLECTION} />
         </header>
         {process.env.uiM ? <PageArtists_uiM/> : <PageArtists_uiDesk/>}
       </main>

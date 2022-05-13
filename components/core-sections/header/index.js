@@ -1,5 +1,5 @@
 import { COLLECTION_HEADER, NORMAL_HEADER, SEARCH_HEADER } from "../../../consts/header_names"
-import CollectionLinks from "./CollectionLinks"
+import LibraryLinks from "./LibraryLinks"
 import FieldSearch from "./FieldSearch"
 import NavigationButtons from "./NavigationButtons"
 import PremiumButton from "./PremiumButton"
@@ -15,7 +15,7 @@ const Header = ({ name, collectionPageName }) => {
 
       {
         name === COLLECTION_HEADER && (
-          <CollectionLinks pageName={collectionPageName} />
+          <LibraryLinks pageName={collectionPageName} />
         )
       }
 

@@ -12,7 +12,7 @@ const MobilePanel = ({ setPanelClass }) => (
         <span>Buscar</span>
       </PanelLink>
 
-      <PanelLink href="/collection/playlists" iconName="library" className={setPanelClass(LIBRARY_PANEL)}>
+      <PanelLink href="/library/playlists" iconName="library" className={setPanelClass(LIBRARY_PANEL)}>
         <span>Tu Biblioteca</span>
       </PanelLink>
 

@@ -1,4 +1,4 @@
-import CollectionLinks from "../../components/core-sections/header/CollectionLinks"
+import LibraryLinks from "../../components/core-sections/header/LibraryLinks"
 import RootContainer from "../../components/fragments/RootContainer"
 import PagePodcasts_uiDesk from "../../components/page-ui-desk/library/subpages/podcasts"
 import PagePodcasts_uiM from "../../components/page-ui-m/library/subpages/podcasts"
@@ -13,7 +13,7 @@ const Posdcasts = () => {
     <RootContainer className="user-podcasts content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PODCASTS_COLLECTION}>
       <main>
         <header className="sub-header">
-          <CollectionLinks pageName={PODCASTS_COLLECTION} />
+          <LibraryLinks pageName={PODCASTS_COLLECTION} />
         </header>
         {process.env.iuM ? <PagePodcasts_uiM /> : <PagePodcasts_uiDesk />}
       </main>
