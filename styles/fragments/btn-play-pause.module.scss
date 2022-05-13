@@ -1,0 +1,31 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  right: .29rem;
+  z-index: var(--index-overlay);
+  opacity: 0;
+  transition: .126s linear;
+  
+  .item:hover &, &.active {
+    opacity: 1;
+    transform: translateY(-12.6%);
+  }
+}
+
+.btn {
+  padding: .5rem;
+  border-radius: 50%;
+  background-color: rgb(0, 200, 0);
+  transition: .027s linear;
+  &:hover {
+    transform: scale(109%);
+  }
+}
+
+.playIcon, .active .pauseIcon {
+  display: block;
+}
+
+.pauseIcon, .active .playIcon {
+  display: none;
+}
