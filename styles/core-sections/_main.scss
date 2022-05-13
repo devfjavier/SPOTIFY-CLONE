@@ -8,5 +8,6 @@ main {
   background-color: var(--section-bg-color);
   grid-area: HEADER-MAIN;
   padding: 4rem 2rem;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
