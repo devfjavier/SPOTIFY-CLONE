@@ -3,8 +3,8 @@ import { COLLECTION_HEADER } from "../../consts/header_names"
 import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 import { ALBUMS_COLLECTION } from "../../consts/collection_page_names"
 import CollectionLinks from "../../components/core-sections/header/CollectionLinks"
-import PageAlbums_uiM from "../../components/page-content/page-library/subpages/page-albums/ui-m"
-import PageAlbums_uiDesk from "../../components/page-content/page-library/subpages/page-albums/ui-desk"
+import PageAlbums_uiDesk from "../../components/page-ui-desk/library/subpages/albums"
+import PageAlbums_uiM from "../../components/page-ui-m/library/subpages/albums"
 
 //page for mobile and desktop
 
