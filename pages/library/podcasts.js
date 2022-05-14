@@ -10,7 +10,7 @@ import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 
 const Posdcasts = () => {
   return (
-    <RootContainer className="user-podcasts content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PODCASTS_COLLECTION}>
+    <RootContainer panelLink={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PODCASTS_COLLECTION}>
       <header className="sub-header">
         <LibraryLinks pageName={PODCASTS_COLLECTION} />
       </header>

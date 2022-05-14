@@ -11,7 +11,7 @@
   transition: filter .12s linear;
   filter: brightness(.6);
 
-  &.actual {
+  &.activeLink {
     filter: brightness(1);
     background-color: var(--item-hover-bg-color);
     border-radius: .29em;

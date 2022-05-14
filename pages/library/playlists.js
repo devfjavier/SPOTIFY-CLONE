@@ -10,7 +10,7 @@ import LibraryLinks from "../../components/core-sections/header/LibraryLinks"
 
 const Playlists = () => {
   return (
-    <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PLAYLISTS_COLLECTION}>
+    <RootContainer panelLink={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PLAYLISTS_COLLECTION}>
       <header className="sub-header">
         <LibraryLinks pageName={PLAYLISTS_COLLECTION} />
       </header>

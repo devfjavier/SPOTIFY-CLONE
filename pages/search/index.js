@@ -8,7 +8,7 @@ import PageSearch_uiDesk from "../../components/page-ui-desk/search"
 
 const Search = () => {
   return (
-    <RootContainer panelName={SEARCH_PANEL} headerName={SEARCH_HEADER}>
+    <RootContainer panelLink={SEARCH_PANEL} headerName={SEARCH_HEADER}>
       {process.env.uiM ? <PageSearch_uiM /> : <PageSearch_uiDesk />}
     </RootContainer>
   )

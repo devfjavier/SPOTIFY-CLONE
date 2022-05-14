@@ -10,7 +10,7 @@ import PageAlbums_uiM from "../../components/page-ui-m/library/subpages/albums"
 
 const Albums = () => {
   return (
-    <RootContainer className="user-albums content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ALBUMS_COLLECTION}>
+    <RootContainer className="user-albums content" panelLink={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ALBUMS_COLLECTION}>
       <header className="sub-header">
         <LibraryLinks pageName={ALBUMS_COLLECTION} />
       </header>

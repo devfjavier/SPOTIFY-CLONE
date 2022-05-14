@@ -10,7 +10,7 @@ import PageArtists_uiM from "../../components/page-ui-m/library/subpages/artists
 
 const Artists = () => {
   return (
-    <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ARTISTS_COLLECTION}>
+    <RootContainer panelLink={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ARTISTS_COLLECTION}>
       <header className="sub-header">
         <LibraryLinks pageName={ARTISTS_COLLECTION} />
       </header>
