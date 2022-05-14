@@ -29,23 +29,3 @@ img {
 svg {
   display: block;
 }
-
-/* CONTENDOR RAIZ DE TODO EL CONTENIDO DE LA PAGINA */
-#__next {
-  display: grid;
-  position: relative;
-  grid-template-rows: 1fr 1fr auto auto;
-  grid-template-areas: 
-  "HEADER-MAIN"
-  "HEADER-MAIN"
-  "FOOTER"
-  "PANEL";
-  
-  @include breakpoint(b2) {
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: 
-    "PANEL HEADER-MAIN"
-    "FOOTER FOOTER";
-  }
-}
