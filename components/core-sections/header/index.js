@@ -1,11 +1,11 @@
-import { COLLECTION_HEADER, NORMAL_HEADER, SEARCH_HEADER } from "../../../consts/header_names"
+import { LIBRARY_HEADER, NORMAL_HEADER, SEARCH_HEADER } from "../../../consts/header_names"
 import LibraryLinks from "./LibraryLinks"
 import FieldSearch from "./FieldSearch"
 import NavigationButtons from "./NavigationButtons"
 import PremiumButton from "./PremiumButton"
 import UserMenu from "./UserMenu"
 
-const Header = ({ name, collectionPageName }) => {
+const Header = ({ name, libraryPageName }) => {
 
   return (
     <header className="HEADER">
@@ -14,8 +14,8 @@ const Header = ({ name, collectionPageName }) => {
       {name === NORMAL_HEADER && <PremiumButton />}
 
       {
-        name === COLLECTION_HEADER && (
-          <LibraryLinks pageName={collectionPageName} />
+        name === LIBRARY_HEADER && (
+          <LibraryLinks pageName={libraryPageName} />
         )
       }
 

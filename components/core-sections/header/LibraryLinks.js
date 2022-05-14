@@ -1,6 +1,6 @@
 import NextLink from "next/link"
 import classes from "../../../styles/core-sections/header/collection-links.module.scss"
-import { ALBUMS_COLLECTION, ARTISTS_COLLECTION, PLAYLISTS_COLLECTION, PODCASTS_COLLECTION } from "../../../consts/collection_page_names"
+import { ALBUMS_LIBRARY, ARTISTS_LIBRARY, PLAYLISTS_LIBRARY, PODCASTS_LIBRARY } from "../../../consts/library_page_names"
 
 const LibraryLinks = ({ pageName }) => {
   const setLinkClass = (page) => pageName === page ? ` ${classes.actual}` : ""
@@ -17,10 +17,10 @@ const LibraryLinks = ({ pageName }) => {
 
   return (
     <ul className={classes.collection}>
-      <Link href="/library/playlists" className={setLinkClass(PLAYLISTS_COLLECTION)}>Listas</Link>
-      <Link href="/library/podcasts" className={setLinkClass(PODCASTS_COLLECTION)}>Podcasts</Link>
-      <Link href="/library/artists" className={setLinkClass(ARTISTS_COLLECTION)}>Artistas</Link>
-      <Link href="/library/albums" className={setLinkClass(ALBUMS_COLLECTION)}>Albumes</Link>
+      <Link href="/library/playlists" className={setLinkClass(PLAYLISTS_LIBRARY)}>Listas</Link>
+      <Link href="/library/podcasts" className={setLinkClass(PODCASTS_LIBRARY)}>Podcasts</Link>
+      <Link href="/library/artists" className={setLinkClass(ARTISTS_LIBRARY)}>Artistas</Link>
+      <Link href="/library/albums" className={setLinkClass(ALBUMS_LIBRARY)}>Albumes</Link>
     </ul>
   )
 }

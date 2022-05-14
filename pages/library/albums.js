@@ -1,7 +1,7 @@
 import RootContainer from "../../components/fragments/RootContainer"
-import { COLLECTION_HEADER } from "../../consts/header_names"
+import { LIBRARY_HEADER } from "../../consts/header_names"
 import { LIBRARY_PANEL } from "../../consts/panel_page_names"
-import { ALBUMS_COLLECTION } from "../../consts/collection_page_names"
+import { ALBUMS_LIBRARY } from "../../consts/library_page_names"
 import LibraryLinks from "../../components/core-sections/header/LibraryLinks"
 import PageAlbums_uiDesk from "../../components/page-ui-desk/library/subpages/albums"
 import PageAlbums_uiM from "../../components/page-ui-m/library/subpages/albums"
@@ -10,9 +10,9 @@ import PageAlbums_uiM from "../../components/page-ui-m/library/subpages/albums"
 
 const Albums = () => {
   return (
-    <RootContainer className="user-albums content" panelLink={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ALBUMS_COLLECTION}>
+    <RootContainer panelLink={LIBRARY_PANEL} headerName={LIBRARY_HEADER} libraryPageName={ALBUMS_LIBRARY}>
       <header className="sub-header">
-        <LibraryLinks pageName={ALBUMS_COLLECTION} />
+        <LibraryLinks pageName={ALBUMS_LIBRARY} />
       </header>
       {process.env.uiM ? <PageAlbums_uiM /> : <PageAlbums_uiDesk />}
     </RootContainer>
