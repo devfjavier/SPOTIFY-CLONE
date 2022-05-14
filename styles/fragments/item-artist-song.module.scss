@@ -19,12 +19,17 @@
     min-width: 9rem;
     min-height: 9rem;
   }
-  
-  &.s_uiDesk:hover {
-    padding: 1rem;
-    background-color: var(--item-hover-bg-color);
+
+  &.s_uiDesk {
+    &:not(.itemCompact) {
+      padding: 1rem;
+    }
+
+    &:hover {
+      background-color: var(--item-hover-bg-color);
+    }
   }
-  
+
   &.s_uiM {
     padding: 0;
   }
@@ -44,6 +49,7 @@
 
 .container {
   position: relative;
+
   .itemCompact & {
     img {
       width: 4rem;
