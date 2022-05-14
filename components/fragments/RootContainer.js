@@ -14,7 +14,9 @@ const RootContainer = ({ panelName, headerName, collectionPageName, children }) 
       </NextHead>
       <Panel name={panelName} />
       <Header name={headerName} collectionPageName={collectionPageName} />
-      {children}
+      <main>
+        {children}
+      </main>
       <Footer />
     </div>
   )

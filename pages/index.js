@@ -9,10 +9,7 @@ import PageHome_uiDesk from '../components/page-ui-desk/home'
 const Home = () => {
   return (
     <RootContainer headerName={NORMAL_HEADER} panelName={INDEX_PANEL}>
-
-      <main>
-        {process.env.uiM ? <PageHome_uiM /> : <PageHome_uiDesk />}
-      </main>
+      {process.env.uiM ? <PageHome_uiM /> : <PageHome_uiDesk />}
     </RootContainer>
   )
 }

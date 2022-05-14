@@ -11,12 +11,10 @@ import PageAlbums_uiM from "../../components/page-ui-m/library/subpages/albums"
 const Albums = () => {
   return (
     <RootContainer className="user-albums content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ALBUMS_COLLECTION}>
-      <main>
-        <header className="sub-header">
-          <LibraryLinks pageName={ALBUMS_COLLECTION} />
-        </header>
-        {process.env.uiM ? <PageAlbums_uiM /> : <PageAlbums_uiDesk />}
-      </main>
+      <header className="sub-header">
+        <LibraryLinks pageName={ALBUMS_COLLECTION} />
+      </header>
+      {process.env.uiM ? <PageAlbums_uiM /> : <PageAlbums_uiDesk />}
     </RootContainer>
   )
 }

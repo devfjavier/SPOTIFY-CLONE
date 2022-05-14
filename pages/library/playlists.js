@@ -11,12 +11,10 @@ import LibraryLinks from "../../components/core-sections/header/LibraryLinks"
 const Playlists = () => {
   return (
     <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PLAYLISTS_COLLECTION}>
-      <main>
-        <header className="sub-header">
-          <LibraryLinks pageName={PLAYLISTS_COLLECTION} />
-        </header>
-        {process.env.uiM ? <PagePlaylists_uiM /> : <PagePlaylists_uiDesk />}
-      </main>
+      <header className="sub-header">
+        <LibraryLinks pageName={PLAYLISTS_COLLECTION} />
+      </header>
+      {process.env.uiM ? <PagePlaylists_uiM /> : <PagePlaylists_uiDesk />}
     </RootContainer>
   )
 }

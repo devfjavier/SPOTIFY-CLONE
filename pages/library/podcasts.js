@@ -11,12 +11,10 @@ import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 const Posdcasts = () => {
   return (
     <RootContainer className="user-podcasts content" panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={PODCASTS_COLLECTION}>
-      <main>
-        <header className="sub-header">
-          <LibraryLinks pageName={PODCASTS_COLLECTION} />
-        </header>
-        {process.env.iuM ? <PagePodcasts_uiM /> : <PagePodcasts_uiDesk />}
-      </main>
+      <header className="sub-header">
+        <LibraryLinks pageName={PODCASTS_COLLECTION} />
+      </header>
+      {process.env.iuM ? <PagePodcasts_uiM /> : <PagePodcasts_uiDesk />}
     </RootContainer>
   )
 }

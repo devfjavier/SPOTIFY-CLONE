@@ -5,9 +5,7 @@ import PageLibrary_uiM from "../../components/page-ui-m/library"
 
 const Library = () => {
   return <RootContainer>
-    <main>
-      {process.env.uiM && <PageLibrary_uiM />}
-    </main>
+    {process.env.uiM && <PageLibrary_uiM />}
   </RootContainer>
 }
 

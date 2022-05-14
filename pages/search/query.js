@@ -7,9 +7,7 @@ import { SEARCH_PANEL } from "../../consts/panel_page_names"
 const Query = () => {
   return (
     <RootContainer panelName={SEARCH_PANEL}>
-      <main>
-        {process.env.uiM && <PageQuery_uiM />}
-      </main>
+      {process.env.uiM && <PageQuery_uiM />}
     </RootContainer>
   )
 }

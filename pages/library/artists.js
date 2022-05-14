@@ -11,12 +11,10 @@ import PageArtists_uiM from "../../components/page-ui-m/library/subpages/artists
 const Artists = () => {
   return (
     <RootContainer panelName={LIBRARY_PANEL} headerName={COLLECTION_HEADER} collectionPageName={ARTISTS_COLLECTION}>
-      <main>
-        <header className="sub-header">
-          <LibraryLinks pageName={ARTISTS_COLLECTION} />
-        </header>
-        {process.env.uiM ? <PageArtists_uiM/> : <PageArtists_uiDesk/>}
-      </main>
+      <header className="sub-header">
+        <LibraryLinks pageName={ARTISTS_COLLECTION} />
+      </header>
+      {process.env.uiM ? <PageArtists_uiM /> : <PageArtists_uiDesk />}
     </RootContainer>
   )
 }

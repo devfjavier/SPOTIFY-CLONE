@@ -7,11 +7,10 @@ import Banner from "../../components/fragments/Banner"
 const Playlist = () => {
   return (
     <RootContainer headerName={NORMAL_HEADER}>
-      <main>
-        <Banner/>
+      <Banner />
 
-        <section className="section tracks">
-          {/* <div className="menu">
+      <section className="section tracks">
+        {/* <div className="menu">
             <button className="play-pause"></button>
             <button className="download">#</button>
             <div className="more-options">
@@ -38,17 +37,16 @@ const Playlist = () => {
             </div>
           </div> */}
 
-          <div>
-            <PlaylistHeader/>
-            <hr/>
-            <div className="song-container">
-              <PlaylistSong/>
-              <PlaylistSong/>
-              <PlaylistSong/>
-            </div>
+        <div>
+          <PlaylistHeader />
+          <hr />
+          <div className="song-container">
+            <PlaylistSong />
+            <PlaylistSong />
+            <PlaylistSong />
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </RootContainer>
   )
 }
