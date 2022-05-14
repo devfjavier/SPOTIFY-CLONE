@@ -7,12 +7,15 @@ const Search = () => {
 
       {process.env.uiM ? <>
         <h2 className="h-color-light">Buscar</h2>
-        <FieldSearch />
+        <FieldSearch skeletonLink />
         <h3 className="h-color-light">Buscar todo</h3>
       </> : <h2 className="h-color-light">Buscar todo</h2>
       }
 
       <div className="items-container">
+        <ItemArtistSong />
+        <ItemArtistSong />
+        <ItemArtistSong />
         <ItemArtistSong />
         <ItemArtistSong />
         <ItemArtistSong />

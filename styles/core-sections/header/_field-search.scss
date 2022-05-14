@@ -15,3 +15,22 @@
     margin: auto .6rem;
   }
 }
+
+.skeleton-link {
+  position: sticky;
+  top: 0;
+  z-index: var(--index-overlay);
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .9rem;
+  background-color: var(--item-bg-color);
+  border-radius: .26rem;
+  transition: .026s;
+  font-weight: bold;
+
+  &:active {
+    transform: scale(.99);
+    filter: brightness(.72);
+  }
+}
