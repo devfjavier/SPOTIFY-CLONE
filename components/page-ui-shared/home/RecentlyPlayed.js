@@ -4,13 +4,13 @@ const RecentlyPlayed = () => {
   return (
     <section>
       <h2 className="h-color-light">Escuchado recientemente</h2>
-      <div className="items-container">
+      <div className={process.env.uiM ? "items-row" : "items-container"}>
         <ItemArtistSong />
         <ItemArtistSong />
         <ItemArtistSong />
+        <ItemArtistSong artist />
         <ItemArtistSong />
-        <ItemArtistSong />
-        <ItemArtistSong />
+        <ItemArtistSong artist />
       </div>
     </section>
   )

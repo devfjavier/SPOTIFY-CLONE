@@ -2,12 +2,20 @@
 
 .items-container {
   display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.27rem;
+}
+
+.items-row {
+  display: flex;
+  gap: 1.27rem;
+  overflow: auto;
+}
+
+.items-compact {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.27rem;
-  
-  @include breakpoint(b2) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 }
 
 .sub-header {

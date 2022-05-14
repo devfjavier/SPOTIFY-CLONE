@@ -1,4 +1,4 @@
-import ItemArtistSong from "../../../fragments/ItemArtistSong"
+import ItemArtistSong from "../../fragments/ItemArtistSong"
 
 const SongsAndArtists = () =>  {
   return (

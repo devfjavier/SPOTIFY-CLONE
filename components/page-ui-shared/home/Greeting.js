@@ -7,7 +7,7 @@ const Greeting = () => {
         <h2 className="h-color-light">Greeting</h2>
         {process.env.uiM && <SideButtons />}
       </div>
-      <div className="items-container">
+      <div className="items-compact">
         <ItemArtistSong compact />
         <ItemArtistSong compact />
         <ItemArtistSong compact />
