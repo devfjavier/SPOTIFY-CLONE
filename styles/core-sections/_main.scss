@@ -4,10 +4,16 @@ MAIN, CONTENIDO PRINCIPAL
 
 */
 
+@use "../mixins/breakpoint.scss" as *;
+
 main {
   background-color: var(--section-bg-color);
   grid-area: HEADER-MAIN;
-  padding: 4rem 2rem;
+  padding: 1.27rem .9rem;
   overflow-x: hidden;
   overflow-y: auto;
+
+  @include breakpoint(b2) {
+    padding: 4rem 2rem;
+  }
 }
