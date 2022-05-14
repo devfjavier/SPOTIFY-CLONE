@@ -3,7 +3,6 @@
 .item {
   padding: .6em;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: .6rem;
   cursor: pointer;
@@ -12,18 +11,26 @@
   transition: filter .12s linear;
   filter: brightness(.6);
 
-  &:hover {
-    filter: brightness(1);
-  }
-
   &.actual {
     filter: brightness(1);
     background-color: var(--item-hover-bg-color);
     border-radius: .29em;
   }
+}
 
-  @include breakpoint(b2) {
-    flex-direction: row;
-    gap: 1.2rem;
+.s_uiM {
+  flex-direction: column;
+
+  &:active {
+    filter: brightness(1);
+  }
+}
+
+.s_uiDesk {
+  flex-direction: row;
+  gap: 1.2rem;
+
+  &:hover {
+    filter: brightness(1);
   }
 }
