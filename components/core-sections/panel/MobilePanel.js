@@ -4,7 +4,7 @@ import PanelLink from "./PanelLink"
 const MobilePanel = ({ activeLink }) => {
   const isActive = (link) => activeLink === link ? true : false
   return (
-    <nav id="mobile-panel">
+    <nav id="mobile-panel" className="h-bg-color-dark-1">
       <ul className="menu">
         <PanelLink href="/" iconName="index" active={isActive(INDEX_PANEL)}>
           <span>Inicio</span>

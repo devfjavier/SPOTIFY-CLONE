@@ -14,7 +14,7 @@ const RootContainer = ({ panelLink, headerName, libraryPageName, children }) => 
       </NextHead>
       <Panel activeLink={panelLink} />
       <Header name={headerName} libraryPageName={libraryPageName} />
-      <main>
+      <main className="h-bg-color-dark-3">
         {children}
       </main>
       <Footer />

@@ -6,7 +6,7 @@ import { item } from "../../../styles/core-sections/panel/panel-item.module.scss
 const DeskPanel = ({ activeLink }) => {
   const isActive = (link) => activeLink === link ? true : false
   return (
-    <nav id="desk-panel">
+    <nav id="desk-panel" className="h-bg-color-dark-1">
       <ul className="menu">
         <PanelLink href="/" iconName="index" active={isActive(INDEX_PANEL)}>
           <span>Inicio</span>

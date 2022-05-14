@@ -18,7 +18,7 @@ const UserMenu = () => {
 
   return (
     <div className={classes.container} ref={containerRef}>
-      <button onClick={toggleMenu} className={classes.btn}>
+      <button onClick={toggleMenu} className={"h-bg-color-dark-1 " + classes.btn}>
         <div className={classes.imgContainer}><Icon name="user" fill="#fff" size="1.9rem"/></div>
         <span className="h-color-light">Usuario</span>
         <Icon className={classes.icon} name="play" fill="#fff" size="0.9rem"/>

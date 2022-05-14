@@ -25,7 +25,7 @@ function Base({ className, children }) {
   const class_uiM = classes[is_uiM ? "s_uiM" : "s_uiDesk"]
 
   return (
-    <article className={`${btnItem} ${classes.item} ${class_uiM}${className}`}>
+    <article className={`h-bg-color-dark-4 ${btnItem} ${classes.item} ${class_uiM}${className}`}>
       <a className={classes.sourceLink} href="#"></a>
       {children}
     </article>

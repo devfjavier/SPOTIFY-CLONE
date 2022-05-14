@@ -12,7 +12,6 @@
   position: relative;
   border-radius: .26rem;
   transition: background-color .2s linear;
-  background-color: var(--item-bg-color);
   overflow: hidden;
 
   &:not(.itemCompact) {
