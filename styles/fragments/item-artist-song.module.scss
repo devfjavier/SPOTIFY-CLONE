@@ -10,7 +10,6 @@
 
 .item {
   position: relative;
-  padding: 1rem;
   border-radius: .26rem;
   transition: background-color .2s linear;
   background-color: var(--item-bg-color);
@@ -21,7 +20,8 @@
     min-height: 9rem;
   }
   
-  &:hover:not(.itemCompact) {
+  &.s_uiDesk:hover {
+    padding: 1rem;
     background-color: var(--item-hover-bg-color);
   }
   
