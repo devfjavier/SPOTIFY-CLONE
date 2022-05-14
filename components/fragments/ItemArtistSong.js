@@ -1,31 +1,29 @@
 import classes from "../../styles/fragments/item-artist-song.module.scss"
-import { useRef } from "react"
-import Icon from "../icon-svg"
+import { item } from "../../styles/fragments/btn-play-pause.module.scss"
+import BtnPlayPause from "./BtnPlayPause"
 
-const ItemArtistSong = ({ compact = false }) => {
-  const buttonRef = useRef()
-
-  const toggleButton = () => {
-    buttonRef.current.classList.toggle(classes.isActive)
-  }
-
+const ItemArtistSong = ({ compact = false, artist = false }) => {
+  const is_uiM = process.env.uiM
   return (
-    <article className={classes.item}>
-      <a className={classes.sourceLink} href="search.html"></a>
-      <div className={classes.imgContainer}>
-        <img className="artist-img" src={process.env.projectPath + "/img/song.webp"} alt="godot engine" />
-        <button className={classes.playPause} ref={buttonRef} onClick={toggleButton}>
-          <Icon className={classes.playIcon} name="play" fill="#000" size="1.5rem" />
-          <Icon className={classes.pauseIcon} name="pause" fill="#000" size="1.5rem" />
-        </button>
+    <ItemBase className={compact ? classes.itemCompact : "" + (is_uiM ? ` ${classes.s_uiM}` : "")}>
+      <div className={classes.container}>
+        <img className={artist && !compact ? "h-b-radius-50" : null} src={process.env.projectPath + "/img/song.webp"} alt="godot engine" />
+        {compact || is_uiM || <BtnPlayPause item />}
       </div>
 
-      {compact ? null :
-        <div className={classes.infoContainer}>
-          <h3 className="h-color-light">title</h3>
-          <p className="h-color-gray">subtitle</p>
-        </div>
-      }
+      <div className={compact ? null : classes.infoContainer}>
+        <h3 className="h-color-light">title</h3>
+        {compact || <p className="h-color-gray">subtitle</p>}
+      </div>
+    </ItemBase>
+  )
+}
+
+function ItemBase({ className, children }) {
+  return (
+    <article className={`${item} ${classes.item}` + (className ? ` ${className}` : "")}>
+      <a className={classes.sourceLink} href="#"></a>
+      {children}
     </article>
   )
 }

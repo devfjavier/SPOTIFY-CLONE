@@ -11,55 +11,48 @@
 .item {
   position: relative;
   padding: 1rem;
-  border-radius: .2rem;
+  border-radius: .26rem;
   transition: background-color .2s linear;
   background-color: var(--item-bg-color);
+  overflow: hidden;
 
-  &:hover {
+  &:not(.itemCompact) {
+    min-width: 9rem;
+    min-height: 9rem;
+  }
+  
+  &:hover:not(.itemCompact) {
     background-color: var(--item-hover-bg-color);
   }
-}
-
-.playPause {
-  position: absolute;
-  bottom: 0;
-  right: .29rem;
-  padding: .5rem;
-  border: none;
-  border-radius: 50%;
-  opacity: 0;
-  z-index: var(--index-overlay);
-  background-color: rgb(0, 200, 0);
-  transition: .12s linear;
-  transform: translateY(0);
-
-  &:hover {
-    transform: scale(112%) translateY(-12%);
-  }
-
-  .item:hover &, &.isActive {
-    opacity: 1;
-    transform: translateY(-12%);
+  
+  &.s_uiM {
+    padding: 0;
   }
 }
 
-.playIcon, .isActive .pauseIcon {
-  display: block;
+.itemCompact {
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+  padding: 0;
+
+  &:active {
+    filter: brightness(.72);
+    transform: scale(.96);
+  }
 }
 
-.pauseIcon, .isActive .playIcon {
-  display: none;
+.container {
+  position: relative;
+  .itemCompact & {
+    img {
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
+    }
+  }
 }
 
 .infoContainer {
-  margin-bottom: 1rem;
-}
-
-.imgContainer {
-  position: relative;
-  margin-bottom: 1rem;
-
-  img {
-    border-radius: 50%;
-  }
+  margin: 1rem 0;
 }
