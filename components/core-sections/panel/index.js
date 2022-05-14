@@ -6,8 +6,11 @@ const Panel = ({ name }) => {
   const setPanelClass = (page) => name === page ? ` ${actual}` : ""
 
   return <>
-    <DeskPanel setPanelClass={setPanelClass} />
-    <MobilePanel setPanelClass={setPanelClass} />
+    {process.env.uiM ?
+      <MobilePanel setPanelClass={setPanelClass} />
+      :
+      <DeskPanel setPanelClass={setPanelClass} />
+    }
   </>
 }
 
