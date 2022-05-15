@@ -1,0 +1,35 @@
+.linkContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: .46rem;
+}
+
+.text {
+  display: inline-block;
+  border: 1px solid var(--color-text-gray);
+  padding: .4rem .6rem;
+  border-radius: 1.27rem;
+  transition: .046s linear;
+  transition: 1.27s linear;
+
+  &.activeLink {
+    border-color: #191919;
+    background-color: rgb(0, 109, 0);
+  }
+
+  &:active {
+    filter: brightness(.72);
+  }
+}
+
+.icon {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: .27rem;
+
+  &:active {
+    transform: scale(.96);
+    filter: brightness(.72);
+  }
+}

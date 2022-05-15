@@ -4,9 +4,9 @@ import Sort from "./Sort"
 
 const PageLibrary_uiM = () => {
   return <>
-    <Header/>
-    <Sort/>
-    <SongsAndArtists/>
+    <Header pageLibrary/>
+    <Sort />
+    <SongsAndArtists />
   </>
 }
 

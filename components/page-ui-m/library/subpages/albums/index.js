@@ -1,5 +1,8 @@
+import Header from "../../Header"
+
 const PageAlbums_uiM = () => {
   return <>
+    <Header activeLink="albums" />
   </>
 }
 

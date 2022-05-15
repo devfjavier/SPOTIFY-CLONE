@@ -1,4 +1,3 @@
-import LibraryLinks from "../../components/core-sections/header/LibraryLinks"
 import RootContainer from "../../components/fragments/RootContainer"
 import PagePodcasts_uiDesk from "../../components/page-ui-desk/library/subpages/podcasts"
 import PagePodcasts_uiM from "../../components/page-ui-m/library/subpages/podcasts"
@@ -11,10 +10,7 @@ import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 const Posdcasts = () => {
   return (
     <RootContainer panelLink={LIBRARY_PANEL} headerName={LIBRARY_HEADER} libraryPageName={PODCASTS_LIBRARY}>
-      <header className="sub-header">
-        <LibraryLinks pageName={PODCASTS_LIBRARY} />
-      </header>
-      {process.env.iuM ? <PagePodcasts_uiM /> : <PagePodcasts_uiDesk />}
+      {process.env.uiM ? <PagePodcasts_uiM /> : <PagePodcasts_uiDesk />}
     </RootContainer>
   )
 }
