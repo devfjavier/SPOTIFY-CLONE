@@ -4,7 +4,9 @@ const Greeting = () => {
   return (
     <section>
       <div>
-        <h2 className="h-color-light">Greeting</h2>
+        <h2 className={"h-color-light h-fs" + (process.env.uiM ? "-t3" : "-t2")}>
+          Greeting
+        </h2>
         {process.env.uiM && <SideButtons />}
       </div>
       <div className="items-compact">
