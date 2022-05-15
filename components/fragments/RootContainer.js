@@ -13,7 +13,7 @@ const RootContainer = ({ panelLink, headerName, libraryPageName, children }) => 
         <link rel="icon" href={process.env.projectPath + "/svgs/spotify.svg"} />
       </NextHead>
       <Panel activeLink={panelLink} />
-      {process.env.uiM && <Header name={headerName} libraryPageName={libraryPageName} />}
+      {process.env.uiM || <Header name={headerName} libraryPageName={libraryPageName} />}
       <main className="h-bg-color-dark-3">
         {children}
       </main>
