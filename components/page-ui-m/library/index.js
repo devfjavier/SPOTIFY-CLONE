@@ -1,12 +1,12 @@
+import Items from "../../fragments/Items"
 import Header from "./Header"
-import SongsAndArtists from "./SongsAndArtists"
 import Sort from "./Sort"
 
 const PageLibrary_uiM = () => {
   return <>
     <Header pageLibrary/>
     <Sort />
-    <SongsAndArtists />
+    <Items grid/>
   </>
 }
 

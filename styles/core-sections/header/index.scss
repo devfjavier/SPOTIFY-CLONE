@@ -3,7 +3,6 @@
 HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 
 */
-@use "../../mixins/breakpoint"as *;
 @use "./page-navigation";
 @use "./field-search.scss";
 @use "./button-premium";
@@ -11,15 +10,11 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 /* para todos los HEADER */
 .HEADER {
   position: absolute;
-  display: none;
+  display: grid;
   grid-template-columns: auto 1fr auto auto;
   grid-area: HEADER-MAIN;
   padding: .46rem;
   height: 3.6rem;
   width: 100%;
   background-color: var(--header-color);
-
-  @include breakpoint(b2) {
-    display: grid;
-  }
 }

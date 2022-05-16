@@ -1,6 +1,8 @@
+@use "../mixins/breakpoint.scss" as *;
+
 .items-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(11.6rem, auto));
   gap: 1.27rem;
 }
 

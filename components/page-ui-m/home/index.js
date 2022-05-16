@@ -1,11 +1,32 @@
-import Greeting from "../../page-ui-shared/home/Greeting"
-import RecentlyPlayed from "../../page-ui-shared/home/RecentlyPlayed"
+import Items from "../../fragments/Items"
 
 const PageHome_uiM = () => {
   return <>
-    <Greeting/>
-    <RecentlyPlayed/>
+    <section>
+      <div>
+        <h2 className={"h-color-light h-fs-t3"}>
+          Greeting
+        </h2>
+        <SideButtons />
+      </div>
+      <Items compact />
+    </section>
+
+    <section>
+      <h2 className="h-color-light h-fs-t3">Escuchado recientemente</h2>
+      <Items row />
+    </section>
   </>
+}
+
+function SideButtons() {
+  return (
+    <div className="h-color-gray">
+      <a>icon</a>
+      <a>icon</a>
+      <a>icon</a>
+    </div>
+  )
 }
 
 export default PageHome_uiM

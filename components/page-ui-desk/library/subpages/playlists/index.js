@@ -1,8 +1,11 @@
-import Playlists from "../../../../page-ui-shared/library/playlists/Playlists"
+import Items from "../../../../fragments/Items"
 
 const PagePlaylists_uiDesk = () => {
   return <>
-    <Playlists />
+    <section className="section playlists">
+      <h1 className="h-color-light h-fs-t2">PLAYLIST</h1>
+      <Items grid />
+    </section>
   </>
 }
 
