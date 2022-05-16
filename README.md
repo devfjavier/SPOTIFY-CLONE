@@ -1,7 +1,9 @@
 # SPOTIFY CLONE
 
 It copies much of the user interface for desktop and mobile, it does not have the functionality to play music.\
-The project has only Function Components.
+The project has only Function Components with hooks.\
+Version mobile: [https://spotify-clone-sigma-ten.vercel.app/](https://spotify-clone-sigma-ten.vercel.app)\
+Version desktop: [https://devfjavier.github.io/SPOTIFY-CLONE/](https://devfjavier.github.io/SPOTIFY-CLONE)
 
 ## Available Scripts
 
