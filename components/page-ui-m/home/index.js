@@ -16,6 +16,11 @@ const PageHome_uiM = () => {
       <h2 className="h-color-light h-fs-t3">Escuchado recientemente</h2>
       <Items row />
     </section>
+
+    <section>
+      <h2 className="h-color-light h-fs-t3">Tus artistas favoritos</h2>
+      <Items row />
+    </section>
   </>
 }
 
