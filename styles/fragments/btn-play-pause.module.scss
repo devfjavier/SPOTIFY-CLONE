@@ -1,15 +1,26 @@
 .container {
-  position: absolute;
-  bottom: 0;
-  right: .29rem;
   z-index: var(--index-overlay);
   opacity: 0;
   transition: .126s linear;
   
   .item:hover &, &.active {
     opacity: 1;
+  }
+}
+
+.card {
+  right: .29rem;
+  position: absolute;
+  bottom: 0;
+
+  .item:hover &, &.active {
     transform: translateY(-12.6%);
   }
+}
+
+.compact {
+  margin-left: auto;
+  margin-right: .9rem;
 }
 
 .btn {
