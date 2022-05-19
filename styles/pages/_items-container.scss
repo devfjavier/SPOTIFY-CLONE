@@ -17,3 +17,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.27rem;
 }
+
+.side-buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-buttons {
+  display: flex;
+  gap: .9rem
+}

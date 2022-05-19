@@ -1,9 +1,10 @@
 import Items from "../../fragments/Items"
+import Icon from "../../icon-svg"
 
 const PageHome_uiM = () => {
   return <>
     <section>
-      <div>
+      <div className="side-buttons-container">
         <h2 className={"h-color-light h-fs-t3"}>
           Greeting
         </h2>
@@ -26,10 +27,10 @@ const PageHome_uiM = () => {
 
 function SideButtons() {
   return (
-    <div className="h-color-gray">
-      <a>icon</a>
-      <a>icon</a>
-      <a>icon</a>
+    <div className="h-color-gray side-buttons">
+      <a href="#"><Icon name="bell" fill="#fff" size="1.27rem" /></a>
+      <a href="#"><Icon name="clock" fill="#fff" size="1.27rem" /></a>
+      <a href="#"><Icon name="gear" fill="#fff" size="1.27rem" /></a>
     </div>
   )
 }
