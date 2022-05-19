@@ -16,9 +16,9 @@ const FieldSearch = ({ skeletonLink = false }) => {
 
   return (
     <form className="field-search">
-      <Icon name="search" fill="currentColor" size="1.27rem" />
+      <Icon name="search" size="1.27rem" />
       <input placeholder="Aristas, canciones o podcasts" />
-      <Icon name="x" fill="currentColor" size="1.27rem" />
+      <Icon name="x" size="1.27rem" />
     </form>
   )
 }

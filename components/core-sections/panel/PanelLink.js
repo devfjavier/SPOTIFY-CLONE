@@ -10,7 +10,7 @@ const PanelLink = ({ children, href, iconName, active = false }) => {
     <li>
       <Link href={href}>
         <a className={`h-color-light h-fs-st4 h-unset ${classes.item}${class_uiM}${classActive}`}>
-          {iconName && <Icon name={iconName} fill="currentColor" size="1.4rem" />}
+          {iconName && <Icon name={iconName} size="1.4rem" />}
           {children}
         </a>
       </Link>
