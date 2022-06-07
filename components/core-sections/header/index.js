@@ -1,25 +1,22 @@
-import { LIBRARY_HEADER, NORMAL_HEADER, SEARCH_HEADER } from "../../../consts/header_names"
+import useMainPaths from "../../hooks/useMainPaths"
 import LibraryLinks from "./LibraryLinks"
 import FieldSearch from "./FieldSearch"
 import NavigationButtons from "./NavigationButtons"
 import PremiumButton from "./PremiumButton"
 import UserMenu from "./UserMenu"
 
-const Header = ({ name, libraryPageName }) => {
+const Header = () => {
+  const paths = useMainPaths()
 
   return (
     <header className="HEADER">
       <NavigationButtons />
 
-      {name === NORMAL_HEADER && <PremiumButton />}
-
       {
-        name === LIBRARY_HEADER && (
-          <LibraryLinks pageName={libraryPageName} />
-        )
+        paths.isPageLibrary ? <LibraryLinks />
+        : paths.isPageSearch ? <FieldSearch />
+        : <PremiumButton />
       }
-
-      {name === SEARCH_HEADER && <FieldSearch />}
 
       <UserMenu />
     </header>

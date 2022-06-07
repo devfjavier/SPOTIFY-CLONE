@@ -1,24 +1,22 @@
-import { INDEX_PANEL, LIBRARY_PANEL, PREMIUM_PANEL, SEARCH_PANEL } from "../../../consts/panel_page_names"
 import PanelLink from "./PanelLink"
 
-const MobilePanel = ({ activeLink }) => {
-  const isActive = (link) => activeLink === link ? true : false
+const MobilePanel = () => {
   return (
     <nav id="mobile-panel" className="h-bg-color-dark-1">
       <ul className="menu">
-        <PanelLink href="/" iconName="index" active={isActive(INDEX_PANEL)}>
+        <PanelLink href="/" iconName="index">
           <span>Inicio</span>
         </PanelLink>
 
-        <PanelLink href="/search" iconName="search" active={isActive(SEARCH_PANEL)}>
+        <PanelLink href="/search" iconName="search">
           <span>Buscar</span>
         </PanelLink>
 
-        <PanelLink href="/library" iconName="library" active={isActive(LIBRARY_PANEL)}>
+        <PanelLink href="/library" libraryPath iconName="library">
           <span>Tu Biblioteca</span>
         </PanelLink>
 
-        <PanelLink href="/premium" iconName="spotify" active={isActive(PREMIUM_PANEL)}>
+        <PanelLink href="/premium" iconName="spotify">
           <span>Premium</span>
         </PanelLink>
       </ul>

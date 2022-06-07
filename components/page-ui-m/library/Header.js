@@ -1,9 +1,9 @@
 import classes from "../../../styles/fragments/library-header-link.module.scss"
 import NextLink from "next/link"
 import Icon from "../../icon-svg"
+import { useRouter } from "next/router"
 
-const Header = ({ activeLink = "", pageLibrary = false }) => {
-  const setLinkClass = (link) => activeLink === link ? true : false
+const Header = ({ pageLibrary = false }) => {
 
   return (
     <header>
@@ -13,16 +13,16 @@ const Header = ({ activeLink = "", pageLibrary = false }) => {
         <button className="h-unset"><Icon name="plus" fill="#fff" size="1.27rem" /></button>
       </div>
       <div className="h-color-light items-row">
-        <Link href="/playlists" show={pageLibrary} active={setLinkClass("playlists")}>
+        <Link href="/library/playlists" show={pageLibrary}>
           Listas
         </Link>
-        <Link href="/podcasts" show={pageLibrary} active={setLinkClass("podcasts")}>
+        <Link href="/library/podcasts" show={pageLibrary}>
           Podcasts
         </Link>
-        <Link href="/artists" show={pageLibrary} active={setLinkClass("artists")}>
+        <Link href="/library/artists" show={pageLibrary}>
           Artistas
         </Link>
-        <Link href="/albums" show={pageLibrary} active={setLinkClass("albums")}>
+        <Link href="/library/albums" show={pageLibrary}>
           Albumes
         </Link>
       </div>
@@ -30,24 +30,25 @@ const Header = ({ activeLink = "", pageLibrary = false }) => {
   )
 }
 
-function Link({ href, show = false, active = false, children }) {
-  const classActive = active ? ` ${classes.activeLink}` : ""
+function Link({ href, show = false, children }) {
+  const isActive = href === useRouter().asPath
 
-  if (!show && !active) {
+  const activeClass = isActive ? ` ${classes.activeLink}` : ""
+
+  if (!show && !isActive) {
     return null
   }
 
   return (
-    <NextLink href={`/library${active ? "" : href}`}>
+    <NextLink href={isActive ? "/library" : href}>
       <a className={"h-unset " + classes.linkContainer}>
-        {active && <Icon className={"h-b-radius-50 " + classes.icon} name="x" fill="#fff" size="1.9rem" />}
-        <span className={`${classes.text} ${classActive}`}>
+        {isActive && <Icon className={"h-b-radius-50 " + classes.icon} name="x" fill="#fff" size="1.9rem" />}
+        <span className={`${classes.text}${activeClass}`}>
           {children}
         </span>
       </a>
     </NextLink>
   )
 }
-
 
 export default Header

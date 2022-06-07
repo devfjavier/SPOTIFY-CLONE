@@ -1,5 +1,4 @@
 const Footer = () => {
-  console.log("foter renderizado")
   return (
     <footer className="FOOTER">
       <div className="container">

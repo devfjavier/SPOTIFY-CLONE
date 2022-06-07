@@ -4,7 +4,7 @@ import Footer from "../core-sections/Footer"
 import Header from "../core-sections/header"
 import Panel from "../core-sections/panel"
 
-const RootContainer = ({ panelLink, headerName, libraryPageName, children }) => {
+const RootContainer = ({ children }) => {
   return (
     <div id={process.env.uiM ? root_uiM : root_uiDesk}>
       <NextHead>
@@ -12,8 +12,8 @@ const RootContainer = ({ panelLink, headerName, libraryPageName, children }) => 
         <meta name="description" content="Spotify clone" />
         <link rel="icon" href={process.env.projectPath + "/svgs/spotify.svg"} />
       </NextHead>
-      <Panel activeLink={panelLink} />
-      {process.env.uiM || <Header name={headerName} libraryPageName={libraryPageName} />}
+      <Panel />
+      {process.env.uiM || <Header />}
       <main className="h-bg-color-dark-3">
         {children}
       </main>

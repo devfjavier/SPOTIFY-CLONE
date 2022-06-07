@@ -1,26 +1,28 @@
 import NextLink from "next/link"
+import { useRouter } from "next/router"
 import classes from "../../../styles/core-sections/header/collection-links.module.scss"
-import { ALBUMS_LIBRARY, ARTISTS_LIBRARY, PLAYLISTS_LIBRARY, PODCASTS_LIBRARY } from "../../../consts/library_page_names"
 
-const LibraryLinks = ({ pageName }) => {
-  const setLinkClass = (page) => pageName === page ? ` ${classes.actual}` : ""
+const LibraryLinks = () => {
+  const path = useRouter().asPath
 
-  const Link = ({ href, className, children }) => (
+  const activeClass = (href) => href === path ? ` ${classes.actual}` : ""
+
+  const Link = ({ href, children }) => (
     <li>
       <NextLink href={href}>
-        <a className={`h-fs-st3 h-color-light ${classes.link + className}`}>
+        <a className={`h-fs-st3 h-color-light ${classes.link}${activeClass(href)}`}>
           {children}
         </a>
       </NextLink>
     </li>
   )
-
+  
   return (
     <ul className={classes.collection}>
-      <Link href="/library/playlists" className={setLinkClass(PLAYLISTS_LIBRARY)}>Listas</Link>
-      <Link href="/library/podcasts" className={setLinkClass(PODCASTS_LIBRARY)}>Podcasts</Link>
-      <Link href="/library/artists" className={setLinkClass(ARTISTS_LIBRARY)}>Artistas</Link>
-      <Link href="/library/albums" className={setLinkClass(ALBUMS_LIBRARY)}>Albumes</Link>
+      <Link href="/library/playlists">Listas</Link>
+      <Link href="/library/podcasts">Podcasts</Link>
+      <Link href="/library/artists">Artistas</Link>
+      <Link href="/library/albums">Albumes</Link>
     </ul>
   )
 }

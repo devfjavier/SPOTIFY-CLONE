@@ -1,12 +1,12 @@
 import DeskPanel from "./DeskPanel"
 import MobilePanel from "./MobilePanel"
 
-const Panel = ({ activeLink }) => {
+const Panel = () => {
   return <>
     {process.env.uiM ?
-      <MobilePanel activeLink={activeLink} />
+      <MobilePanel />
       :
-      <DeskPanel activeLink={activeLink} />
+      <DeskPanel />
     }
   </>
 }

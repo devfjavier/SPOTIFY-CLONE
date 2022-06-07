@@ -1,22 +1,21 @@
-import { INDEX_PANEL, LIBRARY_PANEL, SEARCH_PANEL, TRACKS_PANEL } from "../../../consts/panel_page_names"
 import Icon from "../../icon-svg"
 import PanelLink from "./PanelLink"
 import { item } from "../../../styles/core-sections/panel/panel-item.module.scss"
 
-const DeskPanel = ({ activeLink }) => {
-  const isActive = (link) => activeLink === link ? true : false
+const DeskPanel = () => {
+
   return (
     <nav id="desk-panel" className="h-bg-color-dark-1">
       <ul className="menu">
-        <PanelLink href="/" iconName="index" active={isActive(INDEX_PANEL)}>
+        <PanelLink href="/" iconName="index">
           <span>Inicio</span>
         </PanelLink>
 
-        <PanelLink href="/search" iconName="search" active={isActive(SEARCH_PANEL)}>
+        <PanelLink href="/search" iconName="search">
           <span>Buscar</span>
         </PanelLink>
 
-        <PanelLink href="/library/playlists" iconName="library" active={isActive(LIBRARY_PANEL)}>
+        <PanelLink href="/library/playlists" libraryPath iconName="library">
           <span>Tu Biblioteca</span>
         </PanelLink>
       </ul>
@@ -28,7 +27,7 @@ const DeskPanel = ({ activeLink }) => {
             <span>Crear playlist</span>
           </button>
         </li>
-        <PanelLink href="/library/tracks" iconName="tracks" active={isActive(TRACKS_PANEL)}>
+        <PanelLink href="/library/tracks" iconName="tracks">
           <span>Tus me gusta</span>
         </PanelLink>
       </ul>

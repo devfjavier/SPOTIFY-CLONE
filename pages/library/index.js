@@ -1,13 +1,14 @@
-import RootContainer from "../../components/fragments/RootContainer"
 import PageLibrary_uiM from "../../components/page-ui-m/library"
-import { LIBRARY_PANEL } from "../../consts/panel_page_names"
 
-// page only for mobile
+/**
+ * page only for mobile
+ * @returns JSX.Element - page
+ */
 
 const Library = () => {
-  return <RootContainer panelLink={LIBRARY_PANEL}>
+  return <>
     {process.env.uiM && <PageLibrary_uiM />}
-  </RootContainer>
+  </>
 }
 
 export default Library

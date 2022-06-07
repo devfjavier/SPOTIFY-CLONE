@@ -1,3 +1,0 @@
-export const NORMAL_HEADER = "NORMAL_HEADER"
-export const LIBRARY_HEADER = "LIBRARY_HEADER"
-export const SEARCH_HEADER = "SEARCH_HEADER"
