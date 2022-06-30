@@ -3,8 +3,12 @@ import NextHead from "next/head"
 import Footer from "../core-sections/Footer"
 import Header from "../core-sections/header"
 import Panel from "../core-sections/panel"
+import Header_uiM from "../core-sections/header-ui-m"
+import useMainPaths from "../hooks/useMainPaths"
 
 const RootContainer = ({ children }) => {
+  const { isPageLibrary } = useMainPaths()
+
   return (
     <div id={process.env.uiM ? root_uiM : root_uiDesk}>
       <NextHead>
@@ -13,7 +17,7 @@ const RootContainer = ({ children }) => {
         <link rel="icon" href={process.env.projectPath + "/svgs/spotify.svg"} />
       </NextHead>
       <Panel />
-      {process.env.uiM || <Header />}
+      {process.env.uiM ? (isPageLibrary && <Header_uiM pageLibrary />) : <Header />}
       <main className="h-bg-color-dark-3">
         {children}
       </main>

@@ -1,12 +1,11 @@
 import classes from "../../../styles/fragments/library-header-link.module.scss"
 import NextLink from "next/link"
-import Icon from "../../icon-svg"
 import { useRouter } from "next/router"
+import Icon from "../../icon-svg"
 
-const Header = ({ pageLibrary = false }) => {
-
+const Header_uiM = ({ pageLibrary = false }) => {
   return (
-    <header>
+    <header className={classes.header}>
       <div className="items-row">
         <h2 className="h-color-light h-fs-t2">Tu libreria</h2>
         <button className="h-unset"><Icon name="search" fill="#fff" size="1.27rem" /></button>
@@ -51,4 +50,4 @@ function Link({ href, show = false, children }) {
   )
 }
 
-export default Header
+export default Header_uiM
