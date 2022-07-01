@@ -3,11 +3,7 @@ import MobilePanel from "./MobilePanel"
 
 const Panel = () => {
   return <>
-    {process.env.uiM ?
-      <MobilePanel />
-      :
-      <DeskPanel />
-    }
+    {process.env.uiM ? <MobilePanel /> : <DeskPanel />}
   </>
 }
 

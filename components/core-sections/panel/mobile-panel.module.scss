@@ -1,4 +1,6 @@
-#mobile-panel {
+#idMobilePanel {
+  grid-area: PANEL;
+
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

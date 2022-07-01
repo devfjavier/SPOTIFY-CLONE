@@ -1,4 +1,4 @@
-import classes from "../../../styles/fragments/library-header-link.module.scss"
+import classes from "./library-header-link.module.scss"
 import NextLink from "next/link"
 import { useRouter } from "next/router"
 import Icon from "../../icon-svg"

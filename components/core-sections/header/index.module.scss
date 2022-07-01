@@ -3,12 +3,9 @@
 HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 
 */
-@use "./page-navigation";
-@use "./field-search.scss";
-@use "./button-premium";
 
 /* para todos los HEADER */
-.HEADER {
+#idHeader {
   position: absolute;
   display: grid;
   grid-template-columns: auto 1fr auto auto;
@@ -17,4 +14,5 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
   height: 3.6rem;
   width: 100%;
   background-color: var(--header-color);
+  z-index: var(--index-fixed);
 }

@@ -1,0 +1,63 @@
+/* 
+
+FOOTER, CONTROLES DE REPRODUCION
+
+*/
+@use "../../styles/mixins/breakpoint.scss" as *;
+
+#idFooter {
+  background-color: var(--menu-hover-bg-color);
+  padding: 1rem;
+  grid-area: FOOTER;
+
+  .container {
+    display: grid;
+    gap: 12%;
+
+    @include breakpoint(b2) {
+      justify-content: space-between;
+      grid-template-columns: 2fr 6fr 2fr;
+    }
+  }
+
+  .song {
+    display: grid;
+    grid-template-columns: 2.9rem 1fr auto auto;
+    gap: 1rem;
+    align-items: center;
+
+    @include breakpoint(b2) {
+      grid-template-columns: 4rem auto auto auto;
+    }
+  }
+
+  .song .info {
+    display: grid;
+    gap: .2rem;
+  }
+
+  .song .info .link {
+    white-space: nowrap;
+  }
+
+  .song .info .link:hover {
+    text-decoration: underline;
+  }
+
+  .song .like {
+    white-space: nowrap;
+  }
+
+  .primary-controls {
+    background-color: rgba(0, 0, 0, 0.275);
+  }
+
+  .primary-controls,
+  .secondary-controls {
+    display: none;
+
+    @include breakpoint(b2) {
+      display: block;
+    }
+  }
+}

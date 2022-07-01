@@ -1,6 +1,7 @@
-@use "../../mixins/breakpoint" as *;
+@use "../../../styles/mixins/breakpoint.scss" as *;
 
-#desk-panel {
+#idDeskPanel {
+  grid-area: PANEL;
   display: flex;
   padding: 1rem;
   flex-direction: column;

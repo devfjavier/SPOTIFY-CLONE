@@ -1,4 +1,4 @@
-.field-search {
+.fieldSearch {
   grid-column: 2 / span 1;
   justify-self: left;
   align-self: center;
@@ -16,7 +16,7 @@
   }
 }
 
-.skeleton-link {
+.skeletonLink {
   position: sticky;
   top: 0;
   z-index: var(--index-overlay);

@@ -1,4 +1,4 @@
-import classes from "../../../styles/core-sections/header/user-menu.module.scss"
+import classes from "./user-menu.module.scss"
 import { useRef, useEffect } from "react"
 import Icon from "../../icon-svg"
 

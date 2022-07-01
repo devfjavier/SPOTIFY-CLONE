@@ -1,4 +1,4 @@
-import styles from "../../styles/fragments/playlist-header.module.scss"
+import styles from "./playlist-header.module.scss"
 
 const PlaylistHeading = () => {
   return (

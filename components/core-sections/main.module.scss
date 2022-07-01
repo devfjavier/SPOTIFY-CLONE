@@ -4,9 +4,9 @@ MAIN, CONTENIDO PRINCIPAL
 
 */
 
-@use "../mixins/breakpoint.scss" as *;
+@use "../../styles/mixins/breakpoint.scss" as *;
 
-main {
+#main {
   grid-area: HEADER-MAIN;
   padding: 1.27rem .9rem;
   overflow-x: hidden;

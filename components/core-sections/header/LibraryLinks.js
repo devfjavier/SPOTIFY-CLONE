@@ -1,6 +1,6 @@
 import NextLink from "next/link"
 import { useRouter } from "next/router"
-import classes from "../../../styles/core-sections/header/collection-links.module.scss"
+import classes from "./collection-links.module.scss"
 
 const LibraryLinks = () => {
   const path = useRouter().asPath

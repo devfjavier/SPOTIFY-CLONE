@@ -5,6 +5,7 @@ import Header from "../core-sections/header"
 import Panel from "../core-sections/panel"
 import Header_uiM from "../core-sections/header-ui-m"
 import useMainPaths from "../hooks/useMainPaths"
+import Main from "../core-sections/Main"
 
 const RootContainer = ({ children }) => {
   const { isPageLibrary } = useMainPaths()
@@ -18,9 +19,7 @@ const RootContainer = ({ children }) => {
       </NextHead>
       <Panel />
       {process.env.uiM ? (isPageLibrary && <Header_uiM pageLibrary />) : <Header />}
-      <main className="h-bg-color-dark-3">
-        {children}
-      </main>
+      <Main>{children}</Main>
       <Footer />
     </div>
   )

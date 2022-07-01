@@ -1,24 +1,26 @@
+import classes from "./footer.module.scss"
+
 const Footer = () => {
   return (
-    <footer className="FOOTER">
-      <div className="container">
-        <div className="song">
+    <footer id={classes.idFooter}>
+      <div className={classes.container}>
+        <div className={classes.song}>
           <div>
-            <img src={process.env.projectPath + "/img/song.webp"}alt=""/>
+            <img src={process.env.projectPath + "/img/song.webp"} alt="" />
           </div>
-          <div className="info">
-            <a className="link h-color-light" href="">cancion</a>
-            <a className="link h-color-gray" href="">artista</a>
+          <div className={classes.info}>
+            <a className={"h-color-light " + classes.link} href="">cancion</a>
+            <a className={"h-color-gray " + classes.link} href="">artista</a>
           </div>
-          <button className="btn like">dar like</button>
-          <button className="btn play-pause">play-pause</button>
+          <button className={classes.like}>dar like</button>
+          <button>play-pause</button>
         </div>
-          
-        <div className="primary-controls">
+
+        <div className={classes["primary-controls"]}>
           controles
-        </div>               
-        
-        <div className="secondary-controls">
+        </div>
+
+        <div className={classes["secondary-controls"]}>
           volumen
         </div>
       </div>

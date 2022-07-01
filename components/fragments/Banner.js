@@ -1,7 +1,7 @@
-import classes from "../../styles/fragments/banner.module.scss"
+import classes from "./banner.module.scss"
 
 /**
- * @returns {html} banner in a tag section
+ * @returns banner in a tag section
  */
 const Banner = () => {
   return (

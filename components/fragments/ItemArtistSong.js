@@ -1,5 +1,5 @@
-import classes from "../../styles/fragments/item-artist-song.module.scss"
-import { item as btnItem } from "../../styles/fragments/btn-play-pause.module.scss"
+import classes from "./item-artist-song.module.scss"
+import { item as btnItem } from "./btn-play-pause.module.scss"
 import BtnPlayPause from "./BtnPlayPause"
 
 const is_uiM = process.env.uiM

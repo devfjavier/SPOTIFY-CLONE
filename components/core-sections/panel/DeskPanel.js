@@ -1,12 +1,13 @@
+import classes from "./desk-panel.module.scss"
+import { item } from "./panel-item.module.scss"
 import Icon from "../../icon-svg"
 import PanelLink from "./PanelLink"
-import { item } from "../../../styles/core-sections/panel/panel-item.module.scss"
 
 const DeskPanel = () => {
 
   return (
-    <nav id="desk-panel" className="h-bg-color-dark-1">
-      <ul className="menu">
+    <nav id={classes.idDeskPanel} className="h-bg-color-dark-1">
+      <ul className={classes.menu}>
         <PanelLink href="/" iconName="index">
           <span>Inicio</span>
         </PanelLink>

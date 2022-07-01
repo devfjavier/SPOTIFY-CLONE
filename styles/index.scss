@@ -7,11 +7,6 @@
 @use "global/text-color";
 @use "global/font-size";
 @use "global/bg-color";
-// components, divisiones de todo el sitio
-@use "core-sections/main";
-@use "core-sections/panel";
-@use "core-sections/header";
-@use "core-sections/footer";
 
 // paginas de items
 @use "pages/items-container";

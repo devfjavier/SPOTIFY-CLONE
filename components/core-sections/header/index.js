@@ -1,3 +1,4 @@
+import { idHeader } from "./index.module.scss"
 import useMainPaths from "../../hooks/useMainPaths"
 import LibraryLinks from "./LibraryLinks"
 import FieldSearch from "./FieldSearch"
@@ -9,13 +10,13 @@ const Header = () => {
   const paths = useMainPaths()
 
   return (
-    <header className="HEADER">
+    <header id={idHeader}>
       <NavigationButtons />
 
       {
         paths.isPageLibrary ? <LibraryLinks />
-        : paths.isPageSearch ? <FieldSearch />
-        : <PremiumButton />
+          : paths.isPageSearch ? <FieldSearch />
+            : <PremiumButton />
       }
 
       <UserMenu />

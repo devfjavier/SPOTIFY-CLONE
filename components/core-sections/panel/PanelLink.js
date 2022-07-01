@@ -1,4 +1,4 @@
-import classes from "../../../styles/core-sections/panel/panel-item.module.scss"
+import classes from "./panel-item.module.scss"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import Icon from "../../icon-svg"

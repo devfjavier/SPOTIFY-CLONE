@@ -1,9 +1,10 @@
+import classes from "./mobile-panel.module.scss"
 import PanelLink from "./PanelLink"
 
 const MobilePanel = () => {
   return (
-    <nav id="mobile-panel" className="h-bg-color-dark-1">
-      <ul className="menu">
+    <nav id={classes.idMobilePanel} className="h-bg-color-dark-1">
+      <ul className={classes.menu}>
         <PanelLink href="/" iconName="index">
           <span>Inicio</span>
         </PanelLink>
