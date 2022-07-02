@@ -3,7 +3,7 @@ import NextLink from "next/link"
 import { useRouter } from "next/router"
 import Icon from "../../icon-svg"
 
-const Header_uiM = ({ pageLibrary = false }) => {
+const Header_uiM = () => {
   return (
     <header className={classes.header}>
       <div className="items-row">
@@ -11,17 +11,17 @@ const Header_uiM = ({ pageLibrary = false }) => {
         <button className="h-unset"><Icon name="search" fill="#fff" size="1.27rem" /></button>
         <button className="h-unset"><Icon name="plus" fill="#fff" size="1.27rem" /></button>
       </div>
-      <div className="h-color-light items-row">
-        <Link href="/library/playlists" show={pageLibrary}>
+      <div className={"h-color-light " + classes.container}>
+        <Link href="/library/playlists">
           Listas
         </Link>
-        <Link href="/library/podcasts" show={pageLibrary}>
+        <Link href="/library/podcasts">
           Podcasts
         </Link>
-        <Link href="/library/artists" show={pageLibrary}>
+        <Link href="/library/artists">
           Artistas
         </Link>
-        <Link href="/library/albums" show={pageLibrary}>
+        <Link href="/library/albums">
           Albumes
         </Link>
       </div>
@@ -29,19 +29,19 @@ const Header_uiM = ({ pageLibrary = false }) => {
   )
 }
 
-function Link({ href, show = false, children }) {
-  const isActive = href === useRouter().asPath
+function Link({ href, children }) {
+  const { asPath, basePath } = useRouter()
 
-  const activeClass = isActive ? ` ${classes.activeLink}` : ""
+  const isCurrentPath = href === asPath
+  const isParentPath = asPath === basePath + "/library"
 
-  if (!show && !isActive) {
-    return null
-  }
+  const activeClass = isCurrentPath ? ` ${classes.isActive}` : ""
+  const hiddenClass = !isParentPath && !isCurrentPath ? ` ${classes.isHidden}` : ""
 
   return (
-    <NextLink href={isActive ? "/library" : href}>
-      <a className={"h-unset " + classes.linkContainer}>
-        {isActive && <Icon className={"h-b-radius-50 " + classes.icon} name="x" fill="#fff" size="1.9rem" />}
+    <NextLink href={isCurrentPath ? "/library" : href}>
+      <a className={"h-unset " + classes.link + hiddenClass}>
+        {isCurrentPath && <Icon className={"h-b-radius-50 " + classes.icon} name="x" fill="#fff" size="1.9rem" />}
         <span className={`${classes.text}${activeClass}`}>
           {children}
         </span>

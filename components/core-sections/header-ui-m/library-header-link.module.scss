@@ -3,24 +3,38 @@
   position: absolute;
   top: 0;
   z-index: var(--index-overlay);
+  background-color: var(--header-color);
   width: 100%;
+  padding: .27rem;
 }
 
-.linkContainer {
+.container {
+  display: flex;
+  direction: row;
+  align-items: center;
+}
+
+.link {
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: .46rem;
+  padding-right: 1.27rem;
+  
+  &.isHidden {
+    pointer-events: none;
+    width: 0rem;
+    padding-right: 0rem;
+    filter: opacity(0);
+  }
 }
 
 .text {
-  display: inline-block;
   border: 1px solid var(--color-text-gray);
   padding: .4rem .6rem;
   border-radius: 1.27rem;
-  transition: .046s linear;
 
-  &.activeLink {
+  &.isActive {
     border-color: #191919;
     background-color: rgb(0, 109, 0);
   }

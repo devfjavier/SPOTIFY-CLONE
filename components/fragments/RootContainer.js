@@ -18,7 +18,7 @@ const RootContainer = ({ children }) => {
         <link rel="icon" href={process.env.projectPath + "/svgs/spotify.svg"} />
       </NextHead>
       <Panel />
-      {process.env.uiM ? (isPageLibrary && <Header_uiM pageLibrary />) : <Header />}
+      {process.env.uiM ? (isPageLibrary && <Header_uiM />) : <Header />}
       <Main>{children}</Main>
       <Footer />
     </div>
