@@ -6,7 +6,7 @@ MAIN, CONTENIDO PRINCIPAL
 
 @use "../../styles/mixins/breakpoint.scss" as *;
 
-#main {
+#idMain {
   grid-area: HEADER-MAIN;
   padding: 1.27rem .9rem;
   overflow-x: hidden;

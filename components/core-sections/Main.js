@@ -1,7 +1,7 @@
-import { main } from "./main.module.scss"
+import { idMain } from "./main.module.scss"
 
 const Main = ({ children }) => (
-  <main id={main} className="h-bg-color-dark-3">
+  <main id={idMain} className="h-bg-color-dark-3">
     {children}
   </main>
 )
