@@ -5,7 +5,7 @@ import Header from "../core-sections/header"
 import Panel from "../core-sections/panel"
 import Header_uiM from "../core-sections/header-ui-m"
 import useMainPaths from "../hooks/useMainPaths"
-import Main from "../core-sections/Main"
+import HeaderMain from "../core-sections/HeaderMain"
 
 const RootContainer = ({ children }) => {
   const { isPageLibrary } = useMainPaths()
@@ -18,8 +18,10 @@ const RootContainer = ({ children }) => {
         <link rel="icon" href={process.env.projectPath + "/svgs/spotify.svg"} />
       </NextHead>
       <Panel />
-      {process.env.uiM ? (isPageLibrary && <Header_uiM />) : <Header />}
-      <Main>{children}</Main>
+      <HeaderMain>
+        {process.env.uiM ? (isPageLibrary && <Header_uiM />) : <Header />}
+        <main>{children}</main>
+      </HeaderMain>
       <Footer />
     </div>
   )

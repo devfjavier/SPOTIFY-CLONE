@@ -1,6 +1,5 @@
 .header {
-  grid-area: HEADER-MAIN;
-  position: absolute;
+  position: sticky;
   top: 0;
   z-index: var(--index-overlay);
   background-color: var(--header-color);
@@ -19,12 +18,12 @@
   align-items: center;
   cursor: pointer;
   gap: .46rem;
-  padding-right: 1.27rem;
+  margin-right: 1.27rem;
   
   &.isHidden {
     pointer-events: none;
     width: 0rem;
-    padding-right: 0rem;
+    margin-right: 0rem;
     filter: opacity(0);
   }
 }

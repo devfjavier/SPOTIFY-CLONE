@@ -6,10 +6,10 @@ HEADER, CABECERA DEL CONTENIDO PRINCIPAL
 
 /* para todos los HEADER */
 #idHeader {
-  position: absolute;
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: auto 1fr auto auto;
-  grid-area: HEADER-MAIN;
   padding: .46rem;
   height: 3.6rem;
   width: 100%;
