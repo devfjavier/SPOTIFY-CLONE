@@ -1,6 +1,7 @@
 import classes from "./desk-panel.module.scss"
 import PanelItem from "../panel-common/PanelItem"
 import useMainPaths from "../../hooks/useMainPaths"
+import PanelLinkToMobile from "./PanelLinkToUiMobile"
 
 const Panel_uiDesk = () => {
   const { isPageLibrary } = useMainPaths()
@@ -8,6 +9,7 @@ const Panel_uiDesk = () => {
   return (
     <nav id={classes.idDeskPanel} className="h-bg-color-dark-1">
       <ul className={classes.menu}>
+        <PanelLinkToMobile />
         <PanelItem href="/" iconName="index">
           Inicio
         </PanelItem>
