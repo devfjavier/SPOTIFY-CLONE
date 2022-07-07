@@ -1,5 +1,6 @@
 import Items from "../../fragments/Items"
 import Icon from "../../icon-svg"
+import LinkToUiDesktop from "./LinkToUiDesktop"
 
 const PageHome_uiM = () => {
   return <>
@@ -10,6 +11,7 @@ const PageHome_uiM = () => {
         </h2>
         <SideButtons />
       </div>
+      <LinkToUiDesktop />
       <Items compact />
     </section>
 
