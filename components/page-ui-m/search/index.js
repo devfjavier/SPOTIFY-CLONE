@@ -1,4 +1,4 @@
-import FieldSearch from "../../core-sections/header/FieldSearch"
+import FieldSearch from "../../core-sections/header-ui-desk/FieldSearch"
 import Items from "../../fragments/Items"
 
 const PageSearch_uiM = () => {
