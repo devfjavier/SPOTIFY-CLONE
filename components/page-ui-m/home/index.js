@@ -11,8 +11,8 @@ const PageHome_uiM = () => {
         </h2>
         <SideButtons />
       </div>
-      <LinkToUiDesktop />
       <Items compact />
+      <LinkToUiDesktop />
     </section>
 
     <section>
