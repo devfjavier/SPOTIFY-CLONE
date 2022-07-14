@@ -1,5 +1,5 @@
 import FieldSearch from "../../core-sections/header-ui-desk/FieldSearch"
-import Items from "../../fragments/Items"
+import ItemsGenre from "../../fragments/ItemsGenre"
 
 const PageSearch_uiM = () => {
   return <>
@@ -8,7 +8,7 @@ const PageSearch_uiM = () => {
       <FieldSearch skeletonLink />
 
       <h3 className="h-color-light h-fs-t4">Buscar todo</h3>
-      <Items grid/>
+      <ItemsGenre />
     </section>
   </>
 }

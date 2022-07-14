@@ -1,4 +1,4 @@
-import Items from "../../fragments/Items"
+import ItemsGenre from "../../fragments/ItemsGenre"
 import RecentSearches from "./RecenSearches"
 
 const PageSearch_uiDesk = () => {
@@ -6,7 +6,7 @@ const PageSearch_uiDesk = () => {
     <RecentSearches />
     <section>
       <h2 className="h-color-light h-fs-t3">Buscar todo</h2>
-      <Items grid/>
+      <ItemsGenre />
     </section>
   </>
 }
