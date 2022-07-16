@@ -21,7 +21,9 @@ const RootContainer = ({ children }) => {
       {process.env.uiM ? <Panel_uiM /> : <Panel_uiDesk />}
       <HeaderMain>
         {process.env.uiM ? (isPageLibrary && <Header_uiM />) : <Header_uiDesk />}
-        <main>{children}</main>
+        <main className={process.env.uiM ? "" : "h-pad-1-9rem"}>
+          {children}
+        </main>
       </HeaderMain>
       <Footer />
     </div>
