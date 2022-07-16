@@ -1,12 +1,14 @@
+import Img from "../i-particles/Img"
 import classes from "./banner.module.scss"
 
 /**
  * @returns banner in a tag section
  */
+
 const Banner = () => {
   return (
     <section className={classes.banner}>
-      <div classs="img-container"><img src={process.env.projectPath + "/img/song.webp"} alt="song spotify clone godot engine" /></div>
+      <div classs="img-container"><Img src={"/img/song.webp"} alt="song spotify clone godot engine" /></div>
       <div>
         <h2 className="h-color-light h-fs-st3">PLAYLIST</h2>
         <h1 className="h-color-light h-fs-t1">TITULO DEL PLAYLIST</h1>

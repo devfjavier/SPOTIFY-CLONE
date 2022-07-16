@@ -1,11 +1,12 @@
 import classes from "./item-artist-song.module.scss"
 import { item as btnItem } from "./btn-play-pause.module.scss"
 import BtnPlayPause from "./BtnPlayPause"
+import Img from "../i-particles/Img"
 
 const is_uiM = process.env.uiM
 
 const ItemArtistSong = ({ compact = false, artist = false }) => {
-  const img = <img className={artist && !compact ? "h-b-radius-50" : null} src={process.env.projectPath + "/img/song.webp"} alt="godot engine" />
+  const img = <Img className={artist && !compact ? "h-b-radius-50" : null} src={"/img/song.webp"} alt="godot engine" />
 
   if (compact) {
     return (

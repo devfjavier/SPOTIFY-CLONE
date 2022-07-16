@@ -1,3 +1,5 @@
+import Img from "../i-particles/Img"
+
 const ItemsGenre = () => {
   const items = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -6,7 +8,7 @@ const ItemsGenre = () => {
       items.map(i => (
         <a href="#" key={i}>
           <span className="h-fs-st2">Genre</span>
-          <img src={process.env.projectPath + "/img/genre.webp"} alt="godot 4 alpha" />
+          <Img src={"/img/genre.webp"} alt="godot 4 alpha" />
           <style jsx>{`
             a {
               all: unset;

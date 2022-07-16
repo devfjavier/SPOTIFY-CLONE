@@ -1,3 +1,4 @@
+import Img from "../i-particles/Img"
 import classes from "./footer.module.scss"
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className={classes.container}>
         <div className={classes.song}>
           <div>
-            <img src={process.env.projectPath + "/img/song.webp"} alt="" />
+            <Img src={"/img/song.webp"} alt="" />
           </div>
           <div className={classes.info}>
             <a className={"h-color-light " + classes.link} href="">cancion</a>

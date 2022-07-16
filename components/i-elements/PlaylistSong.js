@@ -1,4 +1,5 @@
 import Icon from "../i-particles/icon-svg"
+import Img from "../i-particles/Img"
 import styles from "./playlist-song.module.scss"
 
 const PlaylistSong = () => {
@@ -10,7 +11,7 @@ const PlaylistSong = () => {
         <button className={styles["pause-btn"]}><Icon name="pause"  fill="#fff"/></button>
       </div>
       <div className={styles["title-container"]}>
-        <img src={process.env.projectPath + "/img/song.webp"} alt=""/>
+        <Img src={"/img/song.webp"} alt=""/>
         <div>
           <span className={`${styles.title} h-color-light`}>nombre cancion</span>
           <a className={`${styles["artist-link"]} h-color-gray`} href="">artista</a>
