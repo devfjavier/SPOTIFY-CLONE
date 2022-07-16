@@ -3,7 +3,7 @@ import Icon from "../../i-particles/icon-svg"
 import LinkToUiDesktop from "../../i-particles/LinkToUiDesktop"
 
 const PageHome_uiM = () => {
-  return <>
+  return <div className="h-pad-0-9rem">
     <section>
       <div className="side-buttons-container">
         <h2 className={"h-color-light h-fs-t3"}>
@@ -24,7 +24,7 @@ const PageHome_uiM = () => {
       <h2 className="h-color-light h-fs-t3">Tus artistas favoritos</h2>
       <Items row />
     </section>
-  </>
+  </div>
 }
 
 function SideButtons() {

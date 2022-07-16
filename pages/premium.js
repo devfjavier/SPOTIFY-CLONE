@@ -11,14 +11,14 @@ const Premium = () => {
     </article>
   )
 
-  return <>
+  return <div className="h-pad-0-9rem">
     <h1 className="h-fs-t2 h-color-light">Toma el control de tu musica con Premium</h1>
     <Card title="Escucha sin anuncios" par="Disfruta de musica sin detener" />
     <Card title="Reproduce cualquier cancion" par="Incluso en moviles" />
     <Card title="Saltos ilimitados" par="Solo click en siguiente" />
     <Card title="Descarga musica" par="Escucha donde quieras, incluso sin conexion" />
     <Card title="Alta calidad de audio" par="3 veces mejor calidad de sonido" />
-  </>
+  </ div>
 }
 
 export default Premium

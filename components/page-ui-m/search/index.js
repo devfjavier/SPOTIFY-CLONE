@@ -3,7 +3,7 @@ import ItemsGenre from "../../i-elements/ItemsGenre"
 
 const PageSearch_uiM = () => {
   return <>
-    <section>
+    <section className="h-pad-0-9rem">
       <h2 className="h-color-light h-fs-t2">Buscar</h2>
       <FieldSearch skeletonLink />
 
