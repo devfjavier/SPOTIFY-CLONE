@@ -1,5 +1,5 @@
 import FieldSearch from "../../core-sections/header-ui-desk/FieldSearch"
-import ItemsGenre from "../../fragments/ItemsGenre"
+import ItemsGenre from "../../i-elements/ItemsGenre"
 
 const PageSearch_uiM = () => {
   return <>

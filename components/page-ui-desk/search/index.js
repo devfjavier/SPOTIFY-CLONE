@@ -1,4 +1,4 @@
-import ItemsGenre from "../../fragments/ItemsGenre"
+import ItemsGenre from "../../i-elements/ItemsGenre"
 import RecentSearches from "./RecenSearches"
 
 const PageSearch_uiDesk = () => {

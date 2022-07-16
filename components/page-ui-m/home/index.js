@@ -1,4 +1,4 @@
-import Items from "../../fragments/Items"
+import Items from "../../i-elements/Items"
 import Icon from "../../icon-svg"
 import LinkToUiDesktop from "./LinkToUiDesktop"
 

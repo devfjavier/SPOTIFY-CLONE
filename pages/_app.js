@@ -1,5 +1,5 @@
 import '../styles/index.scss'
-import RootContainer from '../components/fragments/RootContainer'
+import RootContainer from '../components/i-elements/RootContainer'
 
 /**
  * @returns JSX.Element - the current page and RootContainer

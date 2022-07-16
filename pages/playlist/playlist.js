@@ -1,6 +1,6 @@
-import PlaylistSong from "../../components/fragments/PlaylistSong"
-import PlaylistHeader from "../../components/fragments/PlaylistHeader"
-import Banner from "../../components/fragments/Banner"
+import PlaylistSong from "../../components/i-elements/PlaylistSong"
+import PlaylistHeader from "../../components/i-elements/PlaylistHeader"
+import Banner from "../../components/i-elements/Banner"
 
 /**
  * page only for desktop

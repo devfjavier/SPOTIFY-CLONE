@@ -1,4 +1,4 @@
-import ItemArtistSong from "../../fragments/ItemArtistSong"
+import ItemArtistSong from "../../i-elements/ItemArtistSong"
 
 const RecentSearches = () => {
   return (
