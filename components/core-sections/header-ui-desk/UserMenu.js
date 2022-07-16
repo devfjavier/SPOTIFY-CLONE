@@ -1,6 +1,6 @@
 import classes from "./user-menu.module.scss"
 import { useRef, useEffect } from "react"
-import Icon from "../../icon-svg"
+import Icon from "../../i-particles/icon-svg"
 
 const UserMenu = () => {
   const containerRef = useRef()

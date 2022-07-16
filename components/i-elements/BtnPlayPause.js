@@ -1,6 +1,6 @@
 import classes from "./btn-play-pause.module.scss"
 import { useRef } from "react"
-import Icon from "../icon-svg"
+import Icon from "../i-particles/icon-svg"
 
 const is_uiM = process.env.uiM
 

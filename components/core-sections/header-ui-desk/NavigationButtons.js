@@ -1,5 +1,5 @@
 import classes from "./page-navigation.module.scss"
-import Icon from "../../icon-svg"
+import Icon from "../../i-particles/icon-svg"
 
 const NavigationButtons = () => {
   return (

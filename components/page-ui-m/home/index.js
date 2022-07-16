@@ -1,6 +1,6 @@
 import Items from "../../i-elements/Items"
-import Icon from "../../icon-svg"
-import LinkToUiDesktop from "./LinkToUiDesktop"
+import Icon from "../../i-particles/icon-svg"
+import LinkToUiDesktop from "../../i-particles/LinkToUiDesktop"
 
 const PageHome_uiM = () => {
   return <>

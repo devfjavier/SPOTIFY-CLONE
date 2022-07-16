@@ -1,5 +1,5 @@
-import classes from "../panel-common/panel-item.module.scss"
-import Icon from "../../icon-svg"
+import classes from "../core-sections/panel-common/panel-item.module.scss"
+import Icon from "./icon-svg"
 
 const PanelLinkToMobile = () => {
   return <a

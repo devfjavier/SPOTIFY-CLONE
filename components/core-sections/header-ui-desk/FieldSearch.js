@@ -1,6 +1,6 @@
 import classes from "./field-search.module.scss"
 import Link from "next/link"
-import Icon from "../../icon-svg"
+import Icon from "../../i-particles/icon-svg"
 
 const FieldSearch = ({ skeletonLink = false }) => {
 

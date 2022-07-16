@@ -1,7 +1,7 @@
 import classes from "./desk-panel.module.scss"
 import PanelItem from "../panel-common/PanelItem"
 import useMainPaths from "../../hooks/useMainPaths"
-import PanelLinkToMobile from "./PanelLinkToUiMobile"
+import PanelLinkToMobile from "../../i-particles/PanelLinkToUiMobile"
 
 const Panel_uiDesk = () => {
   const { isPageLibrary } = useMainPaths()

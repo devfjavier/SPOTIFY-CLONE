@@ -2,7 +2,7 @@ import classes from "./panel-item.module.scss"
 import { createElement } from "react"
 import NextLink from "next/link"
 import { useRouter } from "next/router"
-import Icon from "../../icon-svg"
+import Icon from "../../i-particles/icon-svg"
 
 const PanelItem = ({ href, isPageLibrary, iconName, oneVerIcon, children }) => {
   const isActive = href === useRouter().asPath

@@ -1,4 +1,4 @@
-import Icon from "../icon-svg"
+import Icon from "../i-particles/icon-svg"
 import styles from "./playlist-song.module.scss"
 
 const PlaylistSong = () => {

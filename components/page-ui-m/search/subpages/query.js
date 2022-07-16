@@ -1,4 +1,4 @@
-import Icon from "../../../icon-svg"
+import Icon from "../../../i-particles/icon-svg"
 
 const PageQuery_uiM = () => {
   return <>
