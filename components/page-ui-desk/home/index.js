@@ -12,6 +12,10 @@ const PageHome_uiDesk = () => {
       <h2 className="h-color-light h-fs-t3">Escuchado recientemente</h2>
       <Items grid />
     </section>
+    <section>
+      <h2 className="h-color-light h-fs-t3">Tus artistas favoritos</h2>
+      <Items artist grid />
+    </section>
   </>
 }
 

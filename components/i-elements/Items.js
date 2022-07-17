@@ -1,26 +1,21 @@
-import ItemArtistSong from "./ItemArtistSong"
+import ItemSongArCompact from "./item-song-ar-compact"
+import ItemSongArCard from "./item-song-ar-card"
 
-const Items = ({ compact, row, grid }) => {
+const Items = ({ artist, compact, row, grid }) => {
   if (compact) {
     return <div className="items-compact">
-      <ItemArtistSong compact={compact} />
-      <ItemArtistSong compact={compact} />
-      <ItemArtistSong compact={compact} />
-      <ItemArtistSong compact={compact} />
+      <ItemSongArCompact />
+      <ItemSongArCompact />
+      <ItemSongArCompact />
+      <ItemSongArCompact />
     </div>
   }
 
   return <>
     <div className={row ? "items-row" : grid ? "items-container" : ""}>
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
-      <ItemArtistSong />
+      {[1, 2, 3, 4, 5, 6].map(id => (
+        <ItemSongArCard key={id} artist={artist} />
+      ))}
     </div>
   </>
 }

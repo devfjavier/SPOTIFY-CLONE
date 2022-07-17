@@ -1,0 +1,49 @@
+.link {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.itemCompact {
+  position: relative;
+  transition: background-color .2s linear;
+  display: inline-flex;
+  border-radius: .26rem;
+  align-items: center;
+  gap: .9rem;
+  padding-right: .9rem;
+
+  &:hover:not(.MobileC) {
+    background-color: var(--item-hover-bg-color);
+  }
+
+  &.MobileC:active {
+    filter: brightness(.72);
+    transform: scale(.98);
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+}
+
+.btnContainer {
+  filter: opacity(0);
+  transition: .127s linear;
+
+  .itemCompact & {
+    position: relative;
+    z-index: var(--index-front);
+    margin-left: auto;
+  }
+
+  .itemCompact:hover &,
+  .itemCompact &.isActive {
+    filter: opacity(1)
+  }
+}

@@ -1,0 +1,32 @@
+.btn {
+  padding: .6rem;
+  border-radius: 50%;
+  background-color: rgb(0, 200, 0);
+  transition: .019s linear;
+
+  &.MobileC:active {
+    transform: scale(.98);
+    filter: brightness(1.09);
+  }
+
+  &.DesktopC {
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    &:active {
+      transform: scale(1);
+      filter: brightness(.6);
+    }
+  }
+}
+
+.playIcon,
+.isActive .pauseIcon {
+  display: block;
+}
+
+.pauseIcon,
+.isActive .playIcon {
+  display: none;
+}

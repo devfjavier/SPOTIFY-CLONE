@@ -1,0 +1,54 @@
+.link {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.itemCard {
+  position: relative;
+  transition: background-color .2s linear;
+  border-radius: .46rem;
+  min-width: 9rem;
+  min-height: 9rem;
+
+  &.DesktopC {
+    padding: 1rem;
+
+    &:hover {
+      background-color: var(--item-hover-bg-color);
+    }
+  }
+
+  &.MobileC:active {
+    filter: brightness(.72);
+    transform: scale(.98);
+  }
+}
+
+.infoContainer {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.btnContainer {
+  filter: opacity(0);
+  transition: .127s linear;
+
+  .itemCard & {
+    z-index: var(--index-front);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-19%, calc(-100%));
+  }
+
+  .itemCard:hover &,
+  .itemCard:active &,
+  .itemCard &.isActive {
+    transform: translate(-19%, calc(-119%));
+    filter: opacity(1)
+  }
+}

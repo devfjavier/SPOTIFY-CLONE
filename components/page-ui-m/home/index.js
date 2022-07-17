@@ -22,7 +22,7 @@ const PageHome_uiM = () => {
 
     <section>
       <h2 className="h-color-light h-fs-t3">Tus artistas favoritos</h2>
-      <Items row />
+      <Items artist row />
     </section>
   </div>
 }
